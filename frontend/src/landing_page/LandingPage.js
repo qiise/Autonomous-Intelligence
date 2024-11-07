@@ -21,6 +21,7 @@ import {
   customersPath,
   customerCaseStudyPath,
   pricingPath,
+  registryPath,
   financeGPTPath,
 } from "../constants/RouteConstants";
 import Home from "./landing_page_screens/Home/Home";
@@ -33,6 +34,7 @@ import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { robotHeader } from "../util/RobotHeader";
 import Pricing from "./landing_page_screens/Pricing";
+import Registry from "./landing_page_screens/Registry";
 import CustomerCaseStudy from "./landing_page_screens/Customers/CustomerCaseStudy";
 
 function LandingPage() {
@@ -73,6 +75,7 @@ function LandingPage() {
           <Route path={customersPath} index element={<Customers />} />
           <Route path={customerCaseStudyPath} index element={<CustomerCaseStudy />} />
           <Route path={pricingPath} index element={<Pricing />} />
+          <Route path={registryPath} index element={<Registry />} />
           <Route path={sampleProjectsPath} index element={<SampleProjects />} />
           <Route path={researchPath} index element={<Research />} />
           <Route path="*" element={<Navigate replace to="/" />} />
