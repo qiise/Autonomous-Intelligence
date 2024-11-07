@@ -1,5 +1,4 @@
 import React from "react";
-
 import LPHighLevel from "./LPHighLevel";
 
 function LPHighLevels() {
@@ -9,23 +8,23 @@ function LPHighLevels() {
         How Panacea Works
       </div>
       <h2 className="text-center pt-3">
-      Chat with your documents in a privacy preserving way, keeping your data secure.
+        A platform to create, deploy, and monitor autonomous multi-agent systems.
       </h2>
-      <div class="p-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="p-10 grid grid-cols-1 md:grid-cols-3 gap-5">
         <LPHighLevel
           image="/landing_page_assets/upload.png"
-          title="Upload"
-          description="Upload your private documents (PDF, CSV, DOCX, XLSX, HTML, TXT, PPTX supported)."
+          title="Build Autonomous Agents"
+          description="Develop agents equipped with memory, reasoning, and tool capabilities. Each agent is designed to operate independently, handling tasks and managing state within a multi-agent environment."
         />
         <LPHighLevel
           image="/landing_page_assets/chat.png"
-          title="Chat"
-          description="Ask questions on your documents with LLMs like Llama2, Mistral or fined tuned models."
+          title="Coordinate Agent Teams"
+          description="Orchestrate interactions between agents as they collaborate on complex tasks. Panacea’s system enables seamless communication, task handoff, and dynamic adjustment within agent teams."
         />
         <LPHighLevel
           image="/landing_page_assets/evaluate.png"
-          title="Evaluate"
-          description="Get citations for answers, and ensure the answer is correct to mitigate hallucinations."
+          title="Monitor and Optimize"
+          description="Track agent performance through detailed metrics and logs. Optimize behavior in real-time, adjusting parameters and workflows to improve efficiency and achieve goals with minimal supervision."
         />
       </div>
     </div>
