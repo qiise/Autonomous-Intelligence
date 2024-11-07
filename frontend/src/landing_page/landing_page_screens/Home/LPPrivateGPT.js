@@ -8,7 +8,7 @@ const LPPrivateGPT = () => {
       <div className="text-3xl sm:text-4xl lg:text-5xl my-10 text-center font-medium lg:font-bold">
         Build Your Private Financial Chatbot
       </div>
-      <div className="text-white bg-black
+      <div className="text-white bg-[#141414]
 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 pb-10">
           <div className=" w-9/12 mx-auto md:w-10/12">
@@ -36,7 +36,7 @@ const LPPrivateGPT = () => {
                 }}
                 style={{ marginTop: "20px", textDecoration: "none" }}
               >
-                Try Agento Now
+                Try Panacea Now
               </button>
             </div>
           </div>

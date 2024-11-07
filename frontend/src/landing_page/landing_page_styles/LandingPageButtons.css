@@ -183,7 +183,7 @@
         @apply font-['Helvetica_Neue'] inline-flex bg-[#40C6FF] text-white border-2 border-[#40C6FF] py-2 px-6 focus:outline-none hover:bg-[#28B2FB] rounded text-sm md:text-lg font-bold rounded-3xl
     }
     .btn-black{
-        @apply  font-['Helvetica_Neue'] inline-flex bg-black
+        @apply  font-['Helvetica_Neue'] inline-flex bg-[#141414]
  text-white border-2 border-white py-2 px-6 focus:outline-none hover:bg-gray-950 rounded text-sm md:text-lg font-bold rounded-3xl
     }
 }

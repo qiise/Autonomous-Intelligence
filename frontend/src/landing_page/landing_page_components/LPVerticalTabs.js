@@ -113,7 +113,7 @@ function LPVerticalTabs({ heading, object }) {
           ))}
         </div>
       </div>
-      <div className="hidden md:block w-11/12 lg:w-4/5 mx-auto bg-black
+      <div className="hidden md:block w-11/12 lg:w-4/5 mx-auto bg-[#141414]
  rounded-2xl">
         <div className="flex justify-evenly">
           <div className="flex flex-col justify-evenly text-xl hover:cursor-pointer">
@@ -122,7 +122,7 @@ function LPVerticalTabs({ heading, object }) {
                 key={index}
                 className={`${
                   selectedCapability === object.name
-                    ? " bg-black
+                    ? " bg-[#141414]
  text-white font-semibold py-3 px-3 rounded-xl"
                     : " text-[#40C6FF] hover:text-sky-200"
                 }`}

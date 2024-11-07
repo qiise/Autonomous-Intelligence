@@ -127,7 +127,7 @@ const NavLinks = ({ open, setOpen }) => {
               <div>
                 <div className="absolute top-14 z-20 hidden group-hover:lg:block hover:lg:block ">
                   <div className="py-3">
-                    <div className="w-4 h-4 left-8 absolute mt-1 bg-black
+                    <div className="w-4 h-4 left-8 absolute mt-1 bg-[#141414]
  rotate-45 "></div>
                   </div>
 

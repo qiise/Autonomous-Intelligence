@@ -116,7 +116,7 @@ function GovtProposal() {
             boxShadow: "0px 0px 15px rgba(0,0,0,0.5)",
             textAlign: "center",
           }}
-          className="bg-black
+          className="bg-[#141414]
  text-white "
         >
           <div style={{ position: "relative" }}>
@@ -132,14 +132,14 @@ function GovtProposal() {
             <div className="w-full flex justify-between mt-4">
               <button
                 onClick={cancelRenameWorkflow}
-                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
+                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
 "
               >
                 Cancel
               </button>
               <button
                 onClick={confirmRenameWorkflow}
-                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
+                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
 "
               >
                 Save
@@ -215,7 +215,7 @@ function GovtProposal() {
                         </button>
                     </div>
                     {renameModal}
-                    <div className="bg-black
+                    <div className="bg-[#141414]
  py-4 px-6 my-2 h-[70vh] max-h-[70vh] overflow-y-scroll">
 
                         {/* File Input */}
@@ -226,7 +226,7 @@ function GovtProposal() {
                             Upload Documents
                         </label>
                         <div className="mb-6 mt-2">
-                            <div className="rounded-xl border-2 border-gray-500 bg-black
+                            <div className="rounded-xl border-2 border-gray-500 bg-[#141414]
 ">
                                 <div className="text-center w-full py-20">
                                     <FontAwesomeIcon
@@ -262,7 +262,7 @@ function GovtProposal() {
                             {files.length > 0 && (
                                 <div>
                                     {files.map((file, index) => (
-                                        <div className="flex w-max px-3 text-white items-center bg-black
+                                        <div className="flex w-max px-3 text-white items-center bg-[#141414]
  mx-2 my-1">
                                             <span className="mr-3">
                                                 {file.name}
@@ -300,11 +300,11 @@ function GovtProposal() {
                                             askQuestion();
                                         }
                                     }}
-                                    className="flex-grow rounded-lg py-2 px-3 mr-2 bg-black
+                                    className="flex-grow rounded-lg py-2 px-3 mr-2 bg-[#141414]
  text-white border-none focus:ring-1 focus:ring-[#28b2fb]"
                                 />
                                 <div
-                                    className="text-white bg-black
+                                    className="text-white bg-[#141414]
  px-4 py-2 rounded-lg cursor-pointer"
                                     onClick={askQuestion}
                                 >
@@ -316,7 +316,7 @@ function GovtProposal() {
                                     {questions.map((q, index) => (
                                         <div
                                             key={index}
-                                            className="flex w-full justify-between px-3 py-2 rounded-lg text-white items-center bg-black
+                                            className="flex w-full justify-between px-3 py-2 rounded-lg text-white items-center bg-[#141414]
  mb-1"
                                         >
                                             <span>{q}</span>
@@ -353,7 +353,7 @@ function GovtProposal() {
                             type="application/pdf"
                             className="w-full min-h-[85vh]"
                         >
-                            <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-black
+                            <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-[#141414]
 ">
                                 <div class="font-bold">
                                     No Report Generated Yet
@@ -362,7 +362,7 @@ function GovtProposal() {
                         </object>
                     </div>
                 ) : (
-                    <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-black
+                    <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-[#141414]
 ">
                         <div class="font-bold">No Report Generated Yet</div>
                     </div>

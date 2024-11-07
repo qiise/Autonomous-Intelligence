@@ -16,7 +16,7 @@ export default function SampleProject(props) {
         </div>
         <div
           className={
-            "LP-Sample-Projects-Project-Description bg-black rounded-2xl"
+            "LP-Sample-Projects-Project-Description bg-[#141414] rounded-2xl"
           }
         >
           <h1>{props.title}</h1>
