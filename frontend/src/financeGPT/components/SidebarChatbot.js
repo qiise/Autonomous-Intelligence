@@ -483,7 +483,7 @@ const onConnectorCardClick = (value) => {
             <ul className="my-4">
               <div className="mx-4 my-2">
                 <h2 className="text-[#9C9C9C] uppercase tracking-wide font-semibold text-xs">
-                  Task Types
+                  Agent Selection
                 </h2>
               </div>
               <div className="mx-4 my-2">
@@ -498,8 +498,7 @@ const onConnectorCardClick = (value) => {
               </div>
             </ul>
           </div>
-          <div className="bg-black
- rounded-xl">
+          <div className="bg-black rounded-xl">
             <h2 className="text-[#9C9C9C] uppercase tracking-wide font-semibold text-xs px-4">
               Model Selection
             </h2>
@@ -509,8 +508,7 @@ const onConnectorCardClick = (value) => {
             {confirmModelPopup}
             {confirmResetModelPopup}
             <div className="rounded py-3 mx-4">
-              <div className="flex-1 bg-black
- rounded-xl">
+              <div className="flex-1 bg-black rounded-xl">
               <ul className="">
                 <Select
                   name="publicOptions"
@@ -527,7 +525,7 @@ const onConnectorCardClick = (value) => {
               </div>
             </div>
             <div className="">
-              <div className="px-4">Your own fine-tuned model key:</div>
+              {/* <div className="px-4">Your own fine-tuned model key:</div>
               <div className="flex items-center mx-5">
                 <input
                   type="text"
@@ -551,15 +549,15 @@ const onConnectorCardClick = (value) => {
                       cursor: "pointer",
                     }}
                   >
-                    &#10003; {/* Check Mark */}
+                    &#10003;
                   </button>
                 )}
-              </div>
-              <div className="px-4">
+              </div> */}
+              {/* <div className="px-4">
               <a href="#" className="underline text-sm text-yellow-500" onClick={handleOpenModal}>
             Select Organization
           </a>
-          </div>
+          </div> */}
               {props.confirmedModelKey && (
                 <button
                   class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-1 px-2 rounded ml-4 mt-3 text-sm"

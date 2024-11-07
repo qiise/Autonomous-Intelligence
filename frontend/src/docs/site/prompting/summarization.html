@@ -46,9 +46,9 @@
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
-            
+
               Summarization
-            
+
           </span>
 </div>
 </div>
@@ -443,8 +443,8 @@
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
-  
-  
+
+
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
@@ -476,15 +476,15 @@
                     iFrameID.style.height = full_height;
                 }
             }
-        
+
             let iframe_id_list = []
             var iframes = document.getElementsByClassName("swagger-ui-iframe");
-            for (var i = 0; i < iframes.length; i++) { 
+            for (var i = 0; i < iframes.length; i++) {
                 iframe_id_list.push(iframes[i].getAttribute("id"))
             }
-        
+
             let ticking = true;
-            
+
             document.addEventListener('scroll', function(e) {
                 if (!ticking) {
                     window.requestAnimationFrame(()=> {
@@ -504,9 +504,9 @@
                     ticking = true;
                 }
             });
-        
+
             const dark_scheme_name = "slate"
-            
+
             window.scheme = document.body.getAttribute("data-md-color-scheme")
             const options = {
                 attributeFilter: ['data-md-color-scheme'],

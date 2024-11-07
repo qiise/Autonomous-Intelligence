@@ -74,7 +74,7 @@ function Footer() {
                   }
                 >
                   {/* Private Chatbot*/}
-                  Private Chatbot
+                  Agento
                 </a>
               </li>
               <li className="mb-3">
