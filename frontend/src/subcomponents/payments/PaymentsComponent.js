@@ -69,7 +69,7 @@ const PaymentsComponent = () => {
   }
 
   return (
-    <div className="text-black text-white bg-black
+    <div className="text-black text-white bg-[#141414]
  min-h-screen">
       <div className="relative flex justify-center py-14">
         <div className="absolute left-10 flex flex-col text-left">
@@ -90,7 +90,7 @@ const PaymentsComponent = () => {
           </span>}
         </div>
         <h1 className="sm:text-4xl text-3xl font-bold title-font text-anoteblack-100">
-          Agento Pricing Plans
+          Panacea Pricing Plans
         </h1>
         <div className="absolute right-10 mx-auto flex">
           <button

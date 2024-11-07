@@ -31,7 +31,7 @@ function Navbar(props) {
 
   var startPath = urlObject.toString();
   return (
-    <nav className="sticky top-0 h-[4.5rem] md:h-20 md:h-18 w-full bg-black
+    <nav className="sticky top-0 h-[4.5rem] md:h-20 md:h-18 w-full bg-[#141414]
  text-white z-30">
       <div className="flex items-center font-medium justify-around">
         <div className="flex items-start">
@@ -74,7 +74,7 @@ function Navbar(props) {
         to="/#top"
         className="font-bold text-3xl lg:cursor-pointer font-['Helvetica_Neue'] ml-2" // Added ml-2 for some spacing between the logo and text
       >
-        Agento
+        Panacea
       </Link>
     </div>
   </div>
@@ -105,7 +105,7 @@ function Navbar(props) {
         </div>
 
         <ul
-          className={`lg:hidden bg-black
+          className={`lg:hidden bg-[#141414]
  fixed w-full h-full top-0 py-24 pl-4 z-20 duration-500 ${
             props.open ? "left-0" : "left-[-100%]"
           }`}

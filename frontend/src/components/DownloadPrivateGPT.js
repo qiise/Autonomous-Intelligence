@@ -7,12 +7,12 @@ const DownloadPrivateGPT= () => {
   const downloadUrl = "https://anote-privategpt.s3.amazonaws.com/private_gpt-1.0.0-arm64.dmg";
 
   return (
-    <div className="flex flex-col min-h-screen bg-black
+    <div className="flex flex-col min-h-screen bg-[#141414]
 ">
       <div className="flex flex-grow items-center justify-center">
         <div className="pl-40 w-1/2 text-white flex flex-col justify-center" style={{ transform: 'translateY(-5%)' }}>
-          <h1 className="text-4xl font-bold mb-4">🎉 Congratulations - Thank you for purchasing Agento!</h1>
-          <p className="mb-14">Welcome to Agento! Engage with your documents directly on your device, ensuring your data remains private and secure. Experience a new level of smart, intuitive document interaction.</p>
+          <h1 className="text-4xl font-bold mb-4">🎉 Congratulations - Thank you for purchasing Panacea!</h1>
+          <p className="mb-14">Welcome to Panacea! Engage with your documents directly on your device, ensuring your data remains private and secure. Experience a new level of smart, intuitive document interaction.</p>
           <div className="flex flex-col space-y-6 w-[50%]">
             <a href={downloadUrl} className="flex items-center justify-between bg-gradient-to-r from-[#306285] to-[#4caab9] hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full" download>
               <FontAwesomeIcon icon={faApple} className="text-3xl px-3" />

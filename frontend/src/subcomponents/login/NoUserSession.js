@@ -51,12 +51,12 @@ function NoUserSession(props) {
   }, []);
 
   return (
-    // <div className=" bg-black min-h-screen">
-    <div className="flex flex-col min-h-screen bg-black">
+    // <div className=" bg-[#141414] min-h-screen">
+    <div className="flex flex-col min-h-screen bg-[#141414]">
     <div className="flex-grow">
       <h1 className="UpreachTitle companyName text-4xl font-semibold flex justify-center pt-10">
         <img src="logo.png" className="w-10 h-10" alt="logo" />
-        <span>Agento</span>
+        <span>Panacea</span>
       </h1>
       <h2 className="text-2xl text-center text-[#40C6FF] font-semibold my-2">
         Chat with your financial documents
@@ -65,11 +65,11 @@ function NoUserSession(props) {
           See How It Works
       </Button>
       <Modal size={"7xl"} show={showVideoModal} onClose={() => setShowVideoModal(false)} className="bg-gray-950">
-          <Modal.Header className="bg-black
+          <Modal.Header className="bg-[#141414]
  text-white p-4">
             See How It Works
           </Modal.Header>
-          <Modal.Body className="p-4 flex items-center justify-center bg-black
+          <Modal.Body className="p-4 flex items-center justify-center bg-[#141414]
 ">
               <div style={{position: "relative", width: "100%", paddingBottom: "56.25%"}}>
                   <a style={{position: "absolute", top: "70px", right: "1rem", opacity: 0.8}} href="https://clipchamp.com/watch/UoPz2Tjbykg?utm_source=embed&utm_medium=embed&utm_campaign=watch">

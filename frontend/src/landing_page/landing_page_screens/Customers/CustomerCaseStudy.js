@@ -11,7 +11,7 @@ function CustomerCaseStudy() {
   ];
 
   return (
-    <div className="flex justify-center items-center h-[64vh] max-h-[64vh] bg-black
+    <div className="flex justify-center items-center h-[64vh] max-h-[64vh] bg-[#141414]
  p-5 md:h-[180vh] md:max-h-[180vh]">
       <div className="w-full h-full md:max-w-4xl shadow-lg rounded-lg overflow-hidden">
         <DocViewer

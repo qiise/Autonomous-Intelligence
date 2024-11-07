@@ -59,7 +59,7 @@ function LandingPage() {
   return (
     <div>
       <Helmet>
-        <title>Agento</title>
+        <title>Panacea</title>
         {robotMetaTag}
       </Helmet>
       {/* <Banner open={open} /> */}

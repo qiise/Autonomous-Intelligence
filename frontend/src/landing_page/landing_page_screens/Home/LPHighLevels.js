@@ -6,7 +6,7 @@ function LPHighLevels() {
   return (
     <div className="mx-5 lg:mx-24 mb-10">
       <div className="text-3xl sm:text-4xl lg:text-5xl md:my-2 text-center font-semibold md:font-bold sm:mt-4 md:mt-4">
-        How Agento Works
+        How Panacea Works
       </div>
       <h2 className="text-center pt-3">
       Chat with your documents in a privacy preserving way, keeping your data secure.

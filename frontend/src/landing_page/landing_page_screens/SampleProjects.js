@@ -45,11 +45,11 @@ function SampleProjects() {
   // );
 
   return (
-    <div className="LP-FAQs bg-black">
+    <div className="LP-FAQs bg-[#141414]">
       <div className="FAQ ">
-        <div class={"LP-Sample-Projects bg-black"}>
+        <div class={"LP-Sample-Projects bg-[#141414]"}>
           <h1 className="mb-6 text-3xl text-center font-bold">
-            Agento Video Demo
+            Panacea Video Demo
           </h1>
           <div className="LP-Contact">
             <SampleProject

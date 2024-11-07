@@ -202,7 +202,7 @@ const Chatbot = (props) => {
               />
             </div>
             <input
-              className="w-full rounded-xl bg-black
+              className="w-full rounded-xl bg-[#141414]
  border-[#9B9B9B] focus:ring-0 focus:border-white text-white placeholder:text-[#9B9B9B]"
               type="text"
               placeholder="Ask your document a question"
