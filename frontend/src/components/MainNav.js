@@ -57,10 +57,10 @@ function MainNav(props) {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-      <div className="mr-4 my-2 py-1 bg-[#40C6FF] rounded-2xl cursor-pointer"
+      <div className="mr-4 my-2 py-1 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] text-black rounded-2xl cursor-pointer"
           onClick={() => navigate(downloadPrivateGPTPath)}
         >
-          <span className="px-4 text-sm font-bold text-white ">
+          <span className="px-4 text-sm font-bold  text-black">
             <FontAwesomeIcon icon={faCoins} className="mr-2" />
             Download Private Version
           </span>
