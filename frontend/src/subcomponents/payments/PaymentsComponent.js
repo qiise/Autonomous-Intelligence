@@ -90,7 +90,7 @@ const PaymentsComponent = () => {
           </span>}
         </div>
         <h1 className="sm:text-4xl text-3xl font-bold title-font text-anoteblack-100">
-          Private Chatbot Pricing Plans
+          Agento Pricing Plans
         </h1>
         <div className="absolute right-10 mx-auto flex">
           <button
