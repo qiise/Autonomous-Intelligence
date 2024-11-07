@@ -121,7 +121,7 @@ function FinanceReports() {
             boxShadow: "0px 0px 15px rgba(0,0,0,0.5)",
             textAlign: "center",
           }}
-          className="bg-[#141414]
+          className="bg-black
  text-white "
         >
           <div style={{ position: "relative" }}>
@@ -137,14 +137,14 @@ function FinanceReports() {
             <div className="w-full flex justify-between mt-4">
               <button
                 onClick={cancelRenameWorkflow}
-                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
               >
                 Cancel
               </button>
               <button
                 onClick={confirmRenameWorkflow}
-                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+                className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
               >
                 Save
@@ -296,7 +296,7 @@ function FinanceReports() {
                         </button>
                     </div>
                     {renameModal}
-                    <div className="bg-[#141414]
+                    <div className="bg-black
  py-4 px-6 my-2 h-[70vh] max-h-[70vh] overflow-y-scroll">
                         <div className="mb-6 ">
                             <label
@@ -321,7 +321,7 @@ function FinanceReports() {
                                     value={ticker}
                                     onChange={handleTickerChange}
                                     onKeyPress={handleAddTicker}
-                                    className="w-1/2 rounded-lg py-2 px-3 mr-2 bg-[#141414]
+                                    className="w-1/2 rounded-lg py-2 px-3 mr-2 bg-black
  text-white border-none focus:ring-1 focus:ring-[#28b2fb]
 "
                                 />
@@ -333,7 +333,7 @@ function FinanceReports() {
                                     {tickers.map((t, index) => (
                                         <div
                                             key={index}
-                                            className="flex w-max px-3 text-white items-center bg-[#141414]
+                                            className="flex w-max px-3 text-white items-center bg-black
  mx-2 my-1"
                                         >
                                             <span className="mr-4">{t}</span>
@@ -358,7 +358,7 @@ function FinanceReports() {
                             Upload Documents
                         </label>
                         <div className="mb-6 mt-2">
-                            <div className="rounded-xl border-2 border-gray-500 bg-[#141414]
+                            <div className="rounded-xl border-2 border-gray-500 bg-black
 ">
                                 <div className="text-center w-full py-20">
                                     <FontAwesomeIcon
@@ -394,7 +394,7 @@ function FinanceReports() {
                             {files.length > 0 && (
                                 <div>
                                     {files.map((file, index) => (
-                                        <div className="flex w-max px-3 text-white items-center bg-[#141414]
+                                        <div className="flex w-max px-3 text-white items-center bg-black
  mx-2 my-1">
                                             <span className="mr-3">
                                                 {file.name}
@@ -432,11 +432,11 @@ function FinanceReports() {
                                             askQuestion();
                                         }
                                     }}
-                                    className="flex-grow rounded-lg py-2 px-3 mr-2 bg-[#141414]
+                                    className="flex-grow rounded-lg py-2 px-3 mr-2 bg-black
  text-white border-none focus:ring-1 focus:ring-[#28b2fb]"
                                 />
                                 <div
-                                    className="text-white bg-[#141414]
+                                    className="text-white bg-black
  px-4 py-2 rounded-lg cursor-pointer"
                                     onClick={askQuestion}
                                 >
@@ -448,7 +448,7 @@ function FinanceReports() {
                                     {questions.map((q, index) => (
                                         <div
                                             key={index}
-                                            className="flex w-full justify-between px-3 py-2 rounded-lg text-white items-center bg-[#141414]
+                                            className="flex w-full justify-between px-3 py-2 rounded-lg text-white items-center bg-black
  mb-1"
                                         >
                                             <span>{q}</span>
@@ -485,7 +485,7 @@ function FinanceReports() {
                             type="application/pdf"
                             className="w-full min-h-[85vh]"
                         >
-                            <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-[#141414]
+                            <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-black
 ">
                                 <div class="font-bold">
                                     No Report Generated Yet
@@ -494,7 +494,7 @@ function FinanceReports() {
                         </object>
                     </div>
                 ) : (
-                    <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-[#141414]
+                    <div class="flex justify-center items-center my-2 w-[95%] h-[85vh] text-white bg-black
 ">
                         <div class="font-bold">No Report Generated Yet</div>
                     </div>

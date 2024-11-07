@@ -2,7 +2,7 @@ import mysql.connector
 
 from subprocess import Popen, PIPE
 
-dbName = "financegpt"
+dbName = "agents"
 
 process = Popen(['mysql', dbName, '-u', 'root'],
                 stdout=PIPE, stdin=PIPE)

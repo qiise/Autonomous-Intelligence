@@ -35,7 +35,7 @@ const NavLinksChatbot = ({ open, setOpen }) => {
     },
   ];
   return (
-    <ul className="space-y-1 bg-[#141414]
+    <ul className="space-y-1 bg-black
 ">
     {links.map((link) => (
       <li key={link.name} className="w-full">

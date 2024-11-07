@@ -4,7 +4,7 @@
 @layer utilities {
   body{
     /* background-color: #1f2225; */
-    @apply bg-[#141414]
+    @apply bg-black
 ;
   }
   @media (min-width: 768px) {

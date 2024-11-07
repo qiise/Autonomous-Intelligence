@@ -256,7 +256,7 @@ function SidebarChatbot(props) {
         boxShadow: "0px 0px 15px rgba(0,0,0,0.5)",
         textAlign: "center",
       }}
-      className="bg-[#141414]
+      className="bg-black
  text-white"
     >
       <p>
@@ -266,14 +266,14 @@ function SidebarChatbot(props) {
       <div className="w-full flex justify-between mt-4">
         <button
           onClick={confirmSwitchChange}
-          className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+          className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
         >
           Yes
         </button>
         <button
           onClick={cancelSwitchChange}
-          className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+          className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
         >
           No
@@ -474,11 +474,11 @@ const onConnectorCardClick = (value) => {
 
   return (
     <>
-    <div className="flex flex-col bg-[#141414]
+    <div className="flex flex-col bg-black
  rounded-xl text-white">
       {deleteConfirmationPopupDoc}
       <div className="flex flex-col flex-grow">
-        <div className="flex-1 bg-[#141414]
+        <div className="flex-1 bg-black
  my-2 rounded-xl">
             <ul className="my-4">
               <div className="mx-4 my-2">
@@ -498,7 +498,7 @@ const onConnectorCardClick = (value) => {
               </div>
             </ul>
           </div>
-          <div className="bg-[#141414]
+          <div className="bg-black
  rounded-xl">
             <h2 className="text-[#9C9C9C] uppercase tracking-wide font-semibold text-xs px-4">
               Model Selection
@@ -509,7 +509,7 @@ const onConnectorCardClick = (value) => {
             {confirmModelPopup}
             {confirmResetModelPopup}
             <div className="rounded py-3 mx-4">
-              <div className="flex-1 bg-[#141414]
+              <div className="flex-1 bg-black
  rounded-xl">
               <ul className="">
                 <Select
@@ -579,7 +579,7 @@ const onConnectorCardClick = (value) => {
           {docs.map((doc) => (
             <div
               key={doc.document_name}
-              className="flex items-center justify-between mx-4 my-2 bg-[#141414]
+              className="flex items-center justify-between mx-4 my-2 bg-black
  hover:bg-[#3A3B41] rounded-xl overflow-x-scroll"
             >
               <button
@@ -626,8 +626,7 @@ const onConnectorCardClick = (value) => {
           theme={{
             root: {
               show: {
-                on: "flex bg-[#141414]
- bg-opacity-50 dark:bg-opacity-80",
+                on: "flex bg-black bg-opacity-50 dark:bg-opacity-80",
               },
             },
             content: {

@@ -139,21 +139,21 @@ function ChatHistory(props) {
         borderRadius: 5,
         boxShadow: "0px 0px 15px rgba(0,0,0,0.5)",
       }}
-      className="bg-[#141414]
+      className="bg-black
  text-white z-50"
     >
       <p>Are you sure you want to delete {chatToDelete}?</p>
       <div className="flex flex-row justify-between mt-2">
         <button
           onClick={confirmDeleteChat}
-          className="bg-[#141414]
+          className="bg-black
  w-1/2 mx-2 border-white border rounded-xl"
         >
           Yes
         </button>
         <button
           onClick={cancelDeleteChat}
-          className="bg-[#141414]
+          className="bg-black
  w-1/2 mx-2 border-white border rounded-xl"
         >
           No
@@ -187,7 +187,7 @@ function ChatHistory(props) {
           boxShadow: "0px 0px 15px rgba(0,0,0,0.5)",
           textAlign: "center",
         }}
-        className="bg-[#141414]
+        className="bg-black
  text-white "
       >
         <div style={{ position: "relative" }}>
@@ -203,14 +203,14 @@ function ChatHistory(props) {
           <div className="w-full flex justify-between mt-4">
             <button
               onClick={cancelRenameChat}
-              className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+              className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
             >
               Cancel
             </button>
             <button
               onClick={confirmRenameChat}
-              className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-[#141414]
+              className="w-1/2 mx-2 py-2 bg-gray-700 rounded-lg hover:bg-black
 "
             >
               Save
@@ -222,7 +222,7 @@ function ChatHistory(props) {
   ) : null;
 
   return (
-    <div className="flex flex-col px-4 mt-4 bg-[#141414]
+    <div className="flex flex-col px-4 mt-4 bg-black
  rounded-xl py-4 my-4 min-h-[85vh] h-[85vh] overflow-y-scroll">
       {deleteConfirmationPopupChat}
       {renameModal}
