@@ -86,7 +86,8 @@ function PDFUploader({ chat_id, handleForceUpdate }) {
         <FontAwesomeIcon
           icon={faFileUpload}
           onClick={handleUploadBtnClick}
-          className="px-2"
+          className="px-2 text-black"
+          style={{ color: 'black' }}
         />
       </div>
       <div>
