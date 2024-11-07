@@ -20,13 +20,12 @@ function LPHeader(props) {
             <h1
               className={`LP-header-h1 ${animation} text-4xl font-['Helvetica_Neue'] sm:text-4xl lg:text-6xl mb-4 font-semibold lg:font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB]`}
             >
-              {text}
+              Panacea
             </h1>
           )}
           <h1 className={`text-3xl ${animation} sm:text-4xl lg:text-6xl mb-4 font-medium lg:font-bold font-['Helvetica_Neue']`}>
-            Private Documents
+            Autonomous AI Agents
           </h1>
-          <h2 className="text-xl mb-5">Revealing insights, keeping data confidential</h2>
           <br class="inline-block"></br>
           <div className="flex flex-col sm:flex-row justify-center">
         <button
@@ -41,17 +40,16 @@ function LPHeader(props) {
           className="btn-black w-full sm:w-auto flex justify-center items-center"
           onClick={() => {
             window.location.assign("https://calendly.com/natanvidra/anote");
-            // window.open(window.location["origin"] + "/aiday", "_blank");
           }}
         >
           Schedule Demo
         </button>
       </div>
         </div>
-        <div className="flex-auto w-5/6 lg:w-1/3">
-          <div className="md:w-full md:h-1/2 my-10">
+        <div className="flex-auto w-5/6 lg:w-1/3 ml-auto">
+          <div className="md:w-1/2 md:h-1/4 my-10">
           <img
-            src="/landing_page_assets/home.png"
+            src="/landing_page_assets/panacearighticon.png"
             loading="lazy"
           />
           </div>

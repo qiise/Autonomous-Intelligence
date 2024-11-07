@@ -149,7 +149,7 @@ function Dashboard() {
             />
           )}
           <Helmet>
-            <title>Agento</title>
+            <title>Panacea</title>
           </Helmet>
           <Routes>
             {routes}

@@ -252,7 +252,7 @@ const Chatbot = (props) => {
 
   return (
     <>
-      <div className="min-h-[50vh] h-[85vh] mt-2 relative bg-black
+      <div className="min-h-[50vh] h-[85vh] mt-2 relative bg-[#141414]
  p-4 w-full rounded-2xl border-[#9B9B9B] border-2">
         {props.currChatName ? (
           <>
@@ -317,7 +317,7 @@ const Chatbot = (props) => {
                           overflowY: "auto",
                           whiteSpace: "pre-wrap",
                         }}
-                        className="bg-black
+                        className="bg-[#141414]
  text-white"
                       >
                         {console.log(
