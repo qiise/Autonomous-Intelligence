@@ -194,7 +194,7 @@ const Chatbot = (props) => {
             <div ref={messagesEndRef} /> {/* Empty div for scrolling */}
           </div>
           <div className="flex items-center w-[95%] mx-auto absolute bottom-5 ">
-            <div className="mr-4 text-white bg-[#40C6FF] rounded-xl p-2 cursor-pointer">
+            <div className="mr-4 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] rounded-xl p-2 cursor-pointer text-black">
               <PDFUploader
                 className=""
                 chat_id={props.selectedChatId}
@@ -202,8 +202,7 @@ const Chatbot = (props) => {
               />
             </div>
             <input
-              className="w-full rounded-xl bg-[#141414]
- border-[#9B9B9B] focus:ring-0 focus:border-white text-white placeholder:text-[#9B9B9B]"
+              className="w-full rounded-xl bg-[#141414] border-[#9B9B9B] focus:ring-0 focus:border-white text-white placeholder:text-[#9B9B9B]"
               type="text"
               placeholder="Ask your document a question"
               ref={inputRef} // Assign the input ref
