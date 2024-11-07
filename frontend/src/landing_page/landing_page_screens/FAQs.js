@@ -41,7 +41,7 @@ function FAQs() {
             <span className="font-bold">Build Agentic systems with integrated infrastructure:</span> Panacea provides both local and cloud support for APIs, databases, and vector databases.
           </p>
 
-          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+          <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
 
           {/* What problem are you solving? */}
           <h2
@@ -54,7 +54,7 @@ function FAQs() {
             Organizations need scalable, secure, and autonomous systems to handle complex workflows and data management. Traditional AI systems struggle to coordinate multiple tasks autonomously, limiting their potential. Panacea solves this by enabling robust autonomous agents that can operate independently, collaborate, and manage private data securely within a controlled environment.
           </p>
 
-          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+          <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
 
           {/* How does Panacea work? */}
           <h2
@@ -77,7 +77,7 @@ function FAQs() {
             <span className="font-bold">orchestrator:</span> Manages tasks and communication across agents.
           </p>
 
-          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+          <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
 
           {/* How is it Private? */}
           <h2
@@ -90,7 +90,7 @@ function FAQs() {
             Panacea prioritizes data privacy by operating entirely on-premises or within your organization’s private cloud. Agents can process sensitive data locally without exposing it to external servers. Panacea supports private databases and local models, ensuring data remains within your secure environment, complying with industry-grade security standards.
           </p>
 
-          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+          <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
 
           {/* What tasks does Panacea support? */}
           <h2
@@ -107,7 +107,7 @@ function FAQs() {
             <span className="font-bold">Data Processing:</span> Handle complex workflows in finance, healthcare, and more by securely analyzing data.
           </p>
 
-          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+          <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
 
           {/* How do you mitigate hallucinations? */}
           <h2
