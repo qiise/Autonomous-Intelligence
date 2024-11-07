@@ -181,13 +181,13 @@ const Pricing = (props) => {
                   className={`${
                     (tier.popular && !showCurrentPlan) ||
                     props.currentPlanIndexOverride == index
-                      ? "border-[#40C6FF] border-4"
+                      ? "border-[#F1CA57] border-4"
                       : "border-gray-300 border-2"
                   } h-full p-6 rounded-lg  flex flex-col relative overflow-hidden`}
                 >
                   {((tier.popular && !showCurrentPlan) ||
                     props.currentPlanIndexOverride == index) && (
-                    <span class="bg-[#40C6FF] text-black font-semibold px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                    <span class="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] text-black font-semibold px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                       {showCurrentPlan ? "CURRENT PLAN" : "POPULAR"}
                     </span>
                   )}
@@ -197,7 +197,7 @@ const Pricing = (props) => {
                   <h1
                     className={`${
                       tier.month ? "text-5xl pb-4" : "text-4xl pb-6"
-                    }  text-[#40C6FF]  mb-4 border-b border-gray-200 leading-none`}
+                    } bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent  mb-4 border-b border-gray-200 leading-none`}
                   >
                     <span>{tier.price}</span>
                     {tier.month && (
