@@ -37,26 +37,32 @@ const NavLinks = ({ open, setOpen }) => {
   }
 
   const links = [
-    {
-      name: "Customers",
-      submenu: false,
-      subicons: false,
-      extramenu: false,
-      new_tab: false,
-      link: "/customers",
-    },
-    {
-      name: "Research",
-      submenu: false,
-      new_tab: false,
-      link: "/research",
-    },
     // {
-    //   name: "Pricing",
+    //   name: "Customers",
+    //   submenu: false,
+    //   subicons: false,
+    //   extramenu: false,
+    //   new_tab: false,
+    //   link: "/customers",
+    // },
+    // {
+    //   name: "Research",
     //   submenu: false,
     //   new_tab: false,
-    //   link: "/pricing",
+    //   link: "/research",
     // },
+    {
+      name: "Registry",
+      submenu: false,
+      new_tab: false,
+      link: "/registry",
+    },
+    {
+      name: "Pricing",
+      submenu: false,
+      new_tab: false,
+      link: "/pricing",
+    },
     {
       name: "Developers",
       submenu: false,
@@ -79,7 +85,7 @@ const NavLinks = ({ open, setOpen }) => {
           <div className="px-3 text-left lg:cursor-pointer group">
             {link.link ? (
               <a
-                className="text-gray-100 text-lg font-['Helvetica_Neue'] hover:text-[#40C6FF] flex justify-between items-center py-7 lg:pr-0 pr-5 group"
+                className="text-gray-100 text-lg font-['Helvetica_Neue'] hover:text-[#EDDC8F] flex justify-between items-center py-7 lg:pr-0 pr-5 group"
                 href={link.link}
                 target={link.new_tab ? "_blank" : "_self"}
                 onClick={(e) => {
@@ -92,8 +98,8 @@ const NavLinks = ({ open, setOpen }) => {
               </a>
             ) : (
               <div
-                className={`py-7 text-lg font-['Helvetica_Neue'] hover:text-[#40C6FF] flex justify-between items-center lg:pr-0 pr-5 group ${
-                  heading !== link.name ? "text-gray-100" : "text-[#40C6FF]"
+                className={`py-7 text-lg font-['Helvetica_Neue'] hover:text-[#EDDC8F] flex justify-between items-center lg:pr-0 pr-5 group ${
+                  heading !== link.name ? "text-gray-100" : "text-[#EDDC8F]"
                 }`}
                 onClick={() => {
                   heading !== link.name
