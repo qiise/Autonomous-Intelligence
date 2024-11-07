@@ -69,7 +69,7 @@ export default function SideNavBar(props) {
   return (
     <div className={"hidden md:block fixed right-5 top-44 w-3/12"}>
       <h4 className="font-semibold text-white text-xl mb-3">{props.title}</h4>
-      <div className="border-l-2 border-[#40C6FF] pl-5 text-[#40C6FF] text-lg">
+      <div className="border-l-2 border-[#EDDC8F] pl-5 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-lg">
         {list}
       </div>
     </div>
