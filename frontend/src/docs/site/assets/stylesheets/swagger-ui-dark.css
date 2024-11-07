@@ -217,7 +217,7 @@ font, html { color: #bfbfbf; }
 
 .swagger-ui .black-05 { color: rgba(191, 191, 191, .05); }
 
-.swagger-ui .bg-[#141414]
+.swagger-ui .bg-black
 -05 { background-color: rgba(0, 0, 0, .05); }
 
 .swagger-ui .black-90, .swagger-ui .hover-black-90:focus, .swagger-ui .hover-black-90:hover { color: rgba(191, 191, 191, .9); }
@@ -308,44 +308,44 @@ font, html { color: #bfbfbf; }
 
 .swagger-ui .color-inherit, .swagger-ui .hover-inherit:focus, .swagger-ui .hover-inherit:hover { color: inherit; }
 
-.swagger-ui .bg-[#141414]
--90, .swagger-ui .hover-bg-[#141414]
--90:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-90, .swagger-ui .hover-bg-black
+-90:focus, .swagger-ui .hover-bg-black
 -90:hover { background-color: rgba(0, 0, 0, .9); }
 
-.swagger-ui .bg-[#141414]
--80, .swagger-ui .hover-bg-[#141414]
--80:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-80, .swagger-ui .hover-bg-black
+-80:focus, .swagger-ui .hover-bg-black
 -80:hover { background-color: rgba(0, 0, 0, .8); }
 
-.swagger-ui .bg-[#141414]
--70, .swagger-ui .hover-bg-[#141414]
--70:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-70, .swagger-ui .hover-bg-black
+-70:focus, .swagger-ui .hover-bg-black
 -70:hover { background-color: rgba(0, 0, 0, .7); }
 
-.swagger-ui .bg-[#141414]
--60, .swagger-ui .hover-bg-[#141414]
--60:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-60, .swagger-ui .hover-bg-black
+-60:focus, .swagger-ui .hover-bg-black
 -60:hover { background-color: rgba(0, 0, 0, .6); }
 
-.swagger-ui .bg-[#141414]
--50, .swagger-ui .hover-bg-[#141414]
--50:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-50, .swagger-ui .hover-bg-black
+-50:focus, .swagger-ui .hover-bg-black
 -50:hover { background-color: rgba(0, 0, 0, .5); }
 
-.swagger-ui .bg-[#141414]
--40, .swagger-ui .hover-bg-[#141414]
--40:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-40, .swagger-ui .hover-bg-black
+-40:focus, .swagger-ui .hover-bg-black
 -40:hover { background-color: rgba(0, 0, 0, .4); }
 
-.swagger-ui .bg-[#141414]
--30, .swagger-ui .hover-bg-[#141414]
--30:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-30, .swagger-ui .hover-bg-black
+-30:focus, .swagger-ui .hover-bg-black
 -30:hover { background-color: rgba(0, 0, 0, .3); }
 
-.swagger-ui .bg-[#141414]
--20, .swagger-ui .hover-bg-[#141414]
--20:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-20, .swagger-ui .hover-bg-black
+-20:focus, .swagger-ui .hover-bg-black
 -20:hover { background-color: rgba(0, 0, 0, .2); }
 
 .swagger-ui .bg-white-90, .swagger-ui .hover-bg-white-90:focus, .swagger-ui .hover-bg-white-90:hover { background-color: rgba(46, 48, 62, .9); }
@@ -364,9 +364,9 @@ font, html { color: #bfbfbf; }
 
 .swagger-ui .bg-white-20, .swagger-ui .hover-bg-white-20:focus, .swagger-ui .hover-bg-white-20:hover { background-color: rgba(46, 48, 62, .2); }
 
-.swagger-ui .bg-[#141414]
-, .swagger-ui .hover-bg-[#141414]
-:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+, .swagger-ui .hover-bg-black
+:focus, .swagger-ui .hover-bg-black
 :hover { background-color: #000; }
 
 .swagger-ui .bg-near-black, .swagger-ui .hover-bg-near-black:focus, .swagger-ui .hover-bg-near-black:hover { background-color: #121212; }
@@ -768,9 +768,9 @@ font, html { color: #bfbfbf; }
 
 .swagger-ui .hover-white:focus, .swagger-ui .hover-white:hover, .swagger-ui .info .title small pre, .swagger-ui .topbar a, .swagger-ui .white { color: #fff; }
 
-.swagger-ui .bg-[#141414]
--10, .swagger-ui .hover-bg-[#141414]
--10:focus, .swagger-ui .hover-bg-[#141414]
+.swagger-ui .bg-black
+-10, .swagger-ui .hover-bg-black
+-10:focus, .swagger-ui .hover-bg-black
 -10:hover, .swagger-ui .stripe-dark:nth-child(2n + 1) { background-color: rgba(0, 0, 0, .1); }
 
 .swagger-ui .bg-white-10, .swagger-ui .hover-bg-white-10:focus, .swagger-ui .hover-bg-white-10:hover, .swagger-ui .stripe-light:nth-child(2n + 1) { background-color: rgba(46, 48, 62, .1); }

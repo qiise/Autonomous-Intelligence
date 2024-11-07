@@ -7,10 +7,10 @@ function Banner({ open }) {
     <div
       className={` ${
         open ? "hidden" : ""
-      } flex items-center font-medium justify-around bg-[#141414]
+      } flex items-center font-medium justify-around bg-black
 `}
     >
-      <div className="flex items-center justify-around bg-[#141414]
+      <div className="flex items-center justify-around bg-black
  py-2.5 px-6 cursor:pointer">
         <a
           onClick={() => {

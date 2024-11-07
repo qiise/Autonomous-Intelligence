@@ -12,7 +12,7 @@ function FAQs() {
   ];
   var title = "FAQs";
   return (
-    <div className="bg-[#141414]
+    <div className="bg-black
  ">
       <SideNavBar title={title} entries={entries} />
       <div className="w-4/5 mx-auto md:w-7/12 md:ml-20 lg:ml-36 pt-12 lg:pt-20">

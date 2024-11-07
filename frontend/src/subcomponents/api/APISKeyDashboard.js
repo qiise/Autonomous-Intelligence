@@ -44,7 +44,7 @@ export function APISKeyDashboard() {
 
   return (
     <div className="dashboard-container">
-      <div className="dashboard-card w-1/2 bg-[#141414]
+      <div className="dashboard-card w-1/2 bg-black
  border-2">
         <div className="relative">
           <Button
@@ -85,7 +85,7 @@ export function APISKeyDashboard() {
                 {apiKeys.map((apiKey) => (
                   <Table.Row
                     key={apiKey.id}
-                    className="bg-white dark:border-gray-700 dark:bg-[#141414]
+                    className="bg-white dark:border-gray-700 dark:bg-black
 "
                   >
                     {/* <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{apiKey.key_name}</Table.Cell> */}
