@@ -1,108 +1,126 @@
 import SideNavBar from "../landing_page_components/SideNavBar";
 
-
 function FAQs() {
-  var entries = [
-    "What is Private Chatbot?",
+  const entries = [
+    "What is Panacea?",
     "What problem are you solving?",
-    "How does Private Chatbot work?",
+    "How does Panacea work?",
     "How is it Private?",
-    "What tasks do Private Chatbot support?",
+    "What tasks does Panacea support?",
     "How do you mitigate hallucinations?",
   ];
-  var title = "FAQs";
+  const title = "FAQs";
+
   return (
-    <div className="bg-[#141414]
- ">
+    <div className="bg-[#141414]">
       <SideNavBar title={title} entries={entries} />
       <div className="w-4/5 mx-auto md:w-7/12 md:ml-20 lg:ml-36 pt-12 lg:pt-20">
         <div className="pt-14">
           <h2 className="text-2xl lg:text-4xl font-['Helvetica_Neue'] font-semibold lg:font-bold text-white">
             Frequently Asked Questions
           </h2>
+
+          {/* What is Panacea? */}
           <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
-            id="WhatisPrivateChatbot"
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+            id="WhatisPanacea"
           >
-            What is Private Chatbot?
+            What is Panacea?
           </h2>
-          <p className="text-white font-['Helvetica_Neue'] text-xl">
-            Private Chatbot is an AI-powered chatbot that is able to answer questions from private documents with more accuracy than a generalized LLM. The Private Chatbot is an AI Assistant that is intended to help reduce the time and effort human analysts have to spend manually extracting information from unstructured documents.
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            Panacea is a platform for building autonomous agentic systems. Use Panacea to:
+            <br /><br />
+            <span className="font-bold">Build Agents with memory, knowledge, tools, and reasoning:</span> Panacea manages the agent’s state, memory, and knowledge.
+            <br /><br />
+            <span className="font-bold">Chat with your Agents using a beautiful Agent UI:</span> Panacea enables local agent execution and session management.
+            <br /><br />
+            <span className="font-bold">Coordinate teams of Agents:</span> Panacea supports task transfer and orchestrates agent collaboration.
+            <br /><br />
+            <span className="font-bold">Monitor and optimize Agents:</span> Track key metrics and logs to continuously improve your agents.
+            <br /><br />
+            <span className="font-bold">Build Agentic systems with integrated infrastructure:</span> Panacea provides both local and cloud support for APIs, databases, and vector databases.
           </p>
-          <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
+
+          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+
+          {/* What problem are you solving? */}
           <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="Whatproblemareyousolving"
           >
             What problem are you solving?
           </h2>
-            <p className="text-white font-['Helvetica_Neue'] text-xl">
-            Financial enterprises want to leverage Generative AI for analytics purposes, but have sensitive data that can not be shared off-premises to LLMs like ChatGPT. Financial Enterprises want to leverage LLMs and Generative AI for analytics, while keeping their data private and secure.
-            </p>
-        </div>
-        <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
-        <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
-            id="HowdoesPrivateChatbotwork"
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            Organizations need scalable, secure, and autonomous systems to handle complex workflows and data management. Traditional AI systems struggle to coordinate multiple tasks autonomously, limiting their potential. Panacea solves this by enabling robust autonomous agents that can operate independently, collaborate, and manage private data securely within a controlled environment.
+          </p>
+
+          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+
+          {/* How does Panacea work? */}
+          <h2
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+            id="HowdoesPanaceawork"
           >
-            How does Private Chatbot work?
+            How does Panacea work?
           </h2>
-        <p className="text-white font-['Helvetica_Neue'] text-xl">
-            To use Private Chatbot, there are 3 main steps:
-            <br></br>
-            <br></br>
-            <span className="font-bold">1. Upload:</span> Upload your documents (PDF, DOCX, PPTX, TXT, CSV, XLSX) to a local silo.
-            <br></br>
-            <span className="font-bold">2. Chat:</span> Ask questions on your documents. Get answers and converse with your data.
-            <br></br>
-            <span className="font-bold">3. Evaluate:</span> View relevant / accurate citations to ensure the models answers are correct.
-        </p>
-        <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
-        <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            Panacea creates autonomous agents with defined roles in a multi-agent environment. Key terms:
+            <br /><br />
+            <span className="font-bold">interface:</span> A human query interface for task assignments.
+            <br />
+            <span className="font-bold">node:</span> An individual agent, part of a multi-agent system.
+            <br />
+            <span className="font-bold">edges:</span> Communication links between agents.
+            <br />
+            <span className="font-bold">environment:</span> The workspace with task requirements for agents.
+            <br />
+            <span className="font-bold">orchestrator:</span> Manages tasks and communication across agents.
+          </p>
+
+          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+
+          {/* How is it Private? */}
+          <h2
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="HowisitPrivate"
           >
             How is it Private?
           </h2>
-        <p className="text-white font-['Helvetica_Neue'] text-xl">
-        Uploaded data is stored locally, on premise, for enterprise grade security. Connect to data within your local mysql database. LLMs like GPT4All and Llama2 run locally on your device. All queries stay on your computer, never leaving your private, secure data silo.
-        </p>
-        <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
-        <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
-            id="WhattasksdoPrivateChatbotsupport"
-          >
-            What tasks do Private Chatbot support?
-          </h2>
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            Panacea prioritizes data privacy by operating entirely on-premises or within your organization’s private cloud. Agents can process sensitive data locally without exposing it to external servers. Panacea supports private databases and local models, ensuring data remains within your secure environment, complying with industry-grade security standards.
+          </p>
 
-        <p className="text-white font-['Helvetica_Neue'] text-xl">
-            On Private Chatbot, you can either upload your own documents, or connect to financial documents within the EDGAR API.
-            <br></br>
-        <br></br>
-        <span className="font-bold">Upload Documents:</span> User can upload documents such as PDFs, DOCXs, TXTs, PPTXs, etc. locally from their computer and query questions based off of it.
-        <br></br>
-        <br></br>
-        <span className="font-bold">Query from EDGAR API:</span> With the SEC's EDGAR API, users can enter a company ticker and retrieve relevant financial documents, then query questions.
-        </p>
-        <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
-        <h2
-            className="bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB] text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+
+          {/* What tasks does Panacea support? */}
+          <h2
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
+            id="WhattasksdoesPanaceasupport"
+          >
+            What tasks does Panacea support?
+          </h2>
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            Panacea supports a range of tasks through autonomous agents, including:
+            <br /><br />
+            <span className="font-bold">Document Management:</span> Upload, process, and query documents locally or via APIs like EDGAR.
+            <br /><br />
+            <span className="font-bold">Data Processing:</span> Handle complex workflows in finance, healthcare, and more by securely analyzing data.
+          </p>
+
+          <hr className="h-px my-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
+
+          {/* How do you mitigate hallucinations? */}
+          <h2
+            className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="Howdoyoumitigatehallucinations"
           >
             How do you mitigate hallucinations?
           </h2>
-        <p className="text-white font-['Helvetica_Neue'] text-xl">
-        To mitigate hallucinations, we employ novel research techniques in fine tuning and retrieval augmented generation to provide more accurate answers as well as robust citations.
-        <br></br>
-        <br></br>
-        <span className="font-bold">Fine Tuning LLMs for Accurate Answers:</span> To mitigate hallucinations, we leverage parameter efficient fine tuning with techniques such as LORA and Q-LORA for private LLMs such as Llama2. We have benchmarked LLMs with evaluation metrics such as rouge-l, LLM eval, cosine similarity and bleu score, and have shown that fine tuning significantly enhances the accuracy of the answers for your specific dataset.
-        <br></br>
-        <br></br>
-        <span className="font-bold">Enhanced Retrieval for Accurate Citations:</span> To mitigate hallucinations, you can view the text from the specific document and page number where the model's answer came from. To ensure our model finds the right chunk for the citation, we have done a lot of research on how LLMs use retrieval augmented generation, and have benchmarked a variety of retrieval techniques such as HyDE and FLARE.
-        </p>
-        <hr class="h-px my-10 bg-[#40C6FF] border-0 mx-auto"></hr>
-        <br></br>
-        <br></br>
+          <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
+            To reduce inaccuracies, Panacea employs advanced techniques like Retrieval-Augmented Generation (RAG) and domain-specific fine-tuning. Agents retrieve relevant information from trusted data sources, minimizing reliance on model-generated content alone. Panacea’s fine-tuning improves the reliability of agents, providing citations and evidence to support generated answers, ensuring transparency and accuracy.
+          </p>
+
+        </div>
       </div>
     </div>
   );
