@@ -55,7 +55,9 @@
 
 .outgoing {
   align-self: flex-end;
-  background-color: #28b2fb;
+  /* background-color: #28b2fb; */
+  background-color: #F1CA57;
+  color: black;
   border-radius: 6px;
 }
 

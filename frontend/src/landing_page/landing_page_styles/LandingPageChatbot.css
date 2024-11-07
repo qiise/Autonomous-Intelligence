@@ -52,7 +52,10 @@
 
 .outgoing {
   align-self: flex-end;
-  background-color: #40C6FF;
+  /* background-color: #40C6FF; */
+  background-color: #F1CA57;
+  color: black;
+
   border-radius: 6px;
 }
 
