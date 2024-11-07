@@ -12,7 +12,7 @@ const LPPrivateGPT = () => {
 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 pb-10">
           <div className=" w-9/12 mx-auto md:w-10/12">
-            <div className="text-2xl lg:text-4xl my-4 text-center md:text-left font-semibold lg:font-extrabold text-[#40C6FF]">
+            <div className="text-2xl lg:text-4xl my-4 text-center md:text-left font-semibold lg:font-extrabold bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent">
               Your Own AI Assistant
             </div>
             <div className="w-full md:w-3/4 text-base md:text-lg text-center md:text-left">
@@ -22,7 +22,7 @@ const LPPrivateGPT = () => {
                 model into your chat to get more accurate answers to your questions. Converse with your documents to get a better understanding.
               </p>
             </div>
-            <div className="text-2xl lg:text-4xl my-4 text-center md:text-left font-semibold lg:font-extrabold text-[#40C6FF]">
+            <div className="text-2xl lg:text-4xl my-4 text-center md:text-left font-semibold lg:font-extrabold bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent">
               Citations and References
             </div>
             <div className="w-full md:w-3/4 text-base md:text-lg text-center md:text-left">
