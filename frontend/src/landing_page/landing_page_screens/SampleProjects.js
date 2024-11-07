@@ -49,7 +49,7 @@ function SampleProjects() {
       <div className="FAQ ">
         <div class={"LP-Sample-Projects bg-black"}>
           <h1 className="mb-6 text-3xl text-center font-bold">
-            Private Chatbot Video Demo
+            Agento Video Demo
           </h1>
           <div className="LP-Contact">
             <SampleProject

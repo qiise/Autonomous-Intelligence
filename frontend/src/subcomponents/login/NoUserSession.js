@@ -56,7 +56,7 @@ function NoUserSession(props) {
     <div className="flex-grow">
       <h1 className="UpreachTitle companyName text-4xl font-semibold flex justify-center pt-10">
         <img src="logo.png" className="w-10 h-10" alt="logo" />
-        <span>Private Chatbot</span>
+        <span>Agento</span>
       </h1>
       <h2 className="text-2xl text-center text-[#40C6FF] font-semibold my-2">
         Chat with your financial documents

@@ -275,7 +275,7 @@ function ChatHistory(props) {
             console.log("props selected chat id", props.selectedChatId, "and", chat.id)
           }}
           className={`flex items-center justify-between hover:bg-[#3A3B41] pl-4 py-4 rounded cursor-pointer text-ellipsis whitespace-nowrap overflow-x-hidden overflow-y-hidden ${
-            props.selectedChatId === chat.id ? "bg-[#40C6FF] bg-opacity-10" : ""
+            props.selectedChatId === chat.id ? "bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-opacity-10" : ""
           }`}
         >
           <div className="flex items-center p-2 my-4 text-[#9C9C9C] text-bold rounded-lg mr-2 text-ellipsis whitespace-nowrap overflow-x-hidden">
