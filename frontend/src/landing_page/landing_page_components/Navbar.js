@@ -31,7 +31,7 @@ function Navbar(props) {
 
   var startPath = urlObject.toString();
   return (
-    <nav className="sticky top-0 h-[4.5rem] md:h-20 md:h-18 w-full bg-[#141414]
+    <nav className="sticky top-0 h-[4.5rem] md:h-20 md:h-18 w-full bg-black
  text-white z-30">
       <div className="flex items-center font-medium justify-around">
         <div className="flex items-start">
@@ -105,7 +105,7 @@ function Navbar(props) {
         </div>
 
         <ul
-          className={`lg:hidden bg-[#141414]
+          className={`lg:hidden bg-black
  fixed w-full h-full top-0 py-24 pl-4 z-20 duration-500 ${
             props.open ? "left-0" : "left-[-100%]"
           }`}

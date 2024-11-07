@@ -39,4 +39,4 @@ dbPassword = "f33FFD221H8tvvLogdr4df"
 dbUser = "admin"
 
 # TODO: COMMENT OUT WHEN DEPLOY TO PROD
-dbName = "financegpt"
+dbName = "agents"

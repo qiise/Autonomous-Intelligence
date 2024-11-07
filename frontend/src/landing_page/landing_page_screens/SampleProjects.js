@@ -45,11 +45,9 @@ function SampleProjects() {
   // );
 
   return (
-    <div className="LP-FAQs bg-[#141414]
-">
+    <div className="LP-FAQs bg-black">
       <div className="FAQ ">
-        <div class={"LP-Sample-Projects bg-[#141414]
-"}>
+        <div class={"LP-Sample-Projects bg-black"}>
           <h1 className="mb-6 text-3xl text-center font-bold">
             Private Chatbot Video Demo
           </h1>

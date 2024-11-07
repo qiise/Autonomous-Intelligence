@@ -29,14 +29,14 @@ const PaymentsProduct = () => {
     }, [])
 
   return (
-    <div className="bg-[#141414]
+    <div className="bg-black
  p-8 rounded-md shadow-lg w-96 mx-auto mt-20 text-white">
         <h6 className="font-bold text-2xl mb-4">Subscribe</h6>
         <p className="mb-4">If tab doesn't open, click to proceed to payments</p>
         <button className="bg-blue-600 w-full py-2 rounded-md text-white hover:bg-blue-700 focus:outline-none focus:border-blue-900 focus:ring focus:ring-blue-200 active:bg-blue-800 mb-4" onClick={()=>{
           window.open(stripeUrl, "_blank");
         }}>Proceed</button>
-        <Link to={accountPath} className="bg-cyan-700 w-full py-2 rounded-md text-center block hover:bg-gray-600 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-200 active:bg-[#141414]
+        <Link to={accountPath} className="bg-cyan-700 w-full py-2 rounded-md text-center block hover:bg-gray-600 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-200 active:bg-black
 ">Back to Pricing</Link>
     </div>
   );

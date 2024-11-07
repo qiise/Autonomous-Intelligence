@@ -2,8 +2,7 @@
 
 // function LPHighLevel({ image, title, description }) {
 //   return (
-//     <div class="bg-[#141414]
- py-10 rounded mb-4 overflow-hidden shadow-lg transition-all duration-500">
+//     <div class="bg-black py-10 rounded mb-4 overflow-hidden shadow-lg transition-all duration-500">
 //       <img
 //         class={`w-full ${title == "Define Your Target" ? " h-16" : "h-20"}`}
 //         src={image}

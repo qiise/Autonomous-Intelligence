@@ -375,7 +375,7 @@ const ChatbotEdgar = (props) => {
 
   const confirmEditPopup = showEditModal ? (
     <div
-      className="bg-[#141414]
+      className="bg-black
  text-white p-5"
       style={{
         position: "fixed",
@@ -413,7 +413,7 @@ const ChatbotEdgar = (props) => {
       {isUploading && (
         <div style={splashScreenStyle}>Processing Document...</div>
       )}
-      <div className="bg-[#141414]
+      <div className="bg-black
  mt-2 px-4 py-2 rounded-xl">
         <div>
           <div className="flex flex-row w-full items-baseline">
@@ -461,7 +461,7 @@ const ChatbotEdgar = (props) => {
       </div>
       {/* Chatbot */}
       {props.showChatbot && (
-        <div className="min-h-[90vh] h-[90vh] mt-2 relative bg-[#141414]
+        <div className="min-h-[90vh] h-[90vh] mt-2 relative bg-black
  p-4 w-full rounded-2xl border-[#9B9B9B] border-2">
           {props.currChatName ? (
             <>
@@ -527,7 +527,7 @@ const ChatbotEdgar = (props) => {
                             overflowY: "auto",
                             whiteSpace: "pre-wrap",
                           }}
-                          className="bg-[#141414]
+                          className="bg-black
  text-white"
                         >
                           {console.log(

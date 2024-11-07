@@ -7,7 +7,7 @@ const DownloadPrivateGPT= () => {
   const downloadUrl = "https://anote-privategpt.s3.amazonaws.com/private_gpt-1.0.0-arm64.dmg";
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#141414]
+    <div className="flex flex-col min-h-screen bg-black
 ">
       <div className="flex flex-grow items-center justify-center">
         <div className="pl-40 w-1/2 text-white flex flex-col justify-center" style={{ transform: 'translateY(-5%)' }}>
