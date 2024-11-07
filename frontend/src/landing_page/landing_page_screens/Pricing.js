@@ -7,66 +7,123 @@ import { GetPrivateGPTDashboardUrl } from "../../util/DomainParsing";
 const Pricing = (props) => {
   let dispatch = useDispatch();
   var showCurrentPlan = !(typeof props.currentPlanIndexOverride == "undefined");
+  // const product3 = {
+  //   id: 3,
+  //   title: "Private Chatbot",
+  //   url: "https://docs.anote.ai/privategpt/privategpt.html",
+  //   forceContactUs: true,
+  //   signUpBasePrivateGPTUrl: GetPrivateGPTDashboardUrl(),
+  //   tiers: [
+  //     {
+  //       name: "Basic",
+  //       price: "Free",
+  //       month: false,
+  //       productHash: "privategpt1",
+  //       features: [
+  //         "Access to the standard GPT model and Claude model without privacy-preserving features",
+  //         "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
+  //         "Maximum Number of Files: Up to 5 files per month",
+  //         "Total File Size Limit: Up to 10 MB per month",
+  //         "Maximum Chats: 10 chats per month",
+  //       ],
+  //     },
+  //     {
+  //       name: "Standard",
+  //       price: "$500",
+  //       popular: true,
+  //       month: true,
+  //       productHash: "privategpt2",
+  //       features: [
+  //         "Privacy-preserving LLM using a model like GPT-4ALL or LLAMA2",
+  //         "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
+  //         "Maximum Number of Files: Up to 20 files per month",
+  //         "Total File Size Limit: Up to 50 MB per month",
+  //         "Maximum Chats: 20 chats per month",
+  //       ],
+  //     },
+  //     {
+  //       name: "Premium",
+  //       price: "$1,000",
+  //       productHash: "privategpt3",
+  //       month: true,
+  //       features: [
+  //         "Privacy-preserving LLM using a model like GPT-4ALL or LLAMA2",
+  //         "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
+  //         "Maximum Number of Files: Up to 50 files per month",
+  //         "Total File Size Limit: Up to 100 MB per month",
+  //         "Maximum Chats: 50 chats per month",
+  //       ],
+  //     },
+  //     {
+  //       name: "Enterprise",
+  //       month: false,
+  //       price: "Contact us",
+  //       features: [
+  //         "Fully custom fine tuned private LLM tailored to your specific use case and requirements",
+  //         "Maximum Number of Files: Customizable based on enterprise requirements",
+  //         "Total File Size Limit: Customizable based on enterprise requirements",
+  //         "Maximum Chats: Unlimited chats per month",
+  //       ],
+  //     },
+  //   ],
+  // };
   const product3 = {
     id: 3,
-    title: "Private Chatbot",
+    title: "Panacea",
     url: "https://docs.anote.ai/privategpt/privategpt.html",
     forceContactUs: true,
     signUpBasePrivateGPTUrl: GetPrivateGPTDashboardUrl(),
     tiers: [
       {
-        name: "Basic",
+        name: "Personal",
         price: "Free",
         month: false,
         productHash: "privategpt1",
         features: [
-          "Access to the standard GPT model and Claude model without privacy-preserving features",
-          "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
-          "Maximum Number of Files: Up to 5 files per month",
-          "Total File Size Limit: Up to 10 MB per month",
-          "Maximum Chats: 10 chats per month",
+          "Access to models like GPT, Claude, Mistral and Llama",
+          "Supported File Formats: PDFs, TXTs",
+          "Maximum Chats: 50 chats per month",
+          "Maximum Number of Files: Up to 50 files per month",
         ],
       },
       {
-        name: "Standard",
-        price: "$500",
-        popular: true,
-        month: true,
+        name: "Developer",
+        price: "Custom",
+        month: false,
         productHash: "privategpt2",
         features: [
-          "Privacy-preserving LLM using a model like GPT-4ALL or LLAMA2",
+          "Access to models like GPT, Claude, Mistral and Llama",
+          "Supports custom API integrations",
+          "Pay-per-use API for flexible usage at scale",
           "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
-          "Maximum Number of Files: Up to 20 files per month",
-          "Total File Size Limit: Up to 50 MB per month",
-          "Maximum Chats: 20 chats per month",
         ],
       },
       {
-        name: "Premium",
-        price: "$1,000",
+        name: "Closed Source",
+        price: "Contact us",
+        month: false,
         productHash: "privategpt3",
-        month: true,
         features: [
-          "Privacy-preserving LLM using a model like GPT-4ALL or LLAMA2",
-          "Supported File Formats: PDFs, TXTs, DOCXs, PPTXs",
-          "Maximum Number of Files: Up to 50 files per month",
-          "Total File Size Limit: Up to 100 MB per month",
-          "Maximum Chats: 50 chats per month",
+          "Custom closed-source agents available in registry",
+          "Privacy-preserving LLM options, including models like GPT-4ALL, Mistral or LLAMA3",
+          "Customizable agents based on your requirements",
         ],
       },
       {
         name: "Enterprise",
-        month: false,
         price: "Contact us",
+        month: false,
+        productHash: "privategpt4",
         features: [
-          "Fully custom fine tuned private LLM tailored to your specific use case and requirements",
-          "Maximum Number of Files: Customizable based on enterprise requirements",
-          "Total File Size Limit: Customizable based on enterprise requirements",
-          "Maximum Chats: Unlimited chats per month",
+          "Private versions of agents with full data privacy",
+          "Scalable infrastructure for high-volume needs",
+          "Unlimited chats and files uploaded per month",
+          "Custom API endpoints for secure, direct integration",
         ],
       },
     ],
   };
+
 
   const [product, setProduct] = useState(product3);
   function buttonText(
