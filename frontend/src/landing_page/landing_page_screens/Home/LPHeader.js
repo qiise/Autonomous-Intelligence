@@ -18,13 +18,13 @@ function LPHeader(props) {
         <div className="lg:flex-grow lg:w-2/3 pt-12 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left lg:mb-0 items-center text-center">
           {!props.open && (
             <h1
-              className={`LP-header-h1 ${animation} text-4xl font-['Helvetica_Neue'] sm:text-4xl lg:text-6xl mb-4 font-semibold lg:font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#40C6FF] to-[#28B2FB]`}
+              className={`font-urbanist text-[36px] font-extralight leading-[43.2px] tracking-[0.05em] text-left bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent`}
             >
-              Panacea
+              panacea
             </h1>
           )}
-          <h1 className={`text-3xl ${animation} sm:text-4xl lg:text-6xl mb-4 font-medium lg:font-bold font-['Helvetica_Neue']`}>
-            Autonomous AI Agents
+          <h1 className={`font-urbanist text-[64px] font-extralight leading-[76.8px] tracking-[0.05em] text-left`}>
+            autonomous AI agents
           </h1>
           <br class="inline-block"></br>
           <div className="flex flex-col sm:flex-row justify-center">
@@ -46,8 +46,8 @@ function LPHeader(props) {
         </button>
       </div>
         </div>
-        <div className="flex-auto w-5/6 lg:w-1/3 ml-auto">
-          <div className="md:w-1/2 md:h-1/4 my-10">
+        <div className="flex-auto">
+          <div className="md:w-1/2 md:h-1/2 ml-auto">
           <img
             src="/landing_page_assets/panacearighticon.png"
             loading="lazy"
