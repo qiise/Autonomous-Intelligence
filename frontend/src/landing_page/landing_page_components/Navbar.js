@@ -74,7 +74,7 @@ function Navbar(props) {
         to="/#top"
         className="font-bold text-3xl lg:cursor-pointer font-['Helvetica_Neue'] ml-2" // Added ml-2 for some spacing between the logo and text
       >
-        Private Chatbot
+        Agento
       </Link>
     </div>
   </div>
