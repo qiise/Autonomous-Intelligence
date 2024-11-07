@@ -36,7 +36,7 @@ const LPPrivateGPT = () => {
                 }}
                 style={{ marginTop: "20px", textDecoration: "none" }}
               >
-                Try Private Chatbot Now
+                Try Agento Now
               </button>
             </div>
           </div>

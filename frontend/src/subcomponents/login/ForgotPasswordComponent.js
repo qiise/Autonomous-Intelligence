@@ -52,7 +52,7 @@ function ForgotPasswordComponent(props) {
         }}
         style={{ color: "#40C6FF" }}
       >
-        Back to Private Chatbot
+        Back to Agento
       </p>
       {props.statusMessage && (
         <p style={{ color: "#F65F50" }}>{props.statusMessage}</p>

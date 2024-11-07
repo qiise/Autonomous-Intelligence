@@ -12,7 +12,7 @@ function LPGetStarted() {
   return (
     <div className="mb-24">
       <div className="text-3xl sm:text-4xl lg:text-5xl my-10 text-center font-medium lg:font-bold">
-        Use Private Chatbot Today
+        Use Agento Today
       </div>
       <div className="text-center">
         <button

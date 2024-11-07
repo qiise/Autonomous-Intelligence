@@ -149,7 +149,7 @@ function Dashboard() {
             />
           )}
           <Helmet>
-            <title>Private Chatbot</title>
+            <title>Agento</title>
           </Helmet>
           <Routes>
             {routes}

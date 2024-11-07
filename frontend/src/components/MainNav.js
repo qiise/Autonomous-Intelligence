@@ -53,7 +53,7 @@ function MainNav(props) {
       <Navbar.Brand href="https://privatechatbot.ai">
         <div className="h-10 w-10 bg-center bg-contain bg-[url('../public/logo.png')] dark:bg-[url('../public/logo.png')]"></div>
         <span className="self-center whitespace-nowrap text-xl text-white font-semibold dark:text-white text-[#374151]">
-          Private Chatbot
+          Agento
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">

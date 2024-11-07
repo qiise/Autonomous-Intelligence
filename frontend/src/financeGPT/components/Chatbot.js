@@ -336,7 +336,7 @@ const Chatbot = (props) => {
               <div ref={messagesEndRef} /> {/* Empty div for scrolling */}
             </div>
             <div className="absolute bottom-7 flex items-center w-[95%] mx-auto ">
-              <div className="mr-4 text-white bg-[#40C6FF] rounded-xl p-2 cursor-pointer">
+              <div className="mr-4 text-white bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] rounded-xl p-2 cursor-pointer">
                 <PDFUploader
                   className=""
                   chat_id={props.selectedChatId}
