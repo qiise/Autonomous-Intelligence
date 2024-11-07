@@ -1315,43 +1315,6 @@ def getAPIKeys():
   return GetAPIKeysHandler(request, user_email)
 
 
-@app.route('/create_organization', methods=['POST'])
-@valid_api_key_required
-def create_organization():
-    try:
-        name = request.json.get('name')
-        organization_type = request.json.get('organization_type')  # 'enterprise' or 'individual'
-        website_url = request.json.get('website_url')
-
-        if not name or not organization_type:
-            return jsonify({"error": "Missing required fields"}), 400
-
-        # Add organization to the database
-        organization_id = add_organization_to_db(name, organization_type, website_url)
-        return jsonify({"organization_id": organization_id}), 201
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-@app.route('/get_organization', methods=['GET'])
-@valid_api_key_required
-def get_organization():
-    try:
-        organization_id = request.args.get('organization_id')
-        if not organization_id:
-            return jsonify({"error": "Missing organization_id"}), 400
-
-        # Get organization info from the database
-        organization = get_organization_from_db(organization_id)
-        if not organization:
-            return jsonify({"error": "Organization not found"}), 404
-
-        return jsonify(organization), 200
-
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
 #For the SDK
 #later will need to add @valid_api_key_required to all
 
