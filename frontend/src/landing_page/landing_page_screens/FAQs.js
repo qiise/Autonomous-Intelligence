@@ -30,15 +30,15 @@ function FAQs() {
           <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
             Panacea is a platform for building autonomous agentic systems. Use Panacea to:
             <br /><br />
-            <span className="font-bold">Build Agents with memory, knowledge, tools, and reasoning:</span> Panacea manages the agent’s state, memory, and knowledge.
-            <br /><br />
-            <span className="font-bold">Chat with your Agents using a beautiful Agent UI:</span> Panacea enables local agent execution and session management.
-            <br /><br />
-            <span className="font-bold">Coordinate teams of Agents:</span> Panacea supports task transfer and orchestrates agent collaboration.
-            <br /><br />
-            <span className="font-bold">Monitor and optimize Agents:</span> Track key metrics and logs to continuously improve your agents.
-            <br /><br />
-            <span className="font-bold">Build Agentic systems with integrated infrastructure:</span> Panacea provides both local and cloud support for APIs, databases, and vector databases.
+            - <span className="font-bold">Build Agents with memory, tools, and reasoning</span> for state management and task handling.
+            <br />
+            - <span className="font-bold">Engage with Agents</span> using a user-friendly interface for local execution and session control.
+            <br />
+            - <span className="font-bold">Coordinate Teams</span> of agents for seamless collaboration and task handoff.
+            <br />
+            - <span className="font-bold">Monitor and optimize Agent performance</span> with tracking metrics and logs.
+            <br />
+            - <span className="font-bold">Integrate with local and cloud infrastructure</span> to support APIs and databases.
           </p>
 
           <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
@@ -64,17 +64,15 @@ function FAQs() {
             How does Panacea work?
           </h2>
           <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
-            Panacea creates autonomous agents with defined roles in a multi-agent environment. Key terms:
+            Panacea enables agents with defined roles in a multi-agent environment. Key components include:
             <br /><br />
-            <span className="font-bold">interface:</span> A human query interface for task assignments.
+            - <span className="font-bold">Interface:</span> Human-facing input for task assignment.
             <br />
-            <span className="font-bold">node:</span> An individual agent, part of a multi-agent system.
+            - <span className="font-bold">Node:</span> An individual agent within the system.
             <br />
-            <span className="font-bold">edges:</span> Communication links between agents.
+            - <span className="font-bold">Edges:</span> Communication links between agents.
             <br />
-            <span className="font-bold">environment:</span> The workspace with task requirements for agents.
-            <br />
-            <span className="font-bold">orchestrator:</span> Manages tasks and communication across agents.
+            - <span className="font-bold">Orchestrator:</span> Manages task distribution and agent coordination.
           </p>
 
           <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
@@ -84,10 +82,10 @@ function FAQs() {
             className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="HowisitPrivate"
           >
-            How is it Private?
+            How does Panacea ensure privacy when agents collaborate?
           </h2>
           <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
-            Panacea prioritizes data privacy by operating entirely on-premises or within your organization’s private cloud. Agents can process sensitive data locally without exposing it to external servers. Panacea supports private databases and local models, ensuring data remains within your secure environment, complying with industry-grade security standards.
+          Panacea is built with privacy in mind. It enables on-premises deployment and private cloud options, ensuring that all agent activities and data remain within a secure environment. Agents can operate on sensitive data without external exposure, complying with strict security standards to protect your organization’s information.
           </p>
 
           <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
@@ -97,14 +95,18 @@ function FAQs() {
             className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="WhattasksdoesPanaceasupport"
           >
-            What tasks does Panacea support?
+            What kinds of collaborative tasks can Panacea agents perform?
           </h2>
           <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
-            Panacea supports a range of tasks through autonomous agents, including:
+          Panacea supports agents across a variety of industries, each with the ability to work collaboratively on tasks such as:
             <br /><br />
-            <span className="font-bold">Document Management:</span> Upload, process, and query documents locally or via APIs like EDGAR.
-            <br /><br />
-            <span className="font-bold">Data Processing:</span> Handle complex workflows in finance, healthcare, and more by securely analyzing data.
+            - <span className="font-bold">Document Analysis and Summarization:</span> Agents can collectively analyze, summarize, and extract insights from large volumes of documents.
+            <br />
+            - <span className="font-bold">Data Integration and Processing:</span> Multiple agents can work together to process and synthesize data from different sources, such as financial reports, healthcare data, and customer inquiries.
+            <br />
+            - <span className="font-bold">Project Management:</span> Agents assist in planning, tracking, and coordinating project workflows, ensuring efficient teamwork across tasks.
+            <br />
+            - <span className="font-bold">Customer and Technical Support:</span> Agents can collaboratively handle complex customer inquiries, with each agent contributing specialized knowledge.
           </p>
 
           <hr className="h-px mt-10 bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] border-0 mx-auto" />
@@ -114,10 +116,10 @@ function FAQs() {
             className="bg-gradient-to-r from-[#EDDC8F] to-[#F1CA57] bg-clip-text text-transparent text-2xl lg:text-2xl mb-4 font-['Helvetica_Neue'] Applications-Header"
             id="Howdoyoumitigatehallucinations"
           >
-            How do you mitigate hallucinations?
+            How can Panacea agents adapt to new tasks and environments?
           </h2>
           <p className="text-white font-['Helvetica_Neue'] text-xl leading-relaxed mb-6">
-            To reduce inaccuracies, Panacea employs advanced techniques like Retrieval-Augmented Generation (RAG) and domain-specific fine-tuning. Agents retrieve relevant information from trusted data sources, minimizing reliance on model-generated content alone. Panacea’s fine-tuning improves the reliability of agents, providing citations and evidence to support generated answers, ensuring transparency and accuracy.
+          Panacea’s agents are built to be flexible and adaptive. The platform allows agents to learn from past interactions, store relevant knowledge, and incorporate new tools as needed. With each task, agents update their capabilities and adjust workflows to better meet the unique demands of your organization’s evolving environment.
           </p>
 
         </div>

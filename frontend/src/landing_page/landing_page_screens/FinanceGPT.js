@@ -11,16 +11,14 @@
 //             <img
 //               src="/landing_page_assets/IsPrivate.png"
 //               className="w-11/12 md:w-3/5 rounded-xl"
-//               alt="Privacy Illustration"
+//               alt="Agent Registry Illustration"
 //             />
 //             <div className="px-10 mb-5">
 //               <div className="text-2xl font-semibold py-5">
-//                 How is it Private?
+//                 Explore the Agent Registry
 //               </div>
 //               <div className="text-lg">
-//                 Uploaded data is stored locally, on-premise, ensuring enterprise-grade security. Connect directly to data
-//                 within your local MySQL database. Models such as GPT-4ALL and Llama2 run locally on your device. All queries
-//                 remain on your computer, never leaving your private, secure data environment.
+//                 Access a curated registry of closed-source agents, each designed for specialized tasks. These agents run privately within your environment, ensuring data remains secure and accessible only to authorized users. Run your agents in private, functioning autonomously within your local infrastructure, never transmitting data outside your secure network.
 //               </div>
 //             </div>
 //           </div>
@@ -34,17 +32,17 @@
 //             <LPHighLevel
 //               image="/landing_page_assets/privatewhite.png"
 //               title="Personal"
-//               description="Personal access to user interface, supporting file uploads and chats."
+//               description="Access to user interface for personal agent use, including basic file uploads and chat capabilities."
 //             />
 //             <LPHighLevel
 //               image="/landing_page_assets/accuratewhite.png"
 //               title="Developer"
-//               description="API access for developers needing flexible and customizable usage."
+//               description="API access for developers needing flexible and customizable agent deployments."
 //             />
 //             <LPHighLevel
 //               image="/landing_page_assets/citationswhite.png"
 //               title="Enterprise"
-//               description="Scalable private solutions for enterprises with custom private models."
+//               description="Scalable private solutions tailored for enterprise environments, with support for custom models and agents."
 //             />
 //           </div>
 //         </div>
@@ -66,40 +64,40 @@ function FinanceGPT() {
         <div className="w-full md:w-3/4 mx-auto my-10">
           <div className="flex flex-col-reverse md:flex-row items-center">
             <img
-              src="/landing_page_assets/IsPrivate.png"
+              src="/landing_page_assets/agentregistry.png"
               className="w-11/12 md:w-3/5 rounded-xl"
-              alt="Agent Registry Illustration"
+              alt="Agent Registry"
             />
             <div className="px-10 mb-5">
-              <div className="text-2xl font-semibold py-5">
+              <h2 className="text-2xl font-semibold py-5">
                 Explore the Agent Registry
-              </div>
-              <div className="text-lg">
-                Access a curated registry of closed-source agents, each designed for specialized tasks. These agents run privately within your environment, ensuring data remains secure and accessible only to authorized users. Run your agents in private, functioning autonomously within your local infrastructure, never transmitting data outside your secure network.
-              </div>
+              </h2>
+              <p className="text-lg">
+                Access a curated registry of closed-source agents, each designed for specialized tasks. These agents run securely within your environment, ensuring data remains protected and accessible only to authorized users. Operate your agents autonomously within your local, private infrastructure.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="mx-5 lg:mx-2 mt-24">
-          <div className="text-3xl sm:text-4xl lg:text-5xl my-15 text-center font-medium lg:font-bold">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl my-15 text-center font-medium lg:font-bold">
             Your Agentic AI System
-          </div>
+          </h1>
           <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             <LPHighLevel
               image="/landing_page_assets/privatewhite.png"
               title="Personal"
-              description="Access to user interface for personal agent use, including basic file uploads and chat capabilities."
+              description="User interface access for personal agents, enabling file uploads and chat features."
             />
             <LPHighLevel
               image="/landing_page_assets/accuratewhite.png"
               title="Developer"
-              description="API access for developers needing flexible and customizable agent deployments."
+              description="Flexible API access for developers needing customizable agent deployments."
             />
             <LPHighLevel
               image="/landing_page_assets/citationswhite.png"
               title="Enterprise"
-              description="Scalable private solutions tailored for enterprise environments, with support for custom models and agents."
+              description="Scalable private solutions tailored for enterprise needs, supporting custom models and agents."
             />
           </div>
         </div>
