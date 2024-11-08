@@ -26,7 +26,7 @@ const Chatbot = (props) => {
     setIsFirstMessageSent(false);
     setMessages([
       {
-        message: "Hello, I am your financial assistant, upload a file to get started.",
+        message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
         sentTime: "just now",
         direction: "incoming",
       },
@@ -210,7 +210,7 @@ const Chatbot = (props) => {
 
       setMessages([
         {
-          message: "Hello, I am your financial assistant, upload a file to get started.",
+          message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
           sentTime: "just now",
           direction: "incoming",
         },

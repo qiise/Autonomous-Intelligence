@@ -2,7 +2,7 @@ import React from "react";
 
 function LPHighLevel({ image, title, description }) {
   return (
-    <div class="py-10 rounded mb-4 overflow-hidden shadow-lg transition-all duration-500 bg-gradient-to-b from-[#181818] to-[#343F5C]">
+    <div class="py-10 rounded mb-4 overflow-hidden shadow-lg transition-all duration-500  bg-[#1a1a1a] ">
       {/* Flex container to center the image */}
       <div class="flex justify-center">
         <img

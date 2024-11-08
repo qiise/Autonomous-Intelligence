@@ -35,7 +35,7 @@ const ChatbotEdgar = (props) => {
     if (props.ticker) {
       setMessages([
         {
-          message: `Hello, I am your financial assistant, I can answer questions about the company ${props.ticker}, how can I help you?`,
+          message: `Hello, I am your Panacea, your agentic AI assistant. I can answer questions about the company ${props.ticker}, how can I help you?`,
           sentTime: "just now",
           direction: "incoming",
         },
@@ -43,7 +43,7 @@ const ChatbotEdgar = (props) => {
     } else {
       setMessages([
         {
-          message: "Hello, I am your financial assistant, upload a file to get started.",
+          message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
           sentTime: "just now",
           direction: "incoming",
         },
@@ -206,7 +206,7 @@ const ChatbotEdgar = (props) => {
       if (props.ticker) {
         setMessages([
           {
-            message: `Hello, I am your financial assistant, I can answer questions about the company ${props.ticker}, how can I help you?`,
+            message: `Hello, I am your Panacea, your agentic AI assistant. I can answer questions about the company ${props.ticker}, how can I help you?`,
             sentTime: "just now",
             direction: "incoming",
           },
@@ -215,7 +215,7 @@ const ChatbotEdgar = (props) => {
         setMessages([
           {
             message:
-              "Hello, I am your financial assistant, upload a file to get started.",
+              "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
             sentTime: "just now",
             direction: "incoming",
           },
@@ -286,7 +286,7 @@ const ChatbotEdgar = (props) => {
       if (props.ticker) {
         setMessages([
           {
-            message: `Hello, I am your financial assistant, I can answer questions about the company ${props.ticker}, how can I help you?`,
+            message: `Hello, I am your Panacea, your agentic AI assistant. I can answer questions about the company ${props.ticker}, how can I help you?`,
             sentTime: "just now",
             direction: "incoming",
           },
@@ -341,7 +341,7 @@ const ChatbotEdgar = (props) => {
     if (props.ticker) {
       setMessages([
         {
-          message: `Hello, I am your financial assistant, I can answer questions about the company ${props.ticker}, how can I help you?`,
+          message: `Hello, I am your Panacea, your agentic AI assistant. I can answer questions about the company ${props.ticker}, how can I help you?`,
           sentTime: "just now",
           direction: "incoming",
         },
