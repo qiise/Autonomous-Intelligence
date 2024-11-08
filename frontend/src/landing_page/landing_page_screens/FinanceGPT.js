@@ -85,7 +85,7 @@ function FinanceGPT() {
           </h1>
           <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             <LPHighLevel
-              image="/landing_page_assets/privatewhite.png"
+              image="/landing_page_assets/citationswhite.png"
               title="Personal"
               description="User interface access for personal agents, enabling file uploads and chat features."
             />
@@ -95,7 +95,7 @@ function FinanceGPT() {
               description="Flexible API access for developers needing customizable agent deployments."
             />
             <LPHighLevel
-              image="/landing_page_assets/citationswhite.png"
+              image="/landing_page_assets/privatewhite.png"
               title="Enterprise"
               description="Scalable private solutions tailored for enterprise needs, supporting custom models and agents."
             />
