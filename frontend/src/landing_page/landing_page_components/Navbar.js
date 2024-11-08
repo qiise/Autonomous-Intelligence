@@ -65,7 +65,7 @@ function Navbar(props) {
       onMouseLeave={() => setHovered(false)}
     >
       <img
-        src="/logo.png"
+        src="/logonew.png"
         alt="logo"
         className="lg:cursor-pointer h-9"
         onAnimationEnd={() => setHovered(false)}
