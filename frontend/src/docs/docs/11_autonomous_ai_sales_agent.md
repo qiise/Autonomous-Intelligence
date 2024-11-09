@@ -265,6 +265,6 @@ Search for potential clients in the technology sector, compile a list of prospec
 
 ## **Visual Aid**
 
-![Autonomous AI Sales Agent Workflow](images/autonomous_ai_sales_agent_workflow.png)
+![System Architecture Diagram](images/sales.png)
 
 *Illustrates the collaboration between the orchestrator and various agents during the sales outreach process.*

@@ -6,6 +6,8 @@ Welcome to **Panacea**, an innovative autonomous multi-agent AI framework design
 
 Panacea transforms how you interact with technology by leveraging autonomous multi-agent systems. Whether you're an individual seeking to automate routine tasks or an enterprise aiming to enhance operational efficiency, Panacea offers a flexible and secure solution. Our platform allows you to run agents locally or privately, ensuring your data remains under your control while benefiting from advanced AI-driven automation.
 
+![System Architecture Diagram](images/agent_introduction.png)
+
 ## Features
 
 - **Autonomous Agents**: Specialized AI agents that handle distinct tasks independently.

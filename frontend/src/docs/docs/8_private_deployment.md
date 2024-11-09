@@ -15,6 +15,8 @@ For organizations requiring enhanced security and control, Panacea supports priv
 - **Secure Cloud Environments**: Deploy within trusted cloud services (e.g., AWS, Azure, Google Cloud) with robust security measures.
 - **Hybrid Deployment**: Combine on-premise and cloud deployments to leverage the benefits of both environments, ensuring flexibility and scalability.
 
+![System Architecture Diagram](images/multi_agent_privacy.png)
+
 ## Deployment Steps
 
 1. **Prepare Infrastructure**

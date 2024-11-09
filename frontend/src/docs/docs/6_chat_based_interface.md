@@ -16,6 +16,8 @@ Panacea features an intuitive chat-based interface where users can interact with
 - **Progress Indicators**: Visual elements like loading spinners and progress bars indicate ongoing tasks and their statuses.
 - **Agent Activity Notifications**: Notifies users about specific actions taken by agents, enhancing transparency.
 
+![System Architecture Diagram](images/user_interface.png)
+
 ## Benefits
 
 - **Ease of Use**: Allows users to perform complex tasks without needing technical expertise.

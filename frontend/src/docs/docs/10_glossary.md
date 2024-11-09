@@ -30,3 +30,5 @@ This glossary provides definitions for terms frequently used throughout this doc
 - **Failover**: The ability to switch automatically to a redundant or standby system upon the failure of the currently active system.
 - **High Availability (HA)**: Systems designed to operate continuously without failure for a long time.
 - **Elasticity**: The ability of a system to dynamically acquire or release resources to adapt to changing workload demands.
+
+![System Architecture Diagram](images/glossary.png)

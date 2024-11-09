@@ -18,12 +18,16 @@ Panacea incorporates robust logging and monitoring mechanisms to track the activ
 - **Alerts and Notifications**: Receive alerts for critical issues, such as task failures or performance bottlenecks.
 - **Analytics Reports**: Generate reports to analyze workflow efficiency and agent effectiveness.
 
+![System Architecture Diagram](images/monitoring.png)
+
 ## Example Monitoring Dashboard Components
 
 - **Agent Status**: Current status of each agent (active, idle, busy, error).
 - **Task Overview**: Summary of tasks in progress, completed, and failed.
 - **Performance Metrics**: Data on task completion times, resource utilization, and success rates.
 - **System Health**: Indicators of overall system health, including uptime and resource availability.
+
+![System Architecture Diagram](images/dashboard.png)
 
 ## Accessing Logs and Reports
 
