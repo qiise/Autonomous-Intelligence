@@ -30,7 +30,6 @@ nav:
       - Private Deployment: "8_private_deployment.md"
   - Logging and Monitoring: "9_logging_and_monitoring.md"
   - Glossary: "10_glossary.md"
-  - References: "11_references.md"
 
 
 extra:
