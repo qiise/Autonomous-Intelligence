@@ -16,6 +16,8 @@ Users can create and customize their own agents through the UI, tailoring them t
 - **Integration Settings**: Configure how agents integrate with external systems or APIs, enabling seamless data flow and functionality expansion.
 - **Security Settings**: Define access controls and permissions to safeguard data and operations within each agent's environment.
 
+![System Architecture Diagram](images/creation.png)
+
 ## Benefits
 
 - **Personalization**: Tailor agents to fit unique workflow requirements, enhancing productivity and efficiency.
