@@ -4,7 +4,7 @@ Panacea's architecture is built around a decentralized network of specialized ag
 
 ## Architecture Diagram
 
-*Insert an architecture diagram here showcasing the interaction between interface, orchestrator, agents (nodes), communication channels (edges), and logging & monitoring systems.*
+![System Architecture Diagram](images/start.png)
 
 **Key Highlights:**
 - **Decentralized Agents**: Each agent operates autonomously while collaborating to achieve complex tasks.
