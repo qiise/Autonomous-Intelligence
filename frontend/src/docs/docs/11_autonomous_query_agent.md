@@ -137,7 +137,7 @@ The **Autonomous Query Agent** exemplifies Panacea's advanced capabilities by au
 
 ## **Visual Aid**
 
-![Autonomous Query Agent Workflow](images/autonomous_query_agent_workflow.png)
+![System Architecture Diagram](images/autoquery.png)
 
 *Illustrates the autonomous interaction between the orchestrator and various agents in generating and executing queries based on environmental context and rewards.*
 

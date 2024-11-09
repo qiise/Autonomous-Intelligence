@@ -20,6 +20,8 @@ Panacea can be deployed locally, allowing users to run agents on their own machi
    - Begin issuing natural language commands through the chat interface.
    - Monitor task progress and agent activities in real-time.
 
+![System Architecture Diagram](images/deployment.png)
+
 ## Benefits
 
 - **Full Control**: Maintain complete ownership of your data and workflows, ensuring privacy and security.

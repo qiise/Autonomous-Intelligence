@@ -36,3 +36,5 @@ POST /api/agents
   }
 }
 ```
+
+![System Architecture Diagram](images/hightech.png)

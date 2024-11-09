@@ -19,6 +19,8 @@ For businesses requiring enhanced security and control, Panacea provides enterpr
 - **Integration Services**: Benefit from specialized integration services to connect Panacea with existing enterprise infrastructure and workflows.
 - **Performance Optimization**: Optimize agent performance and resource allocation to meet the demands of large-scale operations.
 
+![System Architecture Diagram](images/private.png)
+
 ### Use Cases
 
 - **Financial Services**: Automate complex financial analyses, reporting, and compliance tasks with specialized agents.

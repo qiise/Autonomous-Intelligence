@@ -8,6 +8,8 @@ Communication between agents is facilitated through edges, which are the defined
 - **Data Sharing**: Agents can share data outputs and inputs, enabling collaborative task execution and data-driven decision-making.
 - **Synchronization**: The framework supports synchronization mechanisms to manage dependencies and ensure orderly task execution.
 
+![System Architecture Diagram](images/collaboration.png)
+
 ## Advantages
 
 - **Scalability**: Easily add or remove agents without disrupting the overall system.
@@ -19,6 +21,8 @@ Communication between agents is facilitated through edges, which are the defined
 - **RESTful APIs**: For standard request-response interactions, ensuring compatibility and ease of integration.
 - **WebSockets**: Facilitates real-time, bi-directional communication for tasks requiring immediate updates.
 - **Message Queues**: Implements reliable message passing with systems like RabbitMQ or Kafka to handle high-throughput data exchange.
+
+![System Architecture Diagram](images/collaborative.png)
 
 ## Implementation Highlights
 

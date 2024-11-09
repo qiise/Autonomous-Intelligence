@@ -8,3 +8,5 @@ Panacea comprises several integral components that work together to provide a ro
 - **Edges**: Communication channels that facilitate interaction and data exchange between agents.
 - **Environment**: The workspace for each agent, equipped with the necessary resources and requirements to perform its designated tasks.
 - **Logging and Monitoring**: Systems that track agent activities, providing transparency and insights into workflow processes.
+
+![System Architecture Diagram](images/agent1.png)
