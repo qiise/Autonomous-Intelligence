@@ -222,8 +222,7 @@ function ChatHistory(props) {
   ) : null;
 
   return (
-    <div className="flex flex-col px-4 mt-4 bg-[#141414]
- rounded-xl py-4 my-4 min-h-[85vh] h-[85vh] overflow-y-scroll">
+    <div className="flex flex-col px-4 mt-4 bg-[#141414] rounded-xl py-4 my-4 h-[80vh] overflow-y-scroll">
       {deleteConfirmationPopupChat}
       {renameModal}
       <div className="flex flex-row justify-between items-center">
@@ -274,11 +273,11 @@ function ChatHistory(props) {
             props.setCurrChatName(chat.chat_name);
             console.log("props selected chat id", props.selectedChatId, "and", chat.id)
           }}
-          className={`flex items-center justify-between hover:bg-[#3A3B41] pl-4 py-4 rounded cursor-pointer text-ellipsis whitespace-nowrap overflow-x-hidden overflow-y-hidden ${
-            props.selectedChatId === chat.id ? "bg-[#40C6FF] bg-opacity-10" : ""
+          className={`flex-shrink-0 flex items-center justify-between hover:bg-[#3A3B41] pl-4 py-2 rounded cursor-pointer text-ellipsis whitespace-nowrap overflow-hidden ${
+            props.selectedChatId === chat.id ? "bg-[#3A3B41] bg-opacity-50" : ""
           }`}
         >
-          <div className="flex items-center p-2 my-4 text-[#9C9C9C] text-bold rounded-lg mr-2 text-ellipsis whitespace-nowrap overflow-x-hidden">
+        <div className="flex items-center p-1 text-[#9C9C9C] rounded-lg mr-2 text-ellipsis whitespace-nowrap overflow-hidden">
             {chat.chat_name}
           </div>
           <div>
