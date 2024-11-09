@@ -317,8 +317,7 @@ const Chatbot = (props) => {
                           overflowY: "auto",
                           whiteSpace: "pre-wrap",
                         }}
-                        className="bg-[#141414]
- text-white"
+                        className="bg-[#141414] text-white"
                       >
                         {console.log(
                           "active message index",

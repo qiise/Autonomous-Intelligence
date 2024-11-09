@@ -573,7 +573,7 @@ const onConnectorCardClick = (value) => {
             Uploaded Files
           </h2>
           {/* Map through docs */}
-          <div className="bg-gray-950 min-h-[30vh] h-[30vh] overflow-y-auto">
+          <div className="bg-black min-h-[30vh] h-[30vh] overflow-y-auto">
           {docs.map((doc) => (
             <div
               key={doc.document_name}
