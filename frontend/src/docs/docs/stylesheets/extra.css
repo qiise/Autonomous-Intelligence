@@ -68,3 +68,10 @@
     font-weight: bold;
     color: var(--md-accent-fg-color); /* Apply accent color */
 }
+
+/* Dark mode specific navbar styling */
+[data-md-color-scheme="slate"] .md-header {
+    background-color: var(--md-default-bg-color) !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+    opacity: 1 !important; /* Ensures no transparency */
+}
