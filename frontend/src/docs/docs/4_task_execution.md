@@ -2,7 +2,7 @@
 
 Tasks are the fundamental units of work within Panacea. Each task is a specific instruction that an agent needs to execute. Tasks can be handled in series or in parallel, depending on their nature and dependencies.
 
-![System Architecture Diagram](images/task_execution.png)
+![System Architecture Diagram](images/task_automation.png)
 
 ## Execution Modes
 
