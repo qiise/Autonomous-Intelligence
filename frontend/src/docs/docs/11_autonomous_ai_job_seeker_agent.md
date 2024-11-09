@@ -120,6 +120,6 @@ Find all AI companies in New York, identify relevant job openings, and apply to 
 
 ## **Visual Aid**
 
-![Job Seeker Agent Workflow](images/job_seeker_agent_workflow.png)
+![System Architecture Diagram](images/jobs.png)
 
 *Depicts the interaction between the orchestrator and various agents during the job search and application process.*

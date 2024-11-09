@@ -97,6 +97,6 @@ Create a Python script that scrapes data from a website, stores it in a CSV file
 
 ## **Visual Aid**
 
-![Autonomous AI Coding Agent Workflow](images/autonomous_ai_coding_agent_workflow.png)
+![System Architecture Diagram](images/coding_agent.png)
 
 *Illustrates the interaction between the orchestrator and various agents during the coding process.*
