@@ -25,6 +25,11 @@ nav:
   - API and Enterprise Features:
       - Developer API: "7_developer_api.md"
       - Enterprise Solutions: "7_enterprise_solutions.md"
+  - Use Cases:
+      - Autonomous AI Coding Agent: "11_autonomous_ai_coding_agent.md"
+      - Autonomous AI Sales Agent: "11_autonomous_ai_sales_agent.md"
+      - Autonomous AI Job Seeker Agent: "11_autonomous_ai_job_seeker_agent.md"
+      - Autonomous Query Agent: "11_autonomous_query_agent.md"
   - Deployment:
       - Local Deployment: "8_local_deployment.md"
       - Private Deployment: "8_private_deployment.md"
