@@ -155,9 +155,9 @@ Copy code
 
 ## **Visual Aid**
 
-![Autonomous AI Coding Agent Workflow](images/autonomous_ai_coding_agent_workflow.png)
 
-*Illustrates the interaction between the orchestrator and various agents during the coding process.*
+![System Architecture Diagram](images/sales.png)
+*Illustrates the collaboration between the orchestrator and various agents during the sales outreach process.*
 
 ---
 2.2. Autonomous AI Sales Agent
@@ -263,8 +263,3 @@ Search for potential clients in the technology sector, compile a list of prospec
 - **Consistency:** Maintains regular communication with prospects without manual intervention.
 - **Data-Driven Insights:** Utilizes performance metrics to continuously refine and improve sales strategies.
 
-## **Visual Aid**
-
-![System Architecture Diagram](images/sales.png)
-
-*Illustrates the collaboration between the orchestrator and various agents during the sales outreach process.*
