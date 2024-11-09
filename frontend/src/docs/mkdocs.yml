@@ -82,8 +82,8 @@ theme:
         name: Switch to light mode
       primary: black
       accent: yellow
-  favicon: assets/logo.png
-  logo: assets/logo.png
+  favicon: images/logo.png
+  logo: images/logo.png
 
 
 plugins:

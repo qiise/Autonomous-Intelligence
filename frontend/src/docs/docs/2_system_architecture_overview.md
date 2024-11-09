@@ -7,7 +7,11 @@ Panacea's architecture is built around a decentralized network of specialized ag
 ![System Architecture Diagram](images/start.png)
 
 **Key Highlights:**
+
 - **Decentralized Agents**: Each agent operates autonomously while collaborating to achieve complex tasks.
+
 - **Orchestrator**: Acts as the central command center, managing task distribution and workflow coordination.
+
 - **Communication Channels (Edges)**: Enable seamless data exchange and coordination between agents.
+
 - **Logging & Monitoring**: Ensure transparency, performance tracking, and issue resolution.
