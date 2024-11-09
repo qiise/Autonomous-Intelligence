@@ -134,13 +134,13 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #28b2fb;
-  color: #28b2fb;
+  background-color: #F1CA57;
+  color: #F1CA57;
   cursor: pointer;
 }
 
 .download-button label:hover {
-  background-color: #40C6FF;
+  background-color: #F1CA57;
 }
 
 .download-button label i {
@@ -203,5 +203,5 @@
 .download-button label:hover,
 .send-button:hover,
 .reset-icon:hover {
-  color: #40C6FF;
+  color: #F1CA57;
 }

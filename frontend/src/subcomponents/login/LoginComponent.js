@@ -60,7 +60,7 @@ function LoginComponent(props) {
         onClick={() => {
           props.setPageState(3);
         }}
-        style={{ color: "#40C6FF" }}
+        style={{ color: "#F1CA57" }}
       >
         Forgot Password?
       </p>
@@ -73,7 +73,7 @@ function LoginComponent(props) {
         Continue
       </button>
       {props.statusMessage && (
-        <p style={{ color: "#F65F50" }}>{props.statusMessage}</p>
+        <p style={{ color: "#F1CA57" }}>{props.statusMessage}</p>
       )}
       <div className="mt-4">
         <p>
@@ -83,7 +83,7 @@ function LoginComponent(props) {
             onClick={() => {
               props.setPageState(2);
             }}
-            style={{ color: "#40C6FF" }}
+            style={{ color: "#F1CA57" }}
           >
             Sign Up
           </span>

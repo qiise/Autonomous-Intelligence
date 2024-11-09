@@ -81,7 +81,7 @@ function SignUpComponent(props) {
         Continue
       </button>
       {props.statusMessage && (
-        <p style={{ color: "#F65F50" }}>{props.statusMessage}</p>
+        <p style={{ color: "#F1CA57" }}>{props.statusMessage}</p>
       )}
       <div className="LoginComponentDontHave mt-2">
         <p>
@@ -91,7 +91,7 @@ function SignUpComponent(props) {
             onClick={() => {
               props.setPageState(1);
             }}
-            style={{ color: "#40C6FF" }}
+            style={{ color: "#F1CA57" }}
           >
             Log In
           </span>

@@ -55,18 +55,17 @@ function NoUserSession(props) {
     <div className="flex flex-col min-h-screen bg-[#141414]">
     <div className="flex-grow">
       <h1 className="UpreachTitle companyName text-4xl font-semibold flex justify-center pt-10">
-        <img src="logo.png" className="w-10 h-10" alt="logo" />
-        <span>Panacea</span>
+        <img src="logonew.png" className="w-10 h-10" alt="logo" />
+        <span className=" pl-3">Panacea</span>
       </h1>
-      <h2 className="text-2xl text-center text-[#40C6FF] font-semibold my-2">
-        Chat with your financial documents
+      <h2 className="text-2xl text-center text-[#F1CA57] font-semibold my-2">
+        Build Multi Agent AI Systems
       </h2>
-      <Button className="mx-auto mb-4 btn-yellow" variant="primary" onClick={() => setShowVideoModal(true)}>
+      <Button className="mx-auto mb-4 btn-yellow text-black" variant="primary" onClick={() => setShowVideoModal(true)}>
           See How It Works
       </Button>
       <Modal size={"7xl"} show={showVideoModal} onClose={() => setShowVideoModal(false)} className="bg-gray-950">
-          <Modal.Header className="bg-[#141414]
- text-white p-4">
+          <Modal.Header className="bg-[#141414] text-white p-4">
             See How It Works
           </Modal.Header>
           <Modal.Body className="p-4 flex items-center justify-center bg-[#141414]

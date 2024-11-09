@@ -236,7 +236,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-    background: #40C6FF;
+    background: linear-gradient(to right, #EDDC8F, #F1CA57);
     border-radius: 4px;
     border: 1px solid black;
     display: inline-block;
