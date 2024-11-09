@@ -5,7 +5,7 @@ const colors = {
     hover: '#303030',
     selected: 'white',
     unselected: '#b3b3b3',
-    dropdownIndicator: '#40C6FF'
+    dropdownIndicator: '#F1CA57'
   };
 
   export const SelectStyles = {
@@ -15,7 +15,7 @@ const colors = {
       height: '40px',
       backgroundColor: colors.primary,
       // borderColor: state.isFocused ? colors.focus : colors.focus,
-      boxShadow: state.isFocused ? '0 0 0 1px #28b2fb' : 'none',
+      boxShadow: state.isFocused ? '0 0 0 1px #F1CA57' : 'none',
       border: state.isFocused ? "none" : "none",
       // color: colors.selected,
       // '&:hover': {

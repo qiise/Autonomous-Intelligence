@@ -50,12 +50,12 @@ function ForgotPasswordComponent(props) {
         onClick={() => {
           props.setPageState(1);
         }}
-        style={{ color: "#40C6FF" }}
+        style={{ color: "#F1CA57" }}
       >
         Back to Panacea
       </p>
       {props.statusMessage && (
-        <p style={{ color: "#F65F50" }}>{props.statusMessage}</p>
+        <p style={{ color: "#F1CA57" }}>{props.statusMessage}</p>
       )}
     </div>
   );
