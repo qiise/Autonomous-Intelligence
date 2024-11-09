@@ -74,17 +74,19 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: black
-      accent: yellow
+      primary: custom
+      accent: custom
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: black
-      accent: yellow
+      primary: custom
+      accent: custom
   favicon: images/logo.png
   logo: images/logo.png
 
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
