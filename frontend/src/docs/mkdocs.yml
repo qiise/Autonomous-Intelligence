@@ -1,43 +1,37 @@
 site_name: Panacea
 site_url: https://docs.anote.ai
 use_directory_urls: false
-# repo_url: https://github.com/nv78/Anote-Cookbook
+# repo_url: https://github.com/nv78/Anote
+site_description: "Collaborative Multi Agentic AI Framework."
+# site_author: "Natan Vidra"
 
+
+# Navigation structure
 nav:
-  - Home: privategpt/privategpt.md
-  - Anote SDK:
-    - Getting Started:
-      - Overview: api-overview/setup.md
-      - Installation (Private): privategpt/installation.md
-      - Upload: api-overview/upload.md
-      - Upload (Private): api-overview/upload-private.md
-      - Fine Tune: api-overview/finetune.md
-      - Chat: api-overview/chat.md
-      - Predict: api-overview/predict.md
-      - Evaluate: api-overview/evaluate.md
-    - Capabilities:
-      - Q&A from Edgar: api-qa/example1.md
-      - Q&A from Uploaded Files: api-qa/example2.md
-      - Q&A in Multiple Languages: api-qa/example3.md
-      - Q&A with websites: api-qa/example4.md
-      - Q&A with fine tuning: api-qa/example5.md
-  - Anote 10-Ks:
-    - 10-Ks Background: 10-ks/10ksbackground.md
-    - 10-Ks Questions: 10-ks/10ksquestions.md
-    - 10-Ks Decomposition: 10-ks/10ksdecomposition.md
-    - 10-Ks Feedback: 10-ks/10ksfeedback.md
-    - 10-Ks Solution: 10-ks/10kssolution.md
-    - 10-Ks Impact: 10-ks/10ksimpact.md
-  - Anote Fine Tuning:
-    - Overview: api-prompting/overview.md
-    - Baseline Models: api-prompting/example1.md
-    - Supervised: api-prompting/example2.md
-    - Supervised Methods: api-prompting/example3.md
-    - Unsupervised: api-prompting/example4.md
-    - RLHF: api-prompting/example5.md
-    - Traditional RAG: api-prompting/example6.md
-    - Enhanced RAG: api-prompting/example7.md
-    - Evaluation: api-prompting/example8.md
+  - Introduction: "1_introduction.md"
+  - System Architecture:
+      - Overview: "2_system_architecture_overview.md"
+      - Key Components: "2_key_components.md"
+  - Agent Design:
+      - Agent Types: "3_agent_types.md"
+      - Agent Environment: "3_agent_environment.md"
+  - Workflow Management:
+      - Task Execution: "4_task_execution.md"
+      - Orchestration: "4_orchestration.md"
+  - Communication Framework: "5_communication_framework.md"
+  - User Interface:
+      - Chat-Based Interface: "6_chat_based_interface.md"
+      - Agent Creation: "6_agent_creation.md"
+  - API and Enterprise Features:
+      - Developer API: "7_developer_api.md"
+      - Enterprise Solutions: "7_enterprise_solutions.md"
+  - Deployment:
+      - Local Deployment: "8_local_deployment.md"
+      - Private Deployment: "8_private_deployment.md"
+  - Logging and Monitoring: "9_logging_and_monitoring.md"
+  - Glossary: "10_glossary.md"
+  - References: "11_references.md"
+
 
 extra:
   homepage: https://anote.ai
@@ -77,13 +71,13 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: black
-      accent: light blue
+      accent: yellow
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
       primary: black
-      accent: light blue
+      accent: yellow
   favicon: assets/logo.png
   logo: assets/logo.png
 
