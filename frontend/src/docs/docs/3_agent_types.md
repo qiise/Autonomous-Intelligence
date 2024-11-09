@@ -9,6 +9,8 @@ Panacea encompasses a variety of agents, each tailored to perform distinct funct
 - **Data Analyst Agent**: Analyzes data sets to generate insights and reports, aiding in decision-making processes.
 - **Customer Support Agent**: Handles customer inquiries and support tickets, providing timely and accurate responses.
 
+![System Architecture Diagram](images/agenttypes.png)
+
 ## Custom Agents
 
 In addition to predefined agents, Panacea allows users to create custom agents tailored to specific needs. This flexibility ensures that Panacea can adapt to a wide range of tasks and industries.
