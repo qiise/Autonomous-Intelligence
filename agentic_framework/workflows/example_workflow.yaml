@@ -1,0 +1,17 @@
+# workflows/example_workflow.yaml
+- step: 1
+  agent: SearchAgent
+  parameters:
+    keywords: "AI breakthroughs"
+
+- step: 2
+  agent: AnalysisAgent
+  depends_on: [1]
+  parameters:
+    input: "search_results"
+
+- step: 3
+  agent: CommunicationAgent
+  depends_on: [2]
+  parameters:
+    message: "Summary of recent AI breakthroughs"
