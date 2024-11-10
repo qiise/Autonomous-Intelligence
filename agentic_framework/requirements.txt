@@ -1,0 +1,10 @@
+plaintext
+fastapi
+uvicorn
+aiohttp
+openai
+pyyaml
+diskcache
+aiosqlite
+pytest
+pytest-asyncio
