@@ -1,5 +1,5 @@
 # Panacea
-
+```
 agentic_ai_framework/
 ├── README.md
 ├── main.py
@@ -7,39 +7,40 @@ agentic_ai_framework/
 │   ├── config.yaml
 │   └── rbac.yaml
 ├── agents/
-│   ├── __init__.py
+│   ├── init.py
 │   ├── base_agent.py
 │   ├── registry.py
 │   ├── search_agent.py
 │   ├── analysis_agent.py
 │   └── communication_agent.py
 ├── orchestrator/
-│   ├── __init__.py
+│   ├── init.py
 │   └── orchestrator.py
 ├── lm/
-│   ├── __init__.py
+│   ├── init.py
 │   └── llm_service.py
 ├── tools/
-│   ├── __init__.py
+│   ├── init.py
 │   └── search_api.py
 ├── utils/
-│   ├── __init__.py
+│   ├── init.py
 │   ├── response_synthesizer.py
 │   ├── logger.py
 │   ├── cache_manager.py
 │   ├── workflow_engine.py
 │   └── rbac_manager.py
 ├── memory/
-│   ├── __init__.py
+│   ├── init.py
 │   └── memory_manager.py
 ├── api/
-│   ├── __init__.py
+│   ├── init.py
 │   └── api_server.py
 ├── workflows/
 │   └── example_workflow.yaml
 ├── docs/
 │   └── setup_guide.md
 ├── tests/
-│   ├── __init__.py
+│   ├── init.py
 │   └── test_framework.py
 └── requirements.txt
+```
