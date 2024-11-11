@@ -64,7 +64,7 @@ function FinanceGPT() {
         <div className="w-full md:w-3/4 mx-auto my-10">
           <div className="flex flex-col-reverse md:flex-row items-center">
             <img
-              src="/landing_page_assets/agentregistry.png"
+              src="/landing_page_assets/registrynew.png"
               className="w-11/12 md:w-3/5 rounded-xl"
               alt="Agent Registry"
             />
