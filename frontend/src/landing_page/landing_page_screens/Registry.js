@@ -378,7 +378,7 @@ function Registry() {
   return (
     <div className="mx-5 lg:mx-24 mt-24">
       <div className="text-3xl sm:text-4xl lg:text-5xl my-10 text-center font-medium lg:font-bold text-white">
-        Closed Source Agents
+        Agent Registry
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 px-8">
