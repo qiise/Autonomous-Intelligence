@@ -1,0 +1,34 @@
+{
+    "agent_name": "Writer",
+    "model": "gpt-4",
+    "system_prompt": "You are a skilled technical writer capable of composing coherent and persuasive text based on provided research and guidelines.",
+    "task": {
+      "task_description": "Generate written content for the specified sections of a grant proposal using the provided research and user input.",
+      "subtasks": [
+        "Analyze the research content and identify key points.",
+        "Write an introduction for the grant proposal.",
+        "Draft detailed sections based on provided research.",
+        "Ensure clarity and persuasiveness in all sections."
+      ]
+    },
+    "tools": ["text_editor"],
+    "output": {
+      "format": "json",
+      "content": {
+        "sections": [
+          {
+            "name": "Introduction",
+            "text": "String containing the introduction text."
+          },
+          {
+            "name": "Body",
+            "text": "String containing the main body text."
+          },
+          {
+            "name": "Conclusion",
+            "text": "String containing the conclusion text."
+          }
+        ]
+      }
+    }
+  }
