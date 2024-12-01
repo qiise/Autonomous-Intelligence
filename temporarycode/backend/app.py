@@ -132,5 +132,4 @@ def save_workflow_markdown(file_path, workflow_config):
 if __name__ == '__main__':
     # Set the OpenAI API key
     import openai
-    # openai.api_key = "add key"
     app.run(debug=True)
