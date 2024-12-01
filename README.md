@@ -2,6 +2,16 @@
 
 This is an open-sourced, research-driven initiative designed to explore and develop multi-agent AI systems over the winter. The project focuses on building a **General Purpose AI Agent Framework** and establishing a **Registry of Domain-Specific AI Agents**.
 
+## Agenda: 
+- Intros
+- AI Agent Project Overview
+- Agent Presentation
+- Agent Registry
+- Agent Product Specs
+- Codebase Setup
+- Communications / Next Steps
+- Q&A
+
 ## Product Overview
 - **Framework**: [General Purpose AI Agent Framework](https://privatechatbot.ai/)
 - **Registry**: A collection of specialized AI agents tailored to specific domains.
