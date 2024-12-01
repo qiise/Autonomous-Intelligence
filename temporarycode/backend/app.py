@@ -6,7 +6,7 @@ import asyncio
 from orchestrator import Orchestrator
 import os
 from utils import workflow_config_to_markdown, agent_config_to_markdown
-
+import openai
 app = Flask(__name__)
 CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")  # Enable WebSocket support
@@ -130,6 +130,4 @@ def save_workflow_markdown(file_path, workflow_config):
 
 
 if __name__ == '__main__':
-    # Set the OpenAI API key
-    import openai
     app.run(debug=True)
