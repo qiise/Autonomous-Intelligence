@@ -61,3 +61,5 @@ The project enables various ways to deploy and use AI agent systems:
 
 ## Get Involved
 Join the initiative by contributing to the open-source repository, building specialized agents, or collaborating on research and development. Showcase your work during the **AI Day** event!
+
+Note: to run code correctly you'll need to replace the openAI api key
