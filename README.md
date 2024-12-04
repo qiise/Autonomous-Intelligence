@@ -59,6 +59,28 @@ The project enables various ways to deploy and use AI agent systems:
 - Spawn agent templates directly into the chatbot.
 - Use a **Drag & Drop Flow** to design and execute compound agent systems.
 
+## Notes
+
+We will aim to really build two products over the winter:
+- the general purpose AI agent framework (main project)
+- a registry of specialized agents for specific domains
+
+For each of these products, there will be a lot of details. For folks on the technical side, if you could try to follow the codebase development environment document in the materials folder of the Github repository, and get the codebase set up that would be appreciated. If you have any questions / experience any bugs, feel free to reach out directly, and I can either help you resolve the error or point you to the right POC.
+
+For folks on the non-technical side, if you could look into the following resources that would be appreciated:
+- Phidata - https://www.phidata.com/
+- Crew AI - https://www.crewai.com/
+- Magentic One - https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/
+- AutoGPT - https://github.com/Significant-Gravitas/AutoGPT
+- Langgraph - https://www.langchain.com/langgraph
+
+As far as a final deliverable, we will have final presentations on February 11th at 6 PM EST (date / time tentative). It would be awesome if whoever is interested could give a presentation on a topic that they worked on over the winter related to agents (similar to AI Day), that we could share / post on our youtube channel.
+
+Natan will aim to hold weekly office hours on each Monday between 5 PM EST and 6 PM EST, in case anyone has any questions and would like to collaborate. 
+
+Communications will take place in the #agents thread within the anote slack channel (temporary link to join here):
+https://join.slack.com/t/anote-ai/shared_invite/zt-2vdh1p5xt-KWvtBZEprhrCzU6wrRPwNA
+
 ## Get Involved
 Join the initiative by contributing to the open-source repository, building specialized agents, or collaborating on research and development. Showcase your work during the **AI Day** event!
 
