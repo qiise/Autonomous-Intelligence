@@ -1,6 +1,6 @@
 # Autonomous Intelligence
 
-Autonomous Intelligence is an open-sourced, research-driven initiative aimed at building collaborative multi-agent AI systems. By combining modular design principles and cutting-edge machine learning techniques, this project empowers developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
+[Autonomous Intelligence](https://privatechatbot.ai/) is an open-sourced, research-driven initiative aimed at building collaborative multi-agent AI systems. By combining modular design principles and cutting-edge machine learning techniques, this project empowers developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
 
 ## Product Overview
 
