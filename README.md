@@ -17,7 +17,7 @@ The registry offers a catalog of prebuilt agents optimized for specific domains,
 ### Smart Orchestration
 Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time.
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SmartOrchestrator.png?raw=true)
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/AgentTemplates.png?raw=true)
 
 ### User Interaction
 Users can design and visualize workflows using an intuitive drag-and-drop interface or directly interact with agents through conversational natural language queries.
@@ -49,13 +49,13 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 ## Workflow Example
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Example.png?raw=true)
-
 1. **Input Query**: The user provides a task, e.g., “Summarize this document and email the key points.”
 2. **Agent Selection**: The orchestrator selects the relevant agents (e.g., NER Agent, Email Agent).
 3. **Task Execution**: Agents collaborate to process the document, extract key points, and draft the email.
 4. **Result Delivery**: The system returns the output (draft email) to the user.
 5. **Feedback Loop**: User feedback is incorporated to refine the results or improve the workflow.
+
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Example.png?raw=true)
 
 ### Key Features
 
@@ -68,7 +68,7 @@ Developers can leverage tools for integrating AI agent functionality into their 
 | **Model-Agnostic Design**  | Supports various models, including OpenAI, Claude, Llama, and Mistral.                        |
 | **Private Deployments**    | Operate securely in local environments with privacy-preserving configurations.                 |
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/AgentTemplates.png?raw=true)
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SmartOrchestrator.png?raw=true)
 
 ## Use Cases
 - **Job Applications**: Automate LinkedIn profile optimization, resume customization, and job application submissions.
