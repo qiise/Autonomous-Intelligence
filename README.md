@@ -75,12 +75,16 @@ Autonomous Intelligence's architecture is built around a decentralized network o
 ![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SmartOrchestrator.png?raw=true)
 
 ## Use Cases
-- **Job Applications**: Automate LinkedIn profile optimization, resume customization, and job application submissions.
-- **Grant Writing**: Draft, refine, and submit grant proposals efficiently.
-- **Email Outreach**: Automate email campaigns and follow-ups.
-- **Financial Analysis**: Extract, analyze, and summarize data from financial reports.
-- **Event Planning**: Schedule, coordinate, and manage resources for events.
-- **Social Media Writing**: Create, schedule, and manage social media posts.
+
+Within the Agent Registry, we will be adding many domain specific agents. Here are a few example use cases, with corresponding demos:
+
+| **Use Case**              | **Description**                                                                  | **Link**                                              |
+|---------------------------|----------------------------------------------------------------------------------|------------------------------------------------------|
+| **AI Assisted Coding**    | Automate feature implementations and pull requests                              | [Watch Video](https://www.youtube.com/watch?v=K2KUVdZjZnc) |
+| **AI Assisted RFPs**      | Draft, refine, and submit grant proposals efficiently                           | [Watch Video](https://www.youtube.com/watch?v=fE4_Yjjfl0M) |
+| **AI Assisted Outreach**  | Automate email campaigns, sequences, and follow-ups                             | [Learn More](https://upreach.ai/)                    |
+| **Job Applications**      | Automate resume customization and job application submissions                   | [Learn More](https://roboapply.ai/)                  |
+
 
 ## Getting Started
 
