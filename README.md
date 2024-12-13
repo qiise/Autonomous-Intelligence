@@ -93,7 +93,7 @@ We provide the setup instructions in `materials/codebase_setup.pdf`
 2. **Run On-Premise**: Deploy locally for privacy-sensitive workflows.
 3. **Call via API**: Integrate agent capabilities into your own applications using the provided SDK.
 
-## Documentation
+### Documentation
 
 To learn more about the documentation, visit https://docs.privatechatbot.ai/
 
