@@ -7,19 +7,31 @@ Autonomous Intelligence is an open-sourced, research-driven initiative aimed at 
 ### General Purpose Multi-Agent Framework
 The framework provides a robust infrastructure for creating and managing multiple AI agents. It enables seamless collaboration between agents to tackle complex tasks, dynamically adapting to user inputs and changing conditions.
 
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Generalist.png?raw=true)
+
 ### Domain-Specific Agent Registry
 The registry offers a catalog of prebuilt agents optimized for specific domains, such as coding, data analysis, and natural language processing. This allows users to quickly integrate tailored solutions into their workflows without extensive setup.
+
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Registry.png?raw=true)
 
 ### Smart Orchestration
 Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time.
 
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SmartOrchestrator.png?raw=true)
+
 ### User Interaction
 Users can design and visualize workflows using an intuitive drag-and-drop interface or directly interact with agents through conversational natural language queries.
+
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/AutoGPT.png?raw=true)
 
 ### SDK and API Access
 Developers can leverage tools for integrating AI agent functionality into their applications. The platform supports customization and modular development for scalability and efficiency.
 
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SDK.png?raw=true)
+
 ## How It Works
+
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/HowItWorks.png?raw=true)
 
 ### Core Components
 
@@ -37,6 +49,8 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 ## Workflow Example
 
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Example.png?raw=true)
+
 1. **Input Query**: The user provides a task, e.g., “Summarize this document and email the key points.”
 2. **Agent Selection**: The orchestrator selects the relevant agents (e.g., NER Agent, Email Agent).
 3. **Task Execution**: Agents collaborate to process the document, extract key points, and draft the email.
@@ -53,6 +67,8 @@ Developers can leverage tools for integrating AI agent functionality into their 
 | **Real-Time Debugging**    | Visualize and troubleshoot workflows using interactive flowcharts.                             |
 | **Model-Agnostic Design**  | Supports various models, including OpenAI, Claude, Llama, and Mistral.                        |
 | **Private Deployments**    | Operate securely in local environments with privacy-preserving configurations.                 |
+
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/AgentTemplates.png?raw=true)
 
 ## Use Cases
 - **Job Applications**: Automate LinkedIn profile optimization, resume customization, and job application submissions.
