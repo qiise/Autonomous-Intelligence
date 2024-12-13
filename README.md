@@ -93,10 +93,7 @@ We provide the setup instructions in `materials/codebase_setup.pdf`
 2. **Run On-Premise**: Deploy locally for privacy-sensitive workflows.
 3. **Call via API**: Integrate agent capabilities into your own applications using the provided SDK.
 
-### Documentation
-
-To learn more about the documentation, visit https://docs.privatechatbot.ai/
-
 ### Stay Connected
 - **Slack**: [Join the community](https://join.slack.com/t/anote-ai/shared_invite/zt-2vdh1p5xt-KWvtBZEprhrCzU6wrRPwNA)
 - **GitHub**: [Explore the code](https://github.com/nv78/Autonomous-Intelligence/)
+- **Documentation**: [See the docs](https://docs.privatechatbot.ai/)
