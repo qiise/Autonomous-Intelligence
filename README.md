@@ -1,6 +1,6 @@
 # Autonomous Intelligence
 
-Autonomous Intelligence is an open-sourced, research-driven initiative aimed at revolutionizing collaborative multi-agent AI systems. By combining modular design principles and cutting-edge machine learning techniques, this project empowers developers and organizations to build, deploy, and optimize AI agents that work seamlessly in dynamic, complex environments.
+Autonomous Intelligence is an open-sourced, research-driven initiative aimed at building collaborative multi-agent AI systems. By combining modular design principles and cutting-edge machine learning techniques, this project empowers developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
 
 ## Product Overview
 
@@ -43,8 +43,6 @@ Developers can leverage tools for integrating AI agent functionality into their 
 4. **Result Delivery**: The system returns the output (draft email) to the user.
 5. **Feedback Loop**: User feedback is incorporated to refine the results or improve the workflow.
 
-## Features and Benefits
-
 ### Key Features
 
 | Feature                    | Description                                                                                     |
@@ -56,45 +54,24 @@ Developers can leverage tools for integrating AI agent functionality into their 
 | **Model-Agnostic Design**  | Supports various models, including OpenAI, Claude, Llama, and Mistral.                        |
 | **Private Deployments**    | Operate securely in local environments with privacy-preserving configurations.                 |
 
-### Benefits
-
-| Benefit      | Details                                                                                   |
-|--------------|-------------------------------------------------------------------------------------------|
-| **Efficiency**   | Automate repetitive tasks and complex processes with multi-agent workflows.            |
-| **Scalability**  | Handle large-scale operations with modular and robust architecture.                    |
-| **Adaptability** | Dynamically adjust to diverse use cases, from grant writing to event planning.          |
-| **Transparency** | Monitor agent performance and workflows through comprehensive dashboards.               |
-
-## Use Cases
-
-| Use Case           | Description                                                                                     |
-|--------------------|-------------------------------------------------------------------------------------------------|
-| **Job Applications** | Automate LinkedIn profile optimization, resume customization, and job application submissions. |
-| **Grant Writing**  | Draft, refine, and submit grant proposals efficiently.                                         |
-| **Outreach**       | Automate email campaigns and follow-ups.                                                       |
-| **Financial Analysis** | Extract, analyze, and summarize data from financial reports.                                 |
-| **Event Planning** | Schedule, coordinate, and manage resources for events.                                         |
-| **Social Media Writing** | Create, schedule, and manage social media posts.                                           |
-
 ## Use Cases
 - **Job Applications**: Automate LinkedIn profile optimization, resume customization, and job application submissions.
 - **Grant Writing**: Draft, refine, and submit grant proposals efficiently.
-- **Outreach**: Automate email campaigns and follow-ups.
+- **Email Outreach**: Automate email campaigns and follow-ups.
 - **Financial Analysis**: Extract, analyze, and summarize data from financial reports.
 - **Event Planning**: Schedule, coordinate, and manage resources for events.
 - **Social Media Writing**: Create, schedule, and manage social media posts.
 
-
 ## Getting Started
+
+### Set Up
+
+We provide the setup instructions in `materials/codebase_setup.pdf`
 
 ### Ways to Use
 1. **Run on the Web**: Access the product UI for direct interaction.
 2. **Run On-Premise**: Deploy locally for privacy-sensitive workflows.
 3. **Call via API**: Integrate agent capabilities into your own applications using the provided SDK.
-
-### Set Up
-
-We provide the setup instructions in `materials/codebase_setup.pdf`
 
 ## Documentation
 
@@ -102,4 +79,4 @@ To learn more about the documentation, visit https://docs.privatechatbot.ai/
 
 ### Stay Connected
 - **Slack**: [Join the community](https://join.slack.com/t/anote-ai/shared_invite/zt-2vdh1p5xt-KWvtBZEprhrCzU6wrRPwNA)
-- **GitHub**: [Explore the code](https://github.com/your-repo-link)
+- **GitHub**: [Explore the code](https://github.com/nv78/Autonomous-Intelligence/)
