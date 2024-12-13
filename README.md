@@ -49,11 +49,13 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 ## Workflow Example
 
-1. **Input Query**: The user provides a task, e.g., “Summarize this document and email the key points.”
-2. **Agent Selection**: The orchestrator selects the relevant agents (e.g., NER Agent, Email Agent).
-3. **Task Execution**: Agents collaborate to process the document, extract key points, and draft the email.
-4. **Result Delivery**: The system returns the output (draft email) to the user.
-5. **Feedback Loop**: User feedback is incorporated to refine the results or improve the workflow.
+1. **Input Query**: The user provides a task, e.g., “Reach out to a list of 10,000 New York-based heads of AI who work in mid-sized finance companies.”
+2. **Data Collection**: The orchestrator leverages an AI-powered data foundation and the web to source the most reliable leads. The agent processes the input criteria to generate a list, such as Job Title: Data Scientist, Industry: Technology, Company Size: >1,000, Location: United States
+3. **Agent Workflow**: The AI workflow processes the input by applying specific rules and guidelines to filter the data. Agents collaborate to refine the lead list and create tailored email drafts for each contact.
+4. **Email and List Generation**: The system outputs a curated list of leads, including contact information, along with tailored email content ready for automated delivery.
+5. **Automation**: Emails are automatically sent to the generated list of leads. The system tracks progress, showing the number of emails sent and responses received daily.
+6. **Feedback Loop**: User feedback is incorporated to improve the lead generation process, refine email drafts, or adjust selection criteria for future tasks.
+
 
 ![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Example.png?raw=true)
 
