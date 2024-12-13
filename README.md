@@ -23,8 +23,6 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 ### Core Components
 
-## Core Components
-
 | Component                    | Description                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------|
 | **Orchestrator**             | Central hub for task assignment, execution, and monitoring. Manages agent interactions and refines workflows dynamically. |
