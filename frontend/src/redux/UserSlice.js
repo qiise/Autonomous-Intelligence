@@ -223,6 +223,10 @@ export const initialState = {
             allIds : [
                 // "user1"
             ]
+        },
+        apiKeys: {
+          byId : {},
+          allIds: []
         }
     },
     // ID of current user.  0 is for unset.
