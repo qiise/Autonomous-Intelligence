@@ -1,9 +1,159 @@
 import json
 import requests
 # from constants import *
-from typing import List, Dict, Any
-
 from enum import IntEnum
+from typing import List, Optional, Dict, Any
+
+class Agent:
+    """
+    Represents an AI-driven entity, configured with a model and optional default Task.
+    """
+
+    def __init__(
+        self,
+        name: str,
+        model: str,
+        system_prompt: str,
+        task: Optional["Task"] = None,
+        tools: Optional[List[str]] = None,
+        verbose: bool = False
+    ):
+        """
+        Args:
+            name (str): Short identifier for the agent (e.g., 'FinanceAgent').
+            model (str): Underlying LLM (e.g., 'gpt4', 'gpt3.5turbo', 'llama').
+            system_prompt (str): A top-level prompt or role instruction (e.g., 'You are an event planner.').
+            task (Task, optional): A default Task object this Agent is responsible for.
+            tools (list of str, optional): Names of tools the Agent can call (e.g., 'ScrapeWebsiteTool').
+            verbose (bool): If True, logs extra debug info.
+        """
+        self.name = name
+        self.model = model
+        self.system_prompt = system_prompt
+        self.task = task
+        self.tools = tools or []
+        self.verbose = verbose
+
+    def __repr__(self):
+        return f"<Agent name={self.name} model={self.model} verbose={self.verbose}>"
+
+
+class Task:
+    """
+    Represents a discrete assignment or objective for an Agent.
+    """
+
+    def __init__(
+        self,
+        instructions: str,
+        files_uploaded: Optional[List[str]] = None,
+        examples: Optional[List[str]] = None,
+        expected_output: str = "",
+        agent: Optional[Agent] = None
+    ):
+        """
+        Args:
+            instructions (str): The main prompt or directive for the Agent.
+            files_uploaded (list of str, optional): File paths or IDs relevant to the Task (e.g., PDFs, CSVs).
+            examples (list, optional): Few-shot examples or reference data.
+            expected_output (str): Form or content of the final result (e.g., 'Return a markdown summary').
+            agent (Agent, optional): The Agent assigned to this Task.
+        """
+        self.instructions = instructions
+        self.files_uploaded = files_uploaded or []
+        self.examples = examples or []
+        self.expected_output = expected_output
+        self.agent = agent
+
+    def __repr__(self):
+        return f"<Task instructions={self.instructions[:25]}... expected_output={self.expected_output[:25]}...>"
+
+
+class Crew:
+    """
+    Represents a collaborative group of Agents and the Tasks they must complete.
+    """
+
+    def __init__(
+        self,
+        agents: Optional[List[Agent]] = None,
+        tasks: Optional[List[Task]] = None,
+        verbose: bool = False
+    ):
+        """
+        Args:
+            agents (list of Agent, optional): Agents that will collaborate on Tasks.
+            tasks (list of Task, optional): Tasks to be completed by these Agents.
+            verbose (bool): If True, logs more details during execution.
+        """
+        self.agents = agents or []
+        self.tasks = tasks or []
+        self.verbose = verbose
+
+    def __repr__(self):
+        return f"<Crew agents={len(self.agents)} tasks={len(self.tasks)} verbose={self.verbose}>"
+
+    def kickoff(self, inputs: Dict[str, Any] = None):
+        """
+        Starts or orchestrates the tasks in some manner.
+        Customize as needed for your logic (sequential, parallel, hierarchical, etc.).
+        """
+        if self.verbose:
+            print(f"[Crew] Kicking off with inputs: {inputs}")
+        # Example: Just prints out each task's instructions
+        for task in self.tasks:
+            if self.verbose:
+                print(f"[Crew] Running task: {task.instructions}")
+        return {"status": "completed", "inputs_used": inputs}
+
+
+class Tools:
+    """
+    Represents an external capability or integration (e.g., web search, data fetch).
+    """
+
+    def __init__(
+        self,
+        tool_name: str,
+        config: Optional[Dict[str, Any]] = None
+    ):
+        """
+        Args:
+            tool_name (str): Identifier for the tool (e.g., 'ScrapeWebsiteTool').
+            config (dict, optional): Configuration details (e.g., API keys, parameters).
+        """
+        self.tool_name = tool_name
+        self.config = config or {}
+
+    def __repr__(self):
+        return f"<Tool tool_name={self.tool_name}>"
+
+
+class Workflow:
+    """
+    Defines the method by which tasks are executed within a Crew.
+    """
+
+    def __init__(
+        self,
+        workflow_type: str = "sequential",
+        manager_agent: Optional[Agent] = None,
+        allow_parallel: bool = False
+    ):
+        """
+        Args:
+            workflow_type (str): e.g., 'sequential', 'hierarchical', or 'parallel'.
+            manager_agent (Agent, optional): Used in hierarchical workflows.
+            allow_parallel (bool): If True, tasks may run concurrently.
+        """
+        self.workflow_type = workflow_type
+        self.manager_agent = manager_agent
+        self.allow_parallel = allow_parallel
+
+    def __repr__(self):
+        return (f"<Workflow type={self.workflow_type} "
+                f"manager_agent={self.manager_agent} "
+                f"allow_parallel={self.allow_parallel}>")
 
 class NLPTask(IntEnum):
     TEXT_CLASSIFICATION = 0
@@ -274,4 +424,3 @@ def _open_files(document_files):
 def _close_files(opened_files):
     for file in opened_files:
         file.close()
-

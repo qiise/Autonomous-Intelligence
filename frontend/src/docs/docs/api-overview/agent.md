@@ -3,7 +3,35 @@
 
 An **Agent** is an autonomous unit designed to perform tasks, make decisions, and possibly interact with other Agents. Agents can be specialized by role or configured for different goals.
 
-## 1. Defining an Agent
+::: fsdk.anote-sdk.Agent
+    <!-- options:
+        show_source: false -->
+
+### Agents Fields
+- **name**: Short identifier for the Agent (e.g., `"FinanceAgent"`).
+- **model**: Underlying LLM (e.g., `"gpt4"`, `"gpt3.5turbo"`, `"llama"`).
+- **system_prompt**: A top-level prompt or role instruction (e.g., `"You are an event planner."`).
+- **task**: A default Task this Agent is responsible for (optional).
+- **tools**: Names of tools the Agent can call (e.g., `"ScrapeWebsiteTool"`).
+- **verbose**: If `True`, logs extra debug info.
+
+**Example**:
+```python
+from anote_agents import Agent
+
+agent = Agent(
+    name="FinanceAgent",
+    model="gpt4",
+    system_prompt="You analyze financial data.",
+    task=None,
+    tools=["SerperDevTool", "ScrapeWebsiteTool"],
+    verbose=True
+)
+```
+
+Agents can autonomously execute tasks, leverage tools to gather information or take actions, and collaborate with other agents within a crew.
+
+**Example 2**:
 
 ```python
 from anote_agents import Agent
@@ -16,19 +44,4 @@ customer_support_agent = Agent(
     backstory="You are friendly and patient, helping customers find solutions."
 )
 ```
-Parameters
-role (str): Descriptive title or function (e.g., "Venue Coordinator").
-goal (str): The primary objective (e.g., "Book a venue that fits the budget").
-tools (list): Optional list of tool instances the Agent can leverage.
-verbose (bool): If True, logs additional debug info.
-backstory (str): Optional narrative about the Agent’s personality or expertise.
-2. Agent Behaviors
-Agents can:
-
-Autonomously execute tasks
-Leverage Tools to gather information or take actions
-Collaborate with other agents within a Crew
-3. Advanced Customization
-instructions (list): Additional guidance for the Agent (e.g., formatting rules).
-model: If using advanced LLM integrations, specify a particular model or language engine.
 By defining Agents carefully, you ensure they remain focused on their intended purpose and handle tasks efficiently.
