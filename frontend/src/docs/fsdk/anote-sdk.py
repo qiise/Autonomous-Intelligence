@@ -1,7 +1,7 @@
 import json
 import requests
 # from constants import *
-from typing import List
+from typing import List, Dict, Any
 
 from enum import IntEnum
 
@@ -217,6 +217,125 @@ class Anote:
         response = self._make_request('/public/viewPredictions', data)
         return response
 
+    def __init__(self, api_key: str, base_url: str = "http://localhost:5000"):
+        """
+        Initialize the Anote SDK client.
+
+        Args:
+            api_key (str): The API key for authentication.
+            base_url (str): The base URL of the Anote API.
+        """
+        self.API_BASE_URL = base_url
+        self.headers = {
+            "Authorization": f"Bearer {api_key}"
+        }
+
+    def create_agent(self, request_body: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create an agent with the given configuration.
+
+        Args:
+            request_body (dict): JSON body containing agent details.
+
+        Returns:
+            dict: JSON response from the server, typically including agent_id and status.
+        """
+        endpoint = "/api/agents"
+        return self._make_request(endpoint=endpoint, data=request_body, method="POST")
+
+    def assign_task(self, request_body: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Assign a new task to an existing agent.
+
+        Args:
+            request_body (dict): JSON body with at least:
+                - "agent_id": The ID of the agent to assign the task.
+                - "description": The task description.
+
+        Returns:
+            dict: JSON response from the server, typically including task_id, agent_id, and status.
+        """
+        endpoint = "/api/tasks"
+        return self._make_request(endpoint=endpoint, data=request_body, method="POST")
+
+    def get_task_status(self, task_id: int) -> Dict[str, Any]:
+        """
+        Retrieve the status of a given task.
+
+        Args:
+            task_id (int): The ID of the task.
+
+        Returns:
+            dict: JSON response containing current status, progress details, etc.
+        """
+        endpoint = f"/api/tasks/{task_id}"
+        return self._make_request(endpoint=endpoint, method="GET")
+
+    def list_agents(self) -> Dict[str, Any]:
+        """
+        List all agents currently registered in the system.
+
+        Returns:
+            dict or list: JSON response with a list of agents (each agent may have fields like agent_id, type, status).
+        """
+        endpoint = "/api/agents"
+        return self._make_request(endpoint=endpoint, method="GET")
+
+    def delete_agent(self, agent_id: int) -> Dict[str, Any]:
+        """
+        Delete an existing agent by ID.
+
+        Args:
+            agent_id (int): The ID of the agent to delete.
+
+        Returns:
+            dict: JSON response confirming the deletion status.
+        """
+        endpoint = f"/api/agents/{agent_id}"
+        return self._make_request(endpoint=endpoint, method="DELETE")
+
+    def _make_request(self,
+                      endpoint: str,
+                      data: Optional[dict] = None,
+                      method: str = "POST") -> Dict[str, Any]:
+        """
+        Internal helper to handle HTTP requests to the Anote API.
+
+        Args:
+            endpoint (str): The endpoint path (e.g. "/api/agents").
+            data (dict, optional): The request payload for POST/PUT methods.
+            method (str): The HTTP method to use. Default is "POST".
+
+        Returns:
+            dict: Decoded JSON response from the server.
+
+        Raises:
+            requests.exceptions.RequestException: If the request fails or
+                the status code is not in the 2xx range.
+        """
+        url = f"{self.API_BASE_URL}{endpoint}"
+
+        if method.upper() == "POST":
+            headers = {**self.headers, "Content-Type": "application/json"}
+            response = requests.post(url, json=data, headers=headers)
+        elif method.upper() == "GET":
+            response = requests.get(url, headers=self.headers)
+        elif method.upper() == "DELETE":
+            response = requests.delete(url, headers=self.headers)
+        else:
+            raise ValueError(f"Unsupported HTTP method: {method}")
+
+        if 200 <= response.status_code < 300:
+            try:
+                return response.json()
+            except requests.exceptions.JSONDecodeError:
+                # If response is not JSON, return raw text or raise error
+                return {"error": "Invalid JSON in response", "content": response.text}
+        else:
+            raise requests.exceptions.RequestException(
+                f"Request to {url} failed with status code {response.status_code}: {response.text}"
+            )
+
 
     def _make_request(self, endpoint, data, files=None):
         url = f"{self.API_BASE_URL}{endpoint}"
@@ -261,3 +380,4 @@ def _open_files(document_files):
 def _close_files(opened_files):
     for file in opened_files:
         file.close()
+

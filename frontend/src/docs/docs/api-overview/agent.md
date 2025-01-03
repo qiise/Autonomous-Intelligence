@@ -1,4 +1,4 @@
-```markdown
+
 # Agents
 
 An **Agent** is an autonomous unit designed to perform tasks, make decisions, and possibly interact with other Agents. Agents can be specialized by role or configured for different goals.
