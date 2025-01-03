@@ -25,7 +25,7 @@ const Chatbot = (props) => {
   //initial state
   useEffect(() => {
     // TODO: Uncomment this line before deployment of backend
-    resetServer();
+    // resetServer();
     setIsFirstMessageSent(false);
     setMessages([
       {
@@ -130,25 +130,25 @@ const Chatbot = (props) => {
   };
 
 
-  const resetServer = async () => {
-    const response = await fetcher("reset-chat-demo", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
-    console.log("Reset server operation completed");
+  // const resetServer = async () => {
+  //   const response = await fetcher("reset-chat-demo", {
+  //     method: "POST",
+  //     headers: {
+  //       Accept: "application/json",
+  //       "Content-Type": "application/json",
+  //     },
+  //   });
+  //   console.log("Reset server operation completed");
 
-    setMessages([
-      {
-        message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
-        sentTime: "just now",
-        direction: "incoming",
-      },
-    ]);
-    setIsFirstMessageSent(false);
-  };
+  //   setMessages([
+  //     {
+  //       message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
+  //       sentTime: "just now",
+  //       direction: "incoming",
+  //     },
+  //   ]);
+  //   setIsFirstMessageSent(false);
+  // };
 
   return (
     <>
@@ -157,7 +157,7 @@ const Chatbot = (props) => {
           <div className="flex flex-row justify-between">
             <FontAwesomeIcon
               icon={faUndoAlt}
-              onClick={resetServer}
+              // onClick={resetServer}
               className="reset-icon"
             />
             <div className="text-white font-bold">Chat</div>
