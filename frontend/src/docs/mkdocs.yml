@@ -38,6 +38,8 @@ nav:
       - Delete Agents: api-endpoints/delete-agent.md
       - Assign Tasks: api-endpoints/assign-task.md
       - Get Task Status: api-endpoints/get-task-status.md
+      # - Create Workflow: api-endpoints/create-agent.md
+      # - Get Workflow Status: api-endpoints/get-workflow-status.md
     - SDK Examples:
       - Defining Agents: api-qa/example1.md
       - Defining Tasks: api-qa/example2.md
