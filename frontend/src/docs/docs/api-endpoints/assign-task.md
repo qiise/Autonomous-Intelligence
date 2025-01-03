@@ -1,5 +1,7 @@
 # Assign Task
-::: fsdk.api.Anote.assign_task options: show_source: false
+::: fsdk.api.Anote.assign_task
+    options:
+        show_source: false
 
 Sample usage:
 

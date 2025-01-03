@@ -1,5 +1,7 @@
 # List Agents
-::: fsdk.api.Anote.list_agents options: show_source: false
+::: fsdk.api.Anote.list_agents
+    options:
+        show_source: false
 
 Sample usage:
 

@@ -1,5 +1,7 @@
 # Get Task Status
-::: fsdk.api.Anote.get_task_status options: show_source: false
+::: fsdk.api.Anote.get_task_status
+    options:
+      show_source: false
 
 Sample usage:
 
