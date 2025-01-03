@@ -1,5 +1,3 @@
-## 3. `api-overview/task.md`
-
 # Tasks
 
 A **Task** is a discrete assignment or job for an Agent to execute. Tasks contain:
