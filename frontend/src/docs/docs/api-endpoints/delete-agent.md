@@ -1,5 +1,7 @@
 # Delete Agent
-::: fsdk.api.Anote.delete_agent options: show_source: false
+::: fsdk.api.Anote.delete_agent
+    options:
+        show_source: false
 
 Sample usage:
 

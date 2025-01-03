@@ -28,10 +28,16 @@ nav:
       - Crews: api-overview/crews.md
       - Tools: api-overview/tools.md
       - Workflows: api-overview/workflows.md
-      - Upload: api-overview/upload.md
-      - Fine Tune: api-overview/finetune.md
-      - Chat: api-overview/chat.md
-      - Evaluate: api-overview/evaluate.md
+    - API Endpoints:
+      - Upload: api-endpoints/upload.md
+      - Fine Tune: api-endpoints/finetune.md
+      - Chat: api-endpoints/chat.md
+      - Evaluate: api-endpoints/evaluate.md
+      - Create Agent: api-endpoints/create-agent.md
+      - List Agents: api-endpoints/list-agents.md
+      - Delete Agents: api-endpoints/delete-agent.md
+      - Assign Tasks: api-endpoints/assign-task.md
+      - Get Task Status: api-endpoints/get-task-status.md
     - SDK Examples:
       - Defining Agents: api-qa/example1.md
       - Defining Tasks: api-qa/example2.md
