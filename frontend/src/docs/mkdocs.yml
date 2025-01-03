@@ -23,26 +23,29 @@ nav:
   - AI Agent SDK:
     - Overview: api-overview/setup.md
     - Getting Started:
+      - Agents: api-overview/agent.md
+      - Tasks: api-overview/task.md
+      - Crews: api-overview/crews.md
+      - Tools: api-overview/tools.md
+      - Workflows: api-overview/workflows.md
       - Upload: api-overview/upload.md
       - Fine Tune: api-overview/finetune.md
       - Chat: api-overview/chat.md
-      - Predict: api-overview/predict.md
       - Evaluate: api-overview/evaluate.md
     - SDK Examples:
-      - Q&A from Edgar: api-qa/example1.md
-      - Q&A from Uploaded Files: api-qa/example2.md
-      - Q&A in Multiple Languages: api-qa/example3.md
-      - Q&A with websites: api-qa/example4.md
-      - Q&A with fine tuning: api-qa/example5.md
-      - Developer API: "7_developer_api.md"
+      - Defining Agents: api-qa/example1.md
+      - Defining Tasks: api-qa/example2.md
+      - Building Teams of Agents: api-qa/example3.md
+      - Giving Agents Tools: api-qa/example4.md
+      - Building Agentic Workflows: api-qa/example5.md
+      - Chatting With Predefined Agents: "7_developer_api.md"
     - SDK Use Cases:
-      - Baseline Models: api-prompting/example1.md
-      - Supervised: api-prompting/example2.md
-      - Supervised Methods: api-prompting/example3.md
-      - Unsupervised: api-prompting/example4.md
+      - Financial Analysis: api-usecase/example1.md
+      - Event Coordination: api-usecase/example2.md
     - Private SDK:
-      - Installation (Private): privategpt/installation.md
-      - Upload (Private): api-overview/upload-private.md
+      - Installation (Private): api-private/installation-private.md
+      - Upload (Private): api-private/upload-private.md
+      - Chat (Private): api-private/chat-private.md
   - Use Cases:
       - Autonomous AI Coding Agent: "11_autonomous_ai_coding_agent.md"
       - Autonomous AI Sales Agent: "11_autonomous_ai_sales_agent.md"
