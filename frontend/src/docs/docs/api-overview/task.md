@@ -1,12 +1,39 @@
 # Tasks
 
-A **Task** is a discrete assignment or job for an Agent to execute. Tasks contain:
-- A description of the work
-- Expected output
-- Optional input requirements
-- References to Tools or data
+A **Task** is a discrete assignment or job for an Agent to execute. Tasks contain a description of the work, expected output, optional input requirements, and references to tools or data.
 
-## 1. Basic Task Definition
+::: fsdk.anote-sdk.Task
+     <!-- options:
+        show_source: false -->
+
+### Tasks Fields
+- **instructions**: The main prompt or directive (e.g., `"Summarize Q3 earnings"`).
+- **files_uploaded**: File paths or IDs relevant to the Task (e.g., `["report_Q3_2023.pdf"]`).
+- **examples**: Optional few-shot examples or reference data.
+- **expected_output**: The form or content of the final result (e.g., `"Return a markdown summary"`).
+- **agent**: The Agent to which this Task is assigned.
+
+Example:
+
+``` python
+from anote_agents import Task
+
+task = Task(
+    instructions="Summarize the Q3 earnings from the attached PDF.",
+    files_uploaded=["report_Q3_2023.pdf"],
+    examples=["In Q2, we saw a 12% increase in revenue..."],
+    expected_output="Short text summary with key figures.",
+    agent=None
+)
+```
+
+#### Examples of Task Usage
+Scheduling: “Find the best meeting times with {participant_count} participants.”
+Research: “Gather references on quantum computing breakthroughs since 2020.”
+
+If using structured outputs, define output_json for validation and type safety.
+
+Example 2:
 
 ```python
 from anote_agents import Task
@@ -18,17 +45,3 @@ data_analysis_task = Task(
     agent=None  # Agent can be assigned later
 )
 ```
-
-Parameters
-description (str): What the Task requires.
-expected_output (str): Clarifies the form or content of the result.
-human_input (bool): If True, indicates user must provide input (e.g., a prompt).
-output_json (Optional Pydantic model): Validates output structure.
-output_file (Optional str): Saves the Agent’s result to a file.
-agent (Agent): The Agent responsible for executing this Task.
-2. Examples of Task Usage
-Scheduling: “Find the best meeting times with {participant_count} participants.”
-Research: “Gather references on quantum computing breakthroughs since 2020.”
-3. Tips
-Use placeholders ({placeholder_name}) in description to dynamically inject input data at runtime.
-If using structured outputs, define a Pydantic model in output_json for validation and type safety.
