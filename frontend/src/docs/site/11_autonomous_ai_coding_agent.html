@@ -681,73 +681,55 @@
 </ul>
 <h3 id="workflow-breakdown"><strong>Workflow Breakdown</strong></h3>
 <p>Let's go over a workflow where an AI agent autonomously identifies potential new features, writes the necessary code, integrates it into the codebase, and submits a pull request to the GitHub repository.</p>
-<ol>
-<li><strong>Codebase Backup</strong>:</li>
-<li>
-<p>The user provides a GitHub access token and a github repository link. The AI creates a secure backup of the local codebase to ensure rollback options.</p>
-</li>
-<li>
-<p><strong>Feature Identification</strong>:</p>
-</li>
-<li>
-<p>The <strong>Product Manager Agent</strong> analyzes the codebase and suggests potential new features.</p>
-</li>
-<li>
-<p><strong>Feature Implementation</strong>:</p>
-</li>
-<li>
-<p>The <strong>Software Engineer Agent</strong> writes the code for the new feature.</p>
-</li>
-<li>
-<p><strong>Code Review</strong>:</p>
-</li>
-<li>
-<p>The <strong>Code Reviewer Agent</strong> inspects the code for bugs, inefficiencies, and adherence to coding standards.</p>
-</li>
-<li>
-<p><strong>Feature Integration</strong>:</p>
-</li>
-<li>
-<p>The <strong>Section Manager Agent</strong> integrates the new feature into the codebase.</p>
-</li>
-<li>
-<p><strong>Testing and Deployment</strong>:</p>
-</li>
+<p>A. <strong>Codebase Backup</strong>:</p>
+<ul>
+<li>The user provides a GitHub access token and a github repository link. The AI creates a secure backup of the local codebase to ensure rollback options.</li>
+</ul>
+<p>B. <strong>Feature Identification</strong>:</p>
+<ul>
+<li>The <strong>Product Manager Agent</strong> analyzes the codebase and suggests potential new features.</li>
+</ul>
+<p>C. <strong>Feature Implementation</strong>:</p>
+<ul>
+<li>The <strong>Software Engineer Agent</strong> writes the code for the new feature.</li>
+</ul>
+<p>D. <strong>Code Review</strong>:</p>
+<ul>
+<li>The <strong>Code Reviewer Agent</strong> inspects the code for bugs, inefficiencies, and adherence to coding standards.</li>
+</ul>
+<p>E. <strong>Feature Integration</strong>:</p>
+<ul>
+<li>The <strong>Section Manager Agent</strong> integrates the new feature into the codebase.</li>
+</ul>
+<p>F. <strong>Testing and Deployment</strong>:</p>
+<ul>
 <li>Tests the implemented feature to ensure functionality.</li>
-<li>
-<p>Creates a pull request on the specified GitHub repository.</p>
-</li>
-<li>
-<p><strong>Backup Restoration</strong>:</p>
-</li>
+<li>Creates a pull request on the specified GitHub repository.</li>
+</ul>
+<p>G. <strong>Backup Restoration</strong>:</p>
+<ul>
 <li>Restores the original backup if errors arise during the process.</li>
-</ol>
+</ul>
 <h3 id="example-use-case"><strong>Example Use Case</strong></h3>
 <h4 id="user-query"><strong>User Query</strong>:</h4>
 <p>"Analyze this codebase and implement a feature that tracks user activity and logs it into a database."</p>
 <h3 id="teams-of-agents"><strong>Teams of Agents</strong></h3>
-<ol>
-<li><strong>Product Manager Agent</strong>:</li>
-<li>
-<p>Identifies the need for user activity tracking and creates a task description.</p>
-</li>
-<li>
-<p><strong>Software Engineer Agent</strong>:</p>
-</li>
-<li>
-<p>Writes the Python code to track user activity and log it to a database.</p>
-</li>
-<li>
-<p><strong>Code Reviewer Agent</strong>:</p>
-</li>
-<li>
-<p>Validates the code for potential bugs, inefficiencies, and adherence to best practices.</p>
-</li>
-<li>
-<p><strong>Section Manager Agent</strong>:</p>
-</li>
+<p>A. <strong>Product Manager Agent</strong>:</p>
+<ul>
+<li>Identifies the need for user activity tracking and creates a task description.</li>
+</ul>
+<p>B. <strong>Software Engineer Agent</strong>:</p>
+<ul>
+<li>Writes the Python code to track user activity and log it to a database.</li>
+</ul>
+<p>C. <strong>Code Reviewer Agent</strong>:</p>
+<ul>
+<li>Validates the code for potential bugs, inefficiencies, and adherence to best practices.</li>
+</ul>
+<p>D. <strong>Section Manager Agent</strong>:</p>
+<ul>
 <li>Integrates the new feature into the main codebase and creates a pull request.</li>
-</ol>
+</ul>
 <h3 id="workflow"><strong>Workflow</strong></h3>
 <h4 id="step-1-initial-query"><strong>Step 1: Initial Query</strong></h4>
 <ul>
@@ -768,28 +750,22 @@
 <li>Review, test, and deploy the feature.</li>
 </ul>
 <h4 id="step-3-task-execution"><strong>Step 3: Task Execution</strong></h4>
-<ol>
-<li><strong>Feature Analysis</strong>:</li>
-<li>
-<p><strong>Product Manager Agent</strong> scans the codebase and identifies user activity tracking as a valuable addition.</p>
-</li>
-<li>
-<p><strong>Feature Implementation</strong>:</p>
-</li>
-<li>
-<p><strong>Software Engineer Agent</strong> writes a Python function to log user activity into a database or simulate such logging.</p>
-</li>
-<li>
-<p><strong>Code Review</strong>:</p>
-</li>
-<li>
-<p><strong>Code Reviewer Agent</strong> checks for vulnerabilities, syntax errors, and performance inefficiencies.</p>
-</li>
-<li>
-<p><strong>Integration</strong>:</p>
-</li>
+<p>A. <strong>Feature Analysis</strong>:</p>
+<ul>
+<li><strong>Product Manager Agent</strong> scans the codebase and identifies user activity tracking as a valuable addition.</li>
+</ul>
+<p>B. <strong>Feature Implementation</strong>:</p>
+<ul>
+<li><strong>Software Engineer Agent</strong> writes a Python function to log user activity into a database or simulate such logging.</li>
+</ul>
+<p>C. <strong>Code Review</strong>:</p>
+<ul>
+<li><strong>Code Reviewer Agent</strong> checks for vulnerabilities, syntax errors, and performance inefficiencies.</li>
+</ul>
+<p>D. <strong>Integration</strong>:</p>
+<ul>
 <li><strong>Section Manager Agent</strong> integrates the feature into the codebase and creates a pull request.</li>
-</ol>
+</ul>
 <h4 id="step-4-testing-and-iteration"><strong>Step 4: Testing and Iteration</strong></h4>
 <ul>
 <li>Tests the feature for functionality and usability.</li>
