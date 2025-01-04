@@ -14,26 +14,33 @@ The **Autonomous AI Coding Agent**  is designed to streamline the software devel
 ### **Workflow Breakdown**
 Let's go over a workflow where an AI agent autonomously identifies potential new features, writes the necessary code, integrates it into the codebase, and submits a pull request to the GitHub repository.
 
-1. **Codebase Backup**:
+A. **Codebase Backup**:
+
    - The user provides a GitHub access token and a github repository link. The AI creates a secure backup of the local codebase to ensure rollback options.
 
-2. **Feature Identification**:
+B. **Feature Identification**:
+
    - The **Product Manager Agent** analyzes the codebase and suggests potential new features.
 
-3. **Feature Implementation**:
+C. **Feature Implementation**:
+
    - The **Software Engineer Agent** writes the code for the new feature.
 
-4. **Code Review**:
+D. **Code Review**:
+
    - The **Code Reviewer Agent** inspects the code for bugs, inefficiencies, and adherence to coding standards.
 
-5. **Feature Integration**:
+E. **Feature Integration**:
+
    - The **Section Manager Agent** integrates the new feature into the codebase.
 
-6. **Testing and Deployment**:
+F. **Testing and Deployment**:
+
    - Tests the implemented feature to ensure functionality.
    - Creates a pull request on the specified GitHub repository.
 
-7. **Backup Restoration**:
+G. **Backup Restoration**:
+
    - Restores the original backup if errors arise during the process.
 
 ### **Example Use Case**
@@ -43,16 +50,20 @@ Let's go over a workflow where an AI agent autonomously identifies potential new
 
 ### **Teams of Agents**
 
-1. **Product Manager Agent**:
+A. **Product Manager Agent**:
+
    - Identifies the need for user activity tracking and creates a task description.
 
-2. **Software Engineer Agent**:
+B. **Software Engineer Agent**:
+
    - Writes the Python code to track user activity and log it to a database.
 
-3. **Code Reviewer Agent**:
+C. **Code Reviewer Agent**:
+
    - Validates the code for potential bugs, inefficiencies, and adherence to best practices.
 
-4. **Section Manager Agent**:
+D. **Section Manager Agent**:
+
    - Integrates the new feature into the main codebase and creates a pull request.
 
 ### **Workflow**
@@ -72,16 +83,20 @@ Let's go over a workflow where an AI agent autonomously identifies potential new
 
 #### **Step 3: Task Execution**
 
-1. **Feature Analysis**:
+A. **Feature Analysis**:
+
    - **Product Manager Agent** scans the codebase and identifies user activity tracking as a valuable addition.
 
-2. **Feature Implementation**:
+B. **Feature Implementation**:
+
    - **Software Engineer Agent** writes a Python function to log user activity into a database or simulate such logging.
 
-3. **Code Review**:
+C. **Code Review**:
+
    - **Code Reviewer Agent** checks for vulnerabilities, syntax errors, and performance inefficiencies.
 
-4. **Integration**:
+D. **Integration**:
+
    - **Section Manager Agent** integrates the feature into the codebase and creates a pull request.
 
 #### **Step 4: Testing and Iteration**
