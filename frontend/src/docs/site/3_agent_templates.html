@@ -6,12 +6,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Collaborative Multi Agentic AI Framework." name="description"/>
-<link href="https://docs.privatechatbot.ai/4_orchestration.html" rel="canonical"/>
-<link href="4_task_execution.html" rel="prev"/>
-<link href="6_chat_based_interface.html" rel="next"/>
+<link href="https://docs.privatechatbot.ai/3_agent_templates.html" rel="canonical"/>
+<link href="2_key_components.html" rel="prev"/>
+<link href="3_agent_environment.html" rel="next"/>
 <link href="images/logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.3, mkdocs-material-9.1.15" name="generator"/>
-<title>Orchestration - Panacea</title>
+<title>Agent Templates - Panacea</title>
 <link href="assets/stylesheets/main.26e3688c.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#orchestration">
+<a class="md-skip" href="#agent-templates">
           Skip to content
         </a>
 </div>
@@ -51,7 +51,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Orchestration
+              Agent Templates
             
           </span>
 </div>
@@ -136,13 +136,13 @@
         Overview
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
           Agent Design
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
           Agent Design
@@ -153,10 +153,37 @@
         Key Components
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="3_agent_templates.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Agent Templates
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="3_agent_templates.html">
         Agent Templates
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-agents">
+    Custom Agents
+  </a>
+<nav aria-label="Custom Agents" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-custom-agent">
+    Creating a Custom Agent
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="3_agent_environment.html">
@@ -166,13 +193,13 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
           Workflow Management
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
           Workflow Management
@@ -183,33 +210,10 @@
         Task Execution
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Orchestration
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="4_orchestration.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="4_orchestration.html">
         Orchestration
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#orchestration-process">
-    Orchestration Process
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#orchestrator-features">
-    Orchestrator Features
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -547,14 +551,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#orchestration-process">
-    Orchestration Process
+<a class="md-nav__link" href="#custom-agents">
+    Custom Agents
+  </a>
+<nav aria-label="Custom Agents" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-a-custom-agent">
+    Creating a Custom Agent
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#orchestrator-features">
-    Orchestrator Features
-  </a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -563,25 +571,26 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="orchestration">Orchestration</h1>
-<p>The orchestrator plays a pivotal role in managing workflows. It interprets user queries, breaks them down into actionable tasks, and assigns these tasks to the appropriate agents. The orchestrator ensures that tasks are distributed efficiently, optimizing workflow execution and ensuring timely completion.</p>
-<p><img alt="System Architecture Diagram" src="images/orchestrator.png"/></p>
-<p>The orchestrator ensures that tasks are distributed efficiently, optimizing workflow execution and ensuring timely completion.</p>
-<h2 id="orchestration-process">Orchestration Process</h2>
-<p>Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time. The following process is how this works:</p>
-<ol>
-<li><strong>Query Interpretation</strong>: The orchestrator parses the natural language query to understand the user's intent and extract relevant entities.</li>
-<li><strong>Task Breakdown</strong>: The query is decomposed into smaller, manageable tasks that can be assigned to individual agents.</li>
-<li><strong>Task Assignment</strong>: Tasks are allocated to the appropriate agents based on their specialization and current workload.</li>
-<li><strong>Monitoring and Adjustment</strong>: The orchestrator monitors task execution, making adjustments as necessary to handle delays or errors.</li>
-</ol>
-<h2 id="orchestrator-features">Orchestrator Features</h2>
+<h1 id="agent-templates">Agent Templates</h1>
+<p>We provide a few example agent templates, which can be called. Examples include:</p>
 <ul>
-<li><strong>Intelligent Routing</strong>: Utilizes AI to determine the most efficient agent for each task.</li>
-<li><strong>Dynamic Scaling</strong>: Adjusts the number of active agents based on task volume and complexity.</li>
-<li><strong>Failure Recovery</strong>: Implements strategies to recover from agent failures, ensuring workflow continuity.</li>
-<li><strong>Performance Optimization</strong>: Continuously analyzes workflow performance to identify and eliminate bottlenecks.</li>
+<li><strong>Web Surfer Agent</strong>: Navigates the web to gather information based on user queries.</li>
+<li><strong>Coder Agent</strong>: Writes code and reasons to solve tasks.</li>
+<li><strong>Computer Terminal Agent</strong>: Executes code written by the coder agent.</li>
+<li><strong>File Reader Agent</strong>: Processes and extracts data from various file formats.</li>
+<li><strong>Email Automation Agent</strong>: Automates the sending, organizing, and managing of emails.</li>
+<li><strong>Data Analyst Agent</strong>: Analyzes data sets to generate insights and provide analytics.</li>
 </ul>
+<p><img alt="System Architecture Diagram" src="images/agenttypes.png"/></p>
+<h2 id="custom-agents">Custom Agents</h2>
+<p>In addition to predefined agents, we allow users to create custom agents tailored to specific needs. This flexibility ensures that Panacea can adapt to a wide range of tasks and industries.</p>
+<h3 id="creating-a-custom-agent">Creating a Custom Agent</h3>
+<ol>
+<li><strong>Define the Agent's Purpose</strong>: Determine the specific task or function the agent will perform.</li>
+<li><strong>Configure Capabilities</strong>: Set up the tools and resources the agent will require.</li>
+<li><strong>Set Communication Protocols</strong>: Define how the agent will interact with other agents and the orchestrator.</li>
+<li><strong>Deploy the Agent</strong>: Launch the agent within the Panacea environment, ready to execute tasks.</li>
+</ol>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
