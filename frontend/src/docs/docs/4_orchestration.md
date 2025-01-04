@@ -2,9 +2,13 @@
 
 The orchestrator plays a pivotal role in managing workflows. It interprets user queries, breaks them down into actionable tasks, and assigns these tasks to the appropriate agents. The orchestrator ensures that tasks are distributed efficiently, optimizing workflow execution and ensuring timely completion.
 
-![System Architecture Diagram](images/tasks.png)
+![System Architecture Diagram](images/orchestrator.png)
+
+The orchestrator ensures that tasks are distributed efficiently, optimizing workflow execution and ensuring timely completion.
 
 ## Orchestration Process
+
+Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time. The following process is how this works:
 
 1. **Query Interpretation**: The orchestrator parses the natural language query to understand the user's intent and extract relevant entities.
 2. **Task Breakdown**: The query is decomposed into smaller, manageable tasks that can be assigned to individual agents.
