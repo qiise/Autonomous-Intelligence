@@ -1,19 +1,14 @@
 # Introduction
+Autonomous Intelligence is an open-sourced, research-driven initiative aimed at building collaborative multi-agent AI systems. By combining modular design principles and cutting-edge machine learning techniques, this project empowers developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
 
-Welcome to **Panacea**, an innovative autonomous multi-agent AI framework designed to simplify and optimize complex workflows. Panacea empowers individuals and organizations to automate tasks through a network of specialized AI agents that collaborate seamlessly to achieve your goals efficiently and privately.
+### General Purpose Multi-Agent AI Framework
 
-## Purpose
+The framework provides a robust infrastructure for creating and managing multiple AI agents. It enables seamless collaboration between agents to tackle complex tasks, dynamically adapting to user inputs and changing conditions.
 
-Panacea transforms how you interact with technology by leveraging autonomous multi-agent systems. Whether you're an individual seeking to automate routine tasks or an enterprise aiming to enhance operational efficiency, Panacea offers a flexible and secure solution. Our platform allows you to run agents locally or privately, ensuring your data remains under your control while benefiting from advanced AI-driven automation.
+![System Architecture Diagram](images/home.png)
 
-![System Architecture Diagram](images/agent_introduction.png)
+### Domain Specific Agent Registry
 
-## Features
+The registry offers a catalog of prebuilt agents optimized for specific domains, such as coding, data analysis, and natural language processing. This allows users to quickly integrate tailored solutions into their workflows without extensive setup.
 
-- **Autonomous Agents**: Specialized AI agents that handle distinct tasks independently.
-- **Seamless Collaboration**: Agents work together to manage and execute complex workflows.
-- **Flexible Deployment**: Run Panacea locally or within your private infrastructure.
-- **Secure and Private**: Maintain full control over your data with robust security measures.
-- **Scalable Architecture**: Easily scale your automation capabilities as your needs grow.
-- **User-Friendly Interface**: Intuitive chat-based UI for effortless interaction and task management.
-- **Comprehensive API**: Integrate Panacea with existing systems and develop custom solutions.
+![System Architecture Diagram](images/registry.png)
