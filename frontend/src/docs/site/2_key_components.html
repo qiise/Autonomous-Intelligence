@@ -8,7 +8,7 @@
 <meta content="Collaborative Multi Agentic AI Framework." name="description"/>
 <link href="https://docs.privatechatbot.ai/2_key_components.html" rel="canonical"/>
 <link href="2_system_architecture_overview.html" rel="prev"/>
-<link href="3_agent_types.html" rel="next"/>
+<link href="3_agent_templates.html" rel="next"/>
 <link href="images/logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.3, mkdocs-material-9.1.15" name="generator"/>
 <title>Key Components - Panacea</title>
@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#key-components">
+<a class="md-skip" href="#core-components">
           Skip to content
         </a>
 </div>
@@ -136,30 +136,27 @@
         Overview
       </a>
 </li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Agent Design
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Agent Design
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <a class="md-nav__link md-nav__link--active" href="2_key_components.html">
         Key Components
       </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Agent Design
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_3">
-<span class="md-nav__icon md-icon"></span>
-          Agent Design
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="3_agent_types.html">
-        Agent Types
+<a class="md-nav__link" href="3_agent_templates.html">
+        Agent Templates
       </a>
 </li>
 <li class="md-nav__item">
@@ -171,13 +168,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
           Workflow Management
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
           Workflow Management
         </label>
@@ -195,19 +192,14 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="5_communication_framework.html">
-        Communication Framework
-      </a>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
           User Interface
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
 <span class="md-nav__icon md-icon"></span>
           User Interface
         </label>
@@ -225,39 +217,237 @@
 </ul>
 </nav>
 </li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-          API and Enterprise Features
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          AI Agent SDK
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          API and Enterprise Features
+          AI Agent SDK
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="7_developer_api.html">
-        Developer API
+<a class="md-nav__link" href="api-overview/setup.html">
+        Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-overview/agent.html">
+        Agents
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="7_enterprise_solutions.html">
-        Enterprise Solutions
+<a class="md-nav__link" href="api-overview/task.html">
+        Tasks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-overview/crews.html">
+        Crews
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-overview/tools.html">
+        Tools
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-overview/workflows.html">
+        Workflows
       </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          API Endpoints
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          API Endpoints
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/upload.html">
+        Upload
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/finetune.html">
+        Fine Tune
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/chat.html">
+        Chat
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/evaluate.html">
+        Evaluate
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/create-agent.html">
+        Create Agent
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/list-agents.html">
+        List Agents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/delete-agent.html">
+        Delete Agents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/assign-task.html">
+        Assign Tasks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-endpoints/get-task-status.html">
+        Get Task Status
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          SDK Examples
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+          SDK Examples
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-qa/example1.html">
+        Defining Agents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-qa/example2.html">
+        Defining Tasks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-qa/example3.html">
+        Building Teams of Agents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-qa/example4.html">
+        Giving Agents Tools
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-qa/example5.html">
+        Building Agentic Workflows
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="7_developer_api.html">
+        Chatting With Predefined Agents
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          SDK Use Cases
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+          SDK Use Cases
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-usecase/example1.md">
+        Financial Analysis
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-usecase/example2.md">
+        Event Coordination
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          Private SDK
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+          Private SDK
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-private/installation-private.md">
+        Installation (Private)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-private/upload-private.md">
+        Upload (Private)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="api-private/chat-private.md">
+        Chat (Private)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Use Cases
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_8">
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Use Cases
         </label>
@@ -286,13 +476,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Deployment
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_9">
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
           Deployment
         </label>
@@ -335,17 +525,54 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="key-components">Key Components</h1>
-<p>Panacea comprises several integral components that work together to provide a robust and efficient automation framework:</p>
-<ul>
-<li><strong>Interface</strong>: The user-facing component where natural language queries are inputted. It serves as the bridge between human instructions and the orchestrator.</li>
-<li><strong>Orchestrator</strong>: The central unit that interprets user queries, divides tasks, and assigns them to the appropriate agents.</li>
-<li><strong>Nodes (Agents)</strong>: Autonomous AI agents, each specialized in handling specific tasks.</li>
-<li><strong>Edges</strong>: Communication channels that facilitate interaction and data exchange between agents.</li>
-<li><strong>Environment</strong>: The workspace for each agent, equipped with the necessary resources and requirements to perform its designated tasks.</li>
-<li><strong>Logging and Monitoring</strong>: Systems that track agent activities, providing transparency and insights into workflow processes.</li>
-</ul>
-<p><img alt="System Architecture Diagram" src="images/agent1.png"/></p>
+<h1 id="core-components">Core Components</h1>
+<p>Our agentic AI framework comprises of several core components:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Orchestrator</strong></td>
+<td>Central hub for task assignment, execution, and monitoring. Manages agent interactions and refines workflows dynamically.</td>
+</tr>
+<tr>
+<td><strong>Agent</strong></td>
+<td>An autonomous unit programmed to perform tasks, make decisions, and communicate with other agents.</td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>A specific assignment completed by an agent, providing all necessary details like description, tools, and responsibilities.</td>
+</tr>
+<tr>
+<td><strong>Crew</strong></td>
+<td>A collaborative group of agents working together to achieve a set of tasks. Crews define strategies for task execution and agent collaboration.</td>
+</tr>
+<tr>
+<td><strong>Process Implementations</strong></td>
+<td>Frameworks for agent collaboration. This includes sequential tasks that are executed in an orderly progression, or hierarchical tasks are managed via a structured chain of command</td>
+</tr>
+<tr>
+<td><strong>Large Language Models (LLMs)</strong></td>
+<td>Backbone of intelligent agents, enabling capabilities like natural language understanding and reasoning. Includes models like GPT, Claude, Mistral, Gemini, and Llama that are Optimized for complex workflows.</td>
+</tr>
+<tr>
+<td><strong>Tool</strong></td>
+<td>A skill or function agents use to perform actions, that includes capabilities like search, computer use, data extraction, file uploading and advanced interactions.</td>
+</tr>
+<tr>
+<td><strong>Agent Registry</strong></td>
+<td>A structured catalog organizing agents by domain, task type, and functionality, allowing users to deploy agents seamlessly.</td>
+</tr>
+<tr>
+<td><strong>Frontend Interface</strong></td>
+<td>Drag-and-drop visual workflow builder and real-time dashboards for monitoring, debugging, and optimizing agent performance.</td>
+</tr>
+</tbody>
+</table>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
