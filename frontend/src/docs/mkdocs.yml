@@ -11,12 +11,11 @@ nav:
       - Overview: "2_system_architecture_overview.md"
       - Agent Design:
           - Key Components: "2_key_components.md"
-          - Agent Types: "3_agent_types.md"
+          - Agent Templates: "3_agent_templates.md"
           - Agent Environment: "3_agent_environment.md"
       - Workflow Management:
           - Task Execution: "4_task_execution.md"
           - Orchestration: "4_orchestration.md"
-          - Communication Framework: "5_communication_framework.md"
       - User Interface:
           - Chat-Based Interface: "6_chat_based_interface.md"
           - Agent Creation: "6_agent_creation.md"
