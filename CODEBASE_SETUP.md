@@ -33,8 +33,6 @@ $ npm start
 
 Navigate to localhost on your browser, and it should look like this.
 
-![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/frontend.png?raw=True)
-
 **3. Backend - Setting up python environment**
 
 To best manage Python libraries and dependencies, use a [conda virtual environment](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
