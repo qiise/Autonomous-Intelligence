@@ -1,6 +1,6 @@
 # Autonomous Intelligence
 
-[Autonomous Intelligence](https://privatechatbot.ai/) is an open source research project aimed at building collaborative multi-agent AI systems. This project empowers developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
+[Autonomous Intelligence](https://privatechatbot.ai/) is an open source research project aimed at building collaborative multi-agent AI systems. The agentic framework provides a robust infrastructure for creating and managing multiple AI agents, and enables developers and organizations to build, deploy, and optimize AI agents that work well in dynamic, complex environments.
 
 ## Product Overview
 
