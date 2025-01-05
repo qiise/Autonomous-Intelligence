@@ -8,7 +8,7 @@ $ git clone https://github.com/nv78/Autonomous-Intelligence
 ```
 You should have a folder that looks as follows:
 
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/directory.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/directory.png?raw=True)
 
 **2. Frontend - setting up React**
 
@@ -33,7 +33,7 @@ $ npm start
 
 Navigate to localhost on your browser, and it should look like this.
 
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/frontend.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/frontend.png?raw=True)
 
 **3. Backend - Setting up python environment**
 
@@ -65,7 +65,7 @@ $ flask run
 ```
 
 You should get an output in your terminal:
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/flask.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/flask.png?raw=True)
 
 **4. Setting up MySQL environment**
 
@@ -93,7 +93,7 @@ mysql> show tables;
 ```
 
 It should look like this:
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/sqltable.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/sqltable.png?raw=True)
 
 **5. Running the Application**
 To run the web app, you need two terminal windows/tabs. On one, you will run the frontend: 
@@ -113,12 +113,12 @@ $ flask run
 ```
 You will also need to get the API key locally. To do so, run the frontend, log in, then click your profile and select API:
 
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/nav.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/nav.png?raw=True)
 
 Create a new API key and store this somewhere
 To test the SDK locally, you will need this API key. Replace it on line 15.
 
-![directory](https://github.com/nv78/Anote/blob/main/materials/images/codebase/sdk.png?raw=True)
+![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/sdk.png?raw=True)
 
 **7. Common bugs/debugging techniques**
 
