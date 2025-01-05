@@ -90,7 +90,7 @@ Within the Agent Registry, we will be adding many domain specific agents. Here a
 
 ### Set Up
 
-We provide the setup instructions in `materials/codebase_setup.pdf`
+We provide the setup instructions in ```CODEBASE_SETUP.md``` 
 
 ### Ways to Use
 1. **Run on the Web**: Access the product UI for direct interaction.
