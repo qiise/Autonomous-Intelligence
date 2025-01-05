@@ -31,9 +31,7 @@ Once that is done, to start the frontend:
 $ npm start
 ```
 
-Navigate to localhost on your browser, and it should look like this:
-
-![directory](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/codebase/frontend.png?raw=True)
+Navigate to localhost on your browser, and you should see the frontend rendered.
 
 **3. Backend - Setting up python environment**
 
