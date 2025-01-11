@@ -61,14 +61,8 @@ export function APISKeyDashboard() {
           <h1 className="dashboard-title font-bold">API Key Dashboard</h1>
         </div>
         <div className="button-container">
-          <button
-            className="generate-button btn-yellow"
-            onClick={handleGenerateAPIKeys}
-          >
-            Create New API Key
-          </button>
         </div>
-        <div className="api-keys-container">
+        <div className="api-keys-container overflow-auto max-h-96">
           {apiKeys.length > 0 && (
             <Table className="api-keys-table" hoverable>
               <Table.Head>
@@ -89,7 +83,7 @@ export function APISKeyDashboard() {
 "
                   >
                     {/* <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">{apiKey.key_name}</Table.Cell> */}
-                    <Table.Cell className="whitespace-nowrap font-medium dark:text-white">
+                    <Table.Cell key={apiKey.id} className="whitespace-nowrap font-medium dark:text-white">
                       {apiKey.key}
                     </Table.Cell>
                     <Table.Cell>{apiKey.created}</Table.Cell>
