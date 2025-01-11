@@ -34,10 +34,11 @@ export function APISKeyDashboard() {
     // Handle the success or error notification for copying if required
   };
 
-  useEffect(() => {
-    dispatch(getAPIKeys());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getAPIKeys());
+  // }, [dispatch]);
 
+  // unused func 
   const lastUsedDisplay = (lastUsed) => {
     return lastUsed ? lastUsed : "Never";
   };
@@ -61,6 +62,11 @@ export function APISKeyDashboard() {
           <h1 className="dashboard-title font-bold">API Key Dashboard</h1>
         </div>
         <div className="button-container">
+        </div>
+          <div onClick={handleGenerateAPIKeys} className="button-container">
+      
+            Create New API Key
+         
         </div>
         <div className="api-keys-container overflow-auto max-h-96">
           {apiKeys.length > 0 && (
