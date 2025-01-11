@@ -91,9 +91,9 @@ function MainNav(props) {
           <Dropdown.Item onClick={() => navigate(accountPath)} className="text-white hover:text-black">
             Account
           </Dropdown.Item>
-          {/* <Dropdown.Item onClick={() => navigate(apiKeyDashboardPath)} className="text-white hover:text-black">
+          <Dropdown.Item onClick={() => navigate(apiKeyDashboardPath)} className="text-white hover:text-black">
             API
-          </Dropdown.Item> */}
+          </Dropdown.Item> 
           <Dropdown.Divider/>
           <Dropdown.Item
             onClick={() =>
