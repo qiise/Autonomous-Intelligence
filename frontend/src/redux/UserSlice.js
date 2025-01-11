@@ -202,10 +202,15 @@ function clearUser(state) {
   state.entities.users.byId = {};
 }
 
+
 function clearApiKeys(state) {
+  if (!state.entities.apiKeys) {
+    state.entities.apiKeys = { byId: {}, allIds: [] };
+  }
   state.entities.apiKeys.allIds = [];
   state.entities.apiKeys.byId = {};
 }
+
 
 export const initialState = {
     // entities holds all normalized data.
