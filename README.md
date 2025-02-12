@@ -5,11 +5,7 @@
 ## Product Overview
 
 ### General Purpose Multi-Agent Framework
-The framework provides a robust infrastructure for creating and managing multiple AI agents. It enables seamless collaboration between agents to tackle complex tasks, dynamically adapting to user inputs and changing conditions.
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/HowItWorksNew.png?raw=true)
-
-### Smart Orchestration
-Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time.
+The framework provides a robust infrastructure for creating and managing multiple AI agents. It enables seamless collaboration between agents to tackle complex tasks, dynamically adapting to user inputs and changing conditions. Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time.
 
 ![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/AgentTemplates.png?raw=true)
 
