@@ -54,7 +54,7 @@ Autonomous Intelligence's architecture is built around a decentralized network o
 6. **Feedback Loop**: User feedback is incorporated to improve the lead generation process, refine email drafts, or adjust selection criteria for future tasks.
 
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Example.png?raw=true)
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/ExampleNew.png?raw=true)
 
 ### Key Features
 
