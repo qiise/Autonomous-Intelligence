@@ -23,8 +23,6 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 Autonomous Intelligence's architecture is built around a decentralized network of specialized agents that work both independently and collaboratively. These agents communicate through defined pathways, managed by an orchestrator that ensures tasks are distributed and executed efficiently.
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/GeneralistNew.png?raw=true)
-
 ### Core Components
 
 | Component                    | Description                                                                                       |
