@@ -60,8 +60,6 @@ Autonomous Intelligence's architecture is built around a decentralized network o
 | **Model-Agnostic Design**  | Supports various models, including OpenAI, Claude, Llama, and Mistral.                        |
 | **Private Deployments**    | Operate securely in local environments with privacy-preserving configurations.                 |
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/SmartOrchestrator.png?raw=true)
-
 ## Use Cases
 
 Within the Agent Registry, we will be adding many domain specific agents. Here are a few example use cases, with corresponding demos:
@@ -79,11 +77,6 @@ Within the Agent Registry, we will be adding many domain specific agents. Here a
 ### Set Up
 
 We provide the setup instructions in ```CODEBASE_SETUP.md``` 
-
-### Ways to Use
-1. **Run on the Web**: Access the product UI for direct interaction.
-2. **Run On-Premise**: Deploy locally for privacy-sensitive workflows.
-3. **Call via API**: Integrate agent capabilities into your own applications using the provided SDK.
 
 ### Stay Connected
 - **Slack**: [Join the community](https://join.slack.com/t/anote-ai/shared_invite/zt-2vdh1p5xt-KWvtBZEprhrCzU6wrRPwNA)
