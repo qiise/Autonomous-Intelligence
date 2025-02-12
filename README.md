@@ -7,12 +7,7 @@
 ### General Purpose Multi-Agent Framework
 The framework provides a robust infrastructure for creating and managing multiple AI agents. It enables seamless collaboration between agents to tackle complex tasks, dynamically adapting to user inputs and changing conditions.
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Generalist.png?raw=true)
-
-### Domain-Specific Agent Registry
-The registry offers a catalog of prebuilt agents optimized for specific domains, such as coding, data analysis, and natural language processing. This allows users to quickly integrate tailored solutions into their workflows without extensive setup.
-
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/Registry.png?raw=true)
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/GeneralistNew.png?raw=true)
 
 ### Smart Orchestration
 Task execution is automated through dynamic selection of the best agents, tools, and workflows for the job. The system handles dependencies, monitors progress, and troubleshoots issues in real time.
@@ -33,7 +28,7 @@ Developers can leverage tools for integrating AI agent functionality into their 
 
 Autonomous Intelligence's architecture is built around a decentralized network of specialized agents that work both independently and collaboratively. These agents communicate through defined pathways, managed by an orchestrator that ensures tasks are distributed and executed efficiently.
 
-![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/HowItWorks.png?raw=true)
+![alt text](https://github.com/nv78/Autonomous-Intelligence/blob/main/materials/assets/HowItWorksNew.png?raw=true)
 
 ### Core Components
 
