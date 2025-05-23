@@ -26,7 +26,7 @@ def get_db_connection():
             conn = mysql.connector.connect(
                 user='root',
                 unix_socket='/var/run/mysqld/mysqld.sock',
-                password = '$tayGo1d',
+                password = 'my password' ,
                 database=dbName,
             )
     else:
