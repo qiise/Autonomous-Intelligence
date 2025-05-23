@@ -3,14 +3,15 @@ import mysql.connector
 from subprocess import Popen, PIPE
 
 dbName = "agents"
-
-process = Popen(['mysql', dbName, '-u', 'root'],
+root_password = '$tayGo1d'
+process = Popen(['mysql', dbName, '-u', 'root', f'-p{root_password}'],
                 stdout=PIPE, stdin=PIPE)
 output = process.communicate(b'source ' + b'schema.sql')[0]
 
 connection = mysql.connector.connect(
     user='root',
-    unix_socket='/tmp/mysql.sock',
+    password=root_password,      # add the root password you set
+    unix_socket='/var/run/mysqld/mysqld.sock',  # correct socket path
     database=dbName,
 )
 
