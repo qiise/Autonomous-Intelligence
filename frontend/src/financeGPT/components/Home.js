@@ -6,7 +6,7 @@ import SidebarChatbot from "./SidebarChatbot";
 import fetcher from "../../http/RequestConfig";
 import ChatbotEdgar from "./chatbot_subcomponents/ChatbotEdgar";
 
-function HomeChatbot() {
+function HomeChatbot({ isLoggedIn }) {
   const [selectedChatId, setSelectedChatId] = useState(null);
   const [forceUpdate, setForceUpdate] = useState(0);
   const [isPrivate, setIsPrivate] = useState(0);
@@ -29,6 +29,10 @@ function HomeChatbot() {
   };
 
   const createNewChat = async () => {
+    if (!isLoggedIn) {
+      alert("Please sign in to save and view your chats.");
+      return;
+    }
     const response = await fetcher("create-new-chat", {
       method: "POST",
       headers: {
@@ -60,27 +64,29 @@ function HomeChatbot() {
 
   return (
     <div className="flex flex-row mt-2">
-      <div className="w-[20%]">
-        <Navbarchatbot
-          selectedChatId={selectedChatId}
-          onChatSelect={handleChatSelect}
-          handleForceUpdate={handleForceUpdate}
-          isPrivate={isPrivate}
-          setIsPrivate={setIsPrivate}
-          setcurrTask={setcurrTask}
-          setTicker={setTicker}
-          currTask={currTask}
-          setConfirmedModelKey={setConfirmedModelKey}
-          confirmedModelKey={confirmedModelKey}
-          setCurrChatName={setCurrChatName}
-          setIsEdit={setIsEdit}
-          setShowChatbot={setShowChatbot}
-          createNewChat={createNewChat}
-          handleChatSelect={handleChatSelect}
-          forceUpdate={forceUpdate}
-        />
-      </div>
-      <div className="w-[60%] mx-4">
+      {isLoggedIn && (
+        <div className="w-[20%]">
+          <Navbarchatbot
+            selectedChatId={selectedChatId}
+            onChatSelect={handleChatSelect}
+            handleForceUpdate={handleForceUpdate}
+            isPrivate={isPrivate}
+            setIsPrivate={setIsPrivate}
+            setcurrTask={setcurrTask}
+            setTicker={setTicker}
+            currTask={currTask}
+            setConfirmedModelKey={setConfirmedModelKey}
+            confirmedModelKey={confirmedModelKey}
+            setCurrChatName={setCurrChatName}
+            setIsEdit={setIsEdit}
+            setShowChatbot={setShowChatbot}
+            createNewChat={createNewChat}
+            handleChatSelect={handleChatSelect}
+            forceUpdate={forceUpdate}
+          />
+        </div>
+      )}
+       <div className={`${isLoggedIn ? "w-[60%] mx-4" : "w-full"}`}>
         {currTask === 0 && (
           <Chatbot
             chat_type={currTask}
@@ -121,25 +127,28 @@ function HomeChatbot() {
           />
         )}
       </div>
-      <div className="w-[20%] mt-2">
-        <SidebarChatbot
-          selectedChatId={selectedChatId}
-          chat_type={currTask}
-          createNewChat={createNewChat}
-          onChatSelect={handleChatSelect}
-          handleForceUpdate={handleForceUpdate}
-          forceUpdate={forceUpdate}
-          setIsPrivate={setIsPrivate}
-          setCurrChatName={setCurrChatName}
-          setcurrTask={setcurrTask}
-          setTicker={setTicker}
-          setShowChatbot={setShowChatbot}
-          setIsEdit={setIsEdit}
-          setConfirmedModelKey={setConfirmedModelKey}
-          relevantChunk={relevantChunk}
-          activeMessageIndex={activeMessageIndex}
-        />
-      </div>
+
+      {isLoggedIn && (
+        <div className="w-[20%] mt-2">
+          <SidebarChatbot
+            selectedChatId={selectedChatId}
+            chat_type={currTask}
+            createNewChat={createNewChat}
+            onChatSelect={handleChatSelect}
+            handleForceUpdate={handleForceUpdate}
+            forceUpdate={forceUpdate}
+            setIsPrivate={setIsPrivate}
+            setCurrChatName={setCurrChatName}
+            setcurrTask={setcurrTask}
+            setTicker={setTicker}
+            setShowChatbot={setShowChatbot}
+            setIsEdit={setIsEdit}
+            setConfirmedModelKey={setConfirmedModelKey}
+            relevantChunk={relevantChunk}
+            activeMessageIndex={activeMessageIndex}
+          />
+        </div>
+      )}
     </div>
   );
 }
