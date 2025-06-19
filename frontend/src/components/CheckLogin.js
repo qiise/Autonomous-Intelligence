@@ -46,10 +46,10 @@ function CheckLogin(props) {
     );
   } else if (!props.showRestrictedRouteRequiringPayments) {
     //mainView = <PaymentsComponent />;
-    mainView = <HomeChatbot />;
+    mainView = <HomeChatbot isLoggedIn={isLoggedIn} />;
   } else {
     // TODO: Replace this with your home page component.
-    mainView = <HomeChatbot />;
+    mainView = <HomeChatbot isLoggedIn={isLoggedIn}/>;
   }
 
   useEffect(() => {
