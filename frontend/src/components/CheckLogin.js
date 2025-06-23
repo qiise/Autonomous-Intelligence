@@ -39,6 +39,8 @@ function CheckLogin(props) {
     navigate(fullPath);
   }
 
+  var mainView = <HomeChatbot isLoggedIn={isLoggedIn} />;
+/*
   var mainView = [];
   if (!isLoggedIn) {
     mainView = (
@@ -51,7 +53,7 @@ function CheckLogin(props) {
     // TODO: Replace this with your home page component.
     mainView = <HomeChatbot isLoggedIn={isLoggedIn}/>;
   }
-
+*/
   useEffect(() => {
     const accessToken = new URLSearchParams(location.search).get("accessToken");
     const refreshToken = new URLSearchParams(location.search).get(
