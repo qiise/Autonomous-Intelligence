@@ -17,6 +17,8 @@ function CheckLogin(props) {
 
   const accessToken = localStorage.getItem("accessToken");
   const sessionToken = localStorage.getItem("sessionToken");
+
+  const isFreeTrial = new URLSearchParams(location.search).get("free") === "true";
   console.log("get access token");
   console.log(accessToken);
   if (accessToken || sessionToken) {
@@ -41,11 +43,11 @@ function CheckLogin(props) {
 
 
   var mainView = [];
-  if (!isLoggedIn) {
-    mainView = <HomeChatbot isLoggedIn={false} />;
-    //mainView = (
-      //<NoUserSession productHash={productHash} freeTrialCode={freeTrialCode} />
-    //);
+  if (!isLoggedIn && !isFreeTrial) {
+    //mainView = <HomeChatbot isLoggedIn={false} />;
+    mainView = (
+      <NoUserSession productHash={productHash} freeTrialCode={freeTrialCode} />
+    );
   } else if (!props.showRestrictedRouteRequiringPayments) {
     //mainView = <PaymentsComponent />;
     mainView = <HomeChatbot isLoggedIn={isLoggedIn} />;
