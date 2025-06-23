@@ -39,13 +39,13 @@ function CheckLogin(props) {
     navigate(fullPath);
   }
 
-  var mainView = <HomeChatbot isLoggedIn={isLoggedIn} />;
-/*
+
   var mainView = [];
   if (!isLoggedIn) {
-    mainView = (
-      <NoUserSession productHash={productHash} freeTrialCode={freeTrialCode} />
-    );
+    mainView = <HomeChatbot isLoggedIn={false} />;
+    //mainView = (
+      //<NoUserSession productHash={productHash} freeTrialCode={freeTrialCode} />
+    //);
   } else if (!props.showRestrictedRouteRequiringPayments) {
     //mainView = <PaymentsComponent />;
     mainView = <HomeChatbot isLoggedIn={isLoggedIn} />;
@@ -53,7 +53,7 @@ function CheckLogin(props) {
     // TODO: Replace this with your home page component.
     mainView = <HomeChatbot isLoggedIn={isLoggedIn}/>;
   }
-*/
+
   useEffect(() => {
     const accessToken = new URLSearchParams(location.search).get("accessToken");
     const refreshToken = new URLSearchParams(location.search).get(
