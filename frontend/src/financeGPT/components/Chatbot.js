@@ -34,7 +34,13 @@ const Chatbot = (props) => {
   }, []);
 
   useEffect(() => {
-    handleLoadChat();
+    if (props.selectedChatId === 0) {
+      if (messages.length ===0) {
+          handleLoadChat();
+      }
+    }else{
+      handleLoadChat();
+    }
     setIsFirstMessageSent(false);
   }, [props.selectedChatId, props.forceUpdate]);
 
@@ -195,6 +201,21 @@ const Chatbot = (props) => {
   };
 
   const handleLoadChat = async () => {
+
+    if (props.selectedChatId === 0) {
+      console.log("Guest session - not loading from database");
+      // Only reset to welcome message if this is the initial load
+      if (messages.length === 0) {
+        setMessages([
+          {
+            message: "Hello, I am your Panacea, your agentic AI assistant. What can I do to help?",
+            sentTime: "just now",
+            direction: "incoming",
+          },
+        ]);
+      }
+      return;
+    }
     try {
       const response = await fetcher("retrieve-messages-from-chat", {
         method: "POST",
@@ -217,6 +238,11 @@ const Chatbot = (props) => {
       ]);
 
       const response_data = await response.json();
+
+      if (!response_data.messages || response_data.messages.length === 0) {
+      console.log("⚠️ No messages returned from API");
+      return;
+      }
 
       const transformedMessages = response_data.messages.map((item) => ({
         message: item.message_text,

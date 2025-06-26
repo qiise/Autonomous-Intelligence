@@ -67,7 +67,7 @@ function HomeChatbot({ isLoggedIn }) {
   useEffect(() => {
   if (!isLoggedIn) {
     // starting a temporary chat for guest
-    setSelectedChatId("guest-chat");
+    setSelectedChatId(0);
     setCurrChatName("Guest Session");
   }
   }, [isLoggedIn]);
