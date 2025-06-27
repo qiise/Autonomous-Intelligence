@@ -77,16 +77,7 @@ function HomeChatbot({ isLoggedIn }) {
     
     <div className="flex flex-row mt-2">
 
-      {!isLoggedIn && (
-        <div className="w-[20%] mt-2">
-          <button
-              className="btn-yellow mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto flex justify-center items-center"
-              
-            >
-              Get Started
-          </button>
-        </div>
-      )}
+      
       {isLoggedIn && (
         <div className="w-[20%]">
           <Navbarchatbot

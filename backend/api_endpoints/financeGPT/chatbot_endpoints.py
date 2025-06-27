@@ -342,8 +342,8 @@ def add_document_to_db(text, document_name, chat_id=None, organization_id=None):
             SELECT id, document_text
             FROM documents
             WHERE document_name = %s
-            AND (chat_id = %s OR organization_id = %s)
-        """, (document_name, chat_id, organization_id))
+            AND chat_id = %s 
+        """, (document_name, chat_id)) #organization_id #OR organization_id = %s)
         existing_doc = cursor.fetchone()
 
         if existing_doc:
@@ -354,9 +354,9 @@ def add_document_to_db(text, document_name, chat_id=None, organization_id=None):
         # If the document doesn't exist, create a new one
         storage_key = "temp"  # You can adjust how the storage key is generated
         cursor.execute("""
-            INSERT INTO documents (document_text, document_name, storage_key, chat_id, organization_id)
-            VALUES (%s, %s, %s, %s, %s)
-        """, (text, document_name, storage_key, chat_id, organization_id))
+            INSERT INTO documents (document_text, document_name, storage_key, chat_id)
+            VALUES (%s, %s, %s, %s)
+        """, (text, document_name, storage_key, chat_id))
 
         doc_id = cursor.lastrowid
 
