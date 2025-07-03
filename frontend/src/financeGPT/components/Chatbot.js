@@ -7,6 +7,7 @@ import {
   faPaperPlane,
   faUndoAlt,
   faEye,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Chatbot.css";
 import fetcher from "../../http/RequestConfig";
@@ -18,6 +19,31 @@ const Chatbot = (props) => {
   const messagesEndRef = useRef(null);
   const responseColor = "black";
   const userColor = "black";
+
+  //WESLEY
+  const handleGenerateShareableUrl = async () => {
+    if (!props.selectedChatId) {
+      alert("No chat selected");
+      return;
+    }
+    try {
+      const response = await fetcher(
+        `generate-playbook/${props.selectedChatId}`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      const shareableUrl = data.url || `/playbook/${data.share_uuid}`;
+      alert(`Your shareable URL: ${shareableUrl}`);
+    } catch (error) {
+      console.error("Error generating shareable URL:", error);
+      alert("Failed to generate shareable URL.");
+    }
+  };
 
   //initial state
   useEffect(() => {
@@ -294,6 +320,12 @@ const Chatbot = (props) => {
                   icon={faFileDownload}
                   onClick={handleDownload}
                   className="file-upload"
+                />
+
+                <FontAwesomeIcon
+                  icon={faLink}
+                  onClick={handleGenerateShareableUrl}
+                  className="cursor-pointer"
                 />
               </div>
             </div>

@@ -34,6 +34,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application
 COPY . .
 
+RUN ls -R /app
+
 # Make start script executable
 RUN chmod +x /app/start.sh
 
@@ -42,7 +44,8 @@ ENV FLASK_APP=app.py \
     FLASK_ENV=development \
     FLASK_DEBUG=1 \
     PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONPATH=/app
 
 # Expose ports
 EXPOSE 5000 6379 9998
