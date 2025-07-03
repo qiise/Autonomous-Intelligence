@@ -13,7 +13,6 @@ DROP TABLE IF EXISTS workflows;
 DROP TABLE IF EXISTS apiKeys;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS freeTrialAllowlist;
-
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -32,7 +31,6 @@ CREATE TABLE users (
     chat_gpt_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     num_chatgpt_requests INTEGER NOT NULL DEFAULT 0
 );
-
 CREATE TABLE StripeInfo (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     user_id INTEGER NOT NULL,
@@ -41,7 +39,6 @@ CREATE TABLE StripeInfo (
     anchor_date TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
 CREATE TABLE Subscriptions (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     stripe_info_id INTEGER NOT NULL,
@@ -52,7 +49,6 @@ CREATE TABLE Subscriptions (
     is_free_trial INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY (stripe_info_id) REFERENCES StripeInfo(id)
 );
-
 CREATE TABLE freeTrialAllowlist (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -61,7 +57,6 @@ CREATE TABLE freeTrialAllowlist (
     max_non_email_count INTEGER NOT NULL DEFAULT 0,
     token_expiration TIMESTAMP
 );
-
 CREATE TABLE freeTrialsAccessed (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -70,7 +65,6 @@ CREATE TABLE freeTrialsAccessed (
     FOREIGN KEY (free_trial_allow_list_id) REFERENCES freeTrialAllowlist(id),
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
 CREATE TABLE chats (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -82,7 +76,6 @@ CREATE TABLE chats (
     custom_model_key TEXT,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
 CREATE TABLE chat_shares (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     chat_id INTEGER NOT NULL,
@@ -90,7 +83,6 @@ CREATE TABLE chat_shares (
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (chat_id) REFERENCES chats(id)
 );
-
 CREATE TABLE chat_share_messages (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     chat_share_id INTEGER NOT NULL,
@@ -99,7 +91,6 @@ CREATE TABLE chat_share_messages (
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (chat_share_id) REFERENCES chat_shares(id)
 );
-
 CREATE TABLE chat_share_documents (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     chat_share_id INTEGER NOT NULL,
@@ -109,7 +100,6 @@ CREATE TABLE chat_share_documents (
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (chat_share_id) REFERENCES chat_shares(id)
 );
-
 CREATE TABLE chat_share_chunks (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     chat_share_document_id INTEGER NOT NULL,
@@ -119,8 +109,6 @@ CREATE TABLE chat_share_chunks (
     page_number INTEGER,
     FOREIGN KEY (chat_share_document_id) REFERENCES chat_share_documents(id)
 );
-
-
 CREATE TABLE messages (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -130,7 +118,6 @@ CREATE TABLE messages (
     relevant_chunks TEXT,
     FOREIGN KEY (chat_id) REFERENCES chats(id)
 );
-
 CREATE TABLE workflows (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -139,14 +126,12 @@ CREATE TABLE workflows (
     user_id INTEGER NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
 CREATE TABLE tickers (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     ticker_name VARCHAR(255) NOT NULL,
     workflow_id INTEGER,
     FOREIGN KEY (workflow_id) REFERENCES workflows(id)
 );
-
 CREATE TABLE documents (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -155,11 +140,10 @@ CREATE TABLE documents (
     storage_key TEXT NOT NULL,
     document_name VARCHAR(255) NOT NULL,
     document_text LONGTEXT NOT NULL,
-    organization_id INTEGER;
+    organization_id INTEGER,
     FOREIGN KEY (workflow_id) REFERENCES workflows(id),
     FOREIGN KEY (chat_id) REFERENCES chats(id)
 );
-
 CREATE TABLE chunks (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     start_index INTEGER,
@@ -169,14 +153,12 @@ CREATE TABLE chunks (
     page_number INTEGER,
     FOREIGN KEY (document_id) REFERENCES documents(id)
 );
-
 CREATE TABLE prompts (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     workflow_id INTEGER NOT NULL,
     prompt_text TEXT NOT NULL,
     FOREIGN KEY (workflow_id) REFERENCES workflows(id)
 );
-
 CREATE TABLE prompt_answers (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     prompt_id INTEGER NOT NULL,
@@ -185,7 +167,6 @@ CREATE TABLE prompt_answers (
     FOREIGN KEY (prompt_id) REFERENCES prompts(id),
     FOREIGN KEY (citation_id) REFERENCES chunks(id)
 );
-
 CREATE TABLE reports (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -194,8 +175,6 @@ CREATE TABLE reports (
     storage_key TEXT NOT NULL,
     FOREIGN KEY (workflow_id) REFERENCES workflows(id)
 );
-
-
 CREATE TABLE apiKeys (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -205,8 +184,6 @@ CREATE TABLE apiKeys (
     key_name VARCHAR(255),
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
-
 CREATE UNIQUE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_chats_user_id ON chats(user_id);
 CREATE INDEX idx_messages_chat_id ON messages(chat_id);

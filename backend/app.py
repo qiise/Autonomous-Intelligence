@@ -170,7 +170,7 @@ def verifyAuthForIDs(table, non_user_id):
     abort(401)
 
 #WESLEY
-@app.route('/generate-playbook/<string:chat_id>', methods = ["GET"])
+@app.route('/generate-playbook/<int:chat_id>', methods = ["GET"])
 @jwt_or_session_token_required
 def create_shareable_playbook(chat_id):
     return create_chat_shareable_url(chat_id)

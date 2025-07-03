@@ -31,6 +31,7 @@ const Chatbot = (props) => {
         `generate-playbook/${props.selectedChatId}`,
         {
           method: "GET",
+          credentials: "include",
           headers: {
             Accept: "application/json",
           },
