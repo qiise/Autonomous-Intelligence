@@ -10,6 +10,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Chatbot.css";
 import fetcher from "../../http/RequestConfig";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+
+
+
+
 
 const Chatbot = (props) => {
   const [messages, setMessages] = useState([]);
@@ -43,6 +48,7 @@ const Chatbot = (props) => {
     }
     setIsFirstMessageSent(false);
   }, [props.selectedChatId, props.forceUpdate]);
+
 
   const scrollToBottom = () => {
     messagesEndRef.current.scrollIntoView({
@@ -295,6 +301,7 @@ const Chatbot = (props) => {
                   onClick={handleDownload}
                   className="file-upload"
                 />
+              
               </div>
             </div>
             <hr />
@@ -400,6 +407,7 @@ const Chatbot = (props) => {
             Create a new chat from left sidebar
           </div>
         )}
+
       </div>
     </>
   );

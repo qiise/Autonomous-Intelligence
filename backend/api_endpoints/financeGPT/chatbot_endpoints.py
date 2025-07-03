@@ -11,8 +11,10 @@ import shutil
 import time
 import numpy as np
 import PyPDF2
+import uuid
 from sec_api import QueryApi, RenderApi
 import requests
+from flask import jsonify
 
 # from openai import OpenAI
 
@@ -1186,3 +1188,4 @@ def get_organization_from_db(organization_id):
         return organization
     finally:
         conn.close()
+

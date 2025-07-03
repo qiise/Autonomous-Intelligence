@@ -78,6 +78,7 @@ from api_endpoints.financeGPT.chatbot_endpoints import add_prompt_to_workflow_db
 
 from datetime import datetime
 
+
 load_dotenv(override=True)
 
 app = Flask(__name__)
@@ -1552,6 +1553,7 @@ def evaluate():
     )
 
     return result
+
 
 
 if __name__ == '__main__':
