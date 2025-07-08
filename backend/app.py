@@ -66,7 +66,7 @@ from ragas.metrics import (
 from bs4 import BeautifulSoup
 
 #WESLEY
-from backend.api_endpoints.financeGPT.chatbot_endpoints import create_chat_shareable_url, access_sharable_chat
+from api_endpoints.financeGPT.chatbot_endpoints import create_chat_shareable_url, access_sharable_chat
 
 
 from api_endpoints.financeGPT.chatbot_endpoints import add_prompt_to_workflow_db, add_workflow_to_db, \
@@ -173,7 +173,12 @@ def verifyAuthForIDs(table, non_user_id):
 @app.route('/generate-playbook/<int:chat_id>', methods = ["GET"])
 @jwt_or_session_token_required
 def create_shareable_playbook(chat_id):
-    return create_chat_shareable_url(chat_id)
+    url = create_chat_shareable_url(chat_id)
+    return jsonify({
+            "url": url,
+            "success": True,
+            "message": "Shareable URL generated successfully"
+        }), 200
 @app.route('/playbook/<string:playbook_url>', methods=["POST"])
 @cross_origin(supports_credentials=True)
 def import_shared_chat(playbook_url):
