@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Chatbot from './Chatbot';
+import SharedChatbot from '../financeGPT/components/SharedChatbot.js';
 import fetcher from '../http/RequestConfig'
 
 const SharedChatViewer = () => {
@@ -82,7 +82,7 @@ const SharedChatViewer = () => {
         
         {/* Chat section  */}
         {newChatId && (
-          <Chatbot
+          <SharedChatbot
             selectedChatId={newChatId}
             currChatName={currChatName}
             setCurrChatName={setCurrChatName}
