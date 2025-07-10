@@ -13,6 +13,7 @@ import numpy as np
 import PyPDF2
 from sec_api import QueryApi, RenderApi
 import requests
+import uuid
 
 
 # from openai import OpenAI
